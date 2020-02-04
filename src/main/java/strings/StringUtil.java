@@ -29,12 +29,13 @@ public class StringUtil {
             vecX.add(tokenMapX.getOrDefault(b, 0));
             vecY.add(tokenMapY.getOrDefault(b, 0));
         }
+
         long x=0,y=0,xy=0;
         for (int i=0; i<tokenSet.size(); i++) {
             xy += vecX.get(i) * vecY.get(i);
             x += vecX.get(i) * vecX.get(i);
             y += vecY.get(i) * vecY.get(i);
         }
-        return (float) (Math.sqrt(xy)/(Math.sqrt(x) * Math.sqrt(y)));
+        return (float) (xy/(Math.sqrt(x) * Math.sqrt(y)));
     }
 }

@@ -24,7 +24,7 @@ public class StringUtilTests {
             tokenY.add((byte)i);
         }
 
-        double similarity = StringUtil.cosineSimilarity(tokenX, tokenX);
+        double similarity = StringUtil.cosineSimilarity(tokenX, tokenY);
         System.out.println(similarity);
     }
 }
