@@ -10,7 +10,7 @@ public class StringUtil {
      * @param tokensY
      * @return
      */
-    public static float cosineSimilarity(List<Byte> tokensX, List<Byte> tokensY){
+    public static double cosineSimilarity(List<Byte> tokensX, List<Byte> tokensY){
         List<Byte> allTokens = new ArrayList<>();
         allTokens.addAll(tokensX);
         allTokens.addAll(tokensY);
@@ -36,6 +36,6 @@ public class StringUtil {
             x += vecX.get(i) * vecX.get(i);
             y += vecY.get(i) * vecY.get(i);
         }
-        return (float) (xy/(Math.sqrt(x) * Math.sqrt(y)));
+        return xy/(Math.sqrt(x) * Math.sqrt(y));
     }
 }
