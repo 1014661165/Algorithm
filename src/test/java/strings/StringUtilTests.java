@@ -27,4 +27,12 @@ public class StringUtilTests {
         double similarity = StringUtil.cosineSimilarity(tokenX, tokenY);
         System.out.println(similarity);
     }
+
+    @Test
+    public void testEditDistance(){
+        String a = "beaut";
+        String b = "beauty";
+        int dist = StringUtil.editDistance(a.getBytes(), b.getBytes());
+        System.out.println(1-dist*1f/(a.length() + b.length()));
+    }
 }
