@@ -4,7 +4,11 @@
     <list default="true" id="28916421-d93f-49b8-aef6-0c26fba0657c" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/strings/StringUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/strings/StringUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/util/FileUtil.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/strings/StringUtilTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/strings/StringUtilTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/strings/StringUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/strings/StringUtil.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/util/FileUtil.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/strings/StringUtilTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/strings/StringUtilTests.class" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -102,7 +106,8 @@
       <workItem from="1580718998417" duration="2187000" />
       <workItem from="1580725451282" duration="2708000" />
       <workItem from="1580789663093" duration="1478000" />
-      <workItem from="1580872490222" duration="1833000" />
+      <workItem from="1580872490222" duration="2216000" />
+      <workItem from="1580874956956" duration="3216000" />
     </task>
     <servers />
   </component>

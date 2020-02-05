@@ -29,10 +29,11 @@ public class StringUtilTests {
     }
 
     @Test
-    public void testEditDistance(){
-        String a = "beaut";
-        String b = "beauty";
+    public void testEditDistance()throws IOException{
+        String a = "coffee";
+        String b = "cafe";
         int dist = StringUtil.editDistance(a.getBytes(), b.getBytes());
-        System.out.println(1-dist*1f/(a.length() + b.length()));
+
+        System.out.printf("%d, %.2f\n", dist, 1-dist*1f/(a.length() + b.length()));
     }
 }
