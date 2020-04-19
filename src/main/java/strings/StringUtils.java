@@ -2,7 +2,7 @@ package strings;
 
 import java.util.*;
 
-public class StringUtil {
+public class StringUtils {
 
     /**
      * 计算token串的余弦相似度
@@ -65,7 +65,6 @@ public class StringUtil {
             System.arraycopy(matrix[1], 0, matrix[0], 0, matrix[0].length);
             Arrays.fill(matrix[1], 0);
             matrix[1][0] = i + 1;
-            //System.out.println(Arrays.toString(matrix[0]));
         }
         return matrix[0][matrix[0].length - 1];
     }

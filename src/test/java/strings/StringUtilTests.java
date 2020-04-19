@@ -1,10 +1,10 @@
 package strings;
 
+import com.fasterxml.jackson.databind.ObjectMapper;
+import com.fasterxml.jackson.dataformat.xml.XmlMapper;
 import org.junit.Test;
 
 import java.io.IOException;
-import java.nio.file.Files;
-import java.nio.file.Paths;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -24,7 +24,7 @@ public class StringUtilTests {
             tokenY.add((byte)i);
         }
 
-        double similarity = StringUtil.cosineSimilarity(tokenX, tokenY);
+        double similarity = StringUtils.cosineSimilarity(tokenX, tokenY);
         System.out.println(similarity);
     }
 
@@ -32,8 +32,21 @@ public class StringUtilTests {
     public void testEditDistance()throws IOException{
         String a = "coffee";
         String b = "cafe";
-        int dist = StringUtil.editDistance(a.getBytes(), b.getBytes());
+        int dist = StringUtils.editDistance(a.getBytes(), b.getBytes());
 
         System.out.printf("%d, %.2f\n", dist, 1-dist*1f/(a.length() + b.length()));
+    }
+
+    @Test
+    public void testXmlAndJson() throws Exception{
+
+        int[] nums = new int[]{1, 2, 3, 4, 5};
+        ObjectMapper objectMapper = new ObjectMapper();
+        String json = objectMapper.writerWithDefaultPrettyPrinter().writeValueAsString(nums);
+        System.out.println(json.length());
+
+        XmlMapper xmlMapper = new XmlMapper();
+        String xml = xmlMapper.writerWithDefaultPrettyPrinter().writeValueAsString(nums);
+        System.out.println(xml.length());
     }
 }
