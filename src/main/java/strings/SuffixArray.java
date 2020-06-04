@@ -95,7 +95,6 @@ public class SuffixArray {
         return results;
     }
 
-
     /**
      * 后缀数组检测结果类
      */
