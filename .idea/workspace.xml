@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="28916421-d93f-49b8-aef6-0c26fba0657c" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/strings/SuffixArray.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/strings/SuffixArray.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -54,7 +53,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.CodeUtilsTests.testIsSimilarCode">
+  <component name="RunManager" selected="JUnit.MultiThreadTests.testCountDownLatch">
     <configuration name="CodeUtilsTests.testIsSimilarCode" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Algorithm" />
       <extension name="coverage">
@@ -71,17 +70,17 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="StringUtilTests.testCosineSimilarity" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="MultiThreadTests.testCountDownLatch" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Algorithm" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="strings.*" />
+          <option name="PATTERN" value="thread.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="strings" />
-      <option name="MAIN_CLASS_NAME" value="strings.StringUtilTests" />
-      <option name="METHOD_NAME" value="testCosineSimilarity" />
+      <option name="PACKAGE_NAME" value="thread" />
+      <option name="MAIN_CLASS_NAME" value="thread.MultiThreadTests" />
+      <option name="METHOD_NAME" value="testCountDownLatch" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -137,11 +136,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.MultiThreadTests.testCountDownLatch" />
         <item itemvalue="JUnit.CodeUtilsTests.testIsSimilarCode" />
         <item itemvalue="JUnit.SuffixArrayTests.testBuildSuffixArray" />
         <item itemvalue="JUnit.StringUtilTests.testXmlAndJson" />
         <item itemvalue="JUnit.StringUtilTests.testEditDistance" />
-        <item itemvalue="JUnit.StringUtilTests.testCosineSimilarity" />
       </list>
     </recent_temporary>
   </component>
@@ -167,6 +166,7 @@
       <workItem from="1587209204164" duration="3590000" />
       <workItem from="1587259514971" duration="3517000" />
       <workItem from="1591263085015" duration="9228000" />
+      <workItem from="1593333524660" duration="487000" />
     </task>
     <servers />
   </component>
