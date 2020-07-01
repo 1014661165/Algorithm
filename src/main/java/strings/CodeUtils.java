@@ -3,23 +3,71 @@ package strings;
 import java.util.*;
 
 /**
- * 代码比较工具（基于余弦相似度）
+ * 代码比较工具（基于后缀数组）
  */
 public class CodeUtils {
 
     /**
-     * 判断两段代码是否相似
+     * 判断两端代码是否相似
      * @param code1 代码段1
      * @param code2 代码段2
-     * @param tokenize 是否token化
      * @param threshold 相似阈值
      * @return
      */
-    public static boolean isSimilarCode(String code1, String code2, boolean tokenize, double threshold){
-        try {
-            List<Object> tokens1 = lexer(code1, tokenize);
-            List<Object> tokens2 = lexer(code2, tokenize);
-            double similarity = cosineSimilarity(tokens1, tokens2);
+    public static boolean isSimilarCode(String code1, String code2, double threshold){
+        try{
+            //token化
+            List<Byte> tokens1 = lexer(code1);
+            List<Byte> tokens2 = lexer(code2);
+
+            //标记片段的token边界
+            List<Fragment> fragments = new ArrayList<>();
+            fragments.add(new Fragment(0, tokens1.size() - 1));
+            fragments.add(new Fragment(tokens1.size(), tokens1.size() + tokens2.size() - 1));
+
+            //后缀数组检测重叠片段
+            List<Byte> tokens = new ArrayList<>();
+            tokens.addAll(tokens1);
+            tokens.addAll(tokens2);
+            SuffixArray suffixArray = new SuffixArray();
+            suffixArray.init(tokens);
+            List<Integer> result = suffixArray.process();
+
+            //处理检测结果
+            List<ClonePair> clonePairs = new ArrayList<>();
+            for (int i = 0; i < result.size() / 3; i++) {
+                if (result.get(3 * i) == 0) {
+                    continue;
+                }
+                int x1 = result.get(3 * i);
+                int x2 = result.get(3 * i + 1);
+                int cloneLen = result.get(3 * i + 2);
+                int firstFrom = searchFragment(fragments, x1);
+                int secondFrom = searchFragment(fragments, x2);
+                if (firstFrom == secondFrom){
+                    continue;
+                }
+                clonePairs.add(new ClonePair(x1, x2, cloneLen));
+            }
+
+            //处理克隆对，计算重叠长度
+            Collections.sort(clonePairs, new Comparator<ClonePair>() {
+                @Override
+                public int compare(ClonePair o1, ClonePair o2) {
+                    if (o1.first < o2.first){
+                        return -1;
+                    }else if (o1.first == o2.first){
+                        return 0;
+                    }else{
+                        return 1;
+                    }
+                }
+            });
+
+            int overlapping = calculateOverlapping(clonePairs);
+            int fragment1Size = fragments.get(0).end - fragments.get(0).start + 1;
+            int fragment2Size = fragments.get(1).end - fragments.get(1).start + 1;
+            double similarity = overlapping * 1d / Math.max(fragment1Size, fragment2Size);
             return similarity >= threshold;
         }catch (Exception e){
             e.printStackTrace();
@@ -28,38 +76,54 @@ public class CodeUtils {
     }
 
     /**
-     * 计算token串的余弦相似度
-     * @param tokensX
-     * @param tokensY
+     * 搜索片段的索引
+     * @param fragments
+     * @param startIndex
      * @return
      */
-    public static double cosineSimilarity(List<Object> tokensX, List<Object> tokensY){
-        List<Object> allTokens = new ArrayList<>();
-        allTokens.addAll(tokensX);
-        allTokens.addAll(tokensY);
-        Set<Object> tokenSet = new HashSet<>(allTokens);
-        Map<Object, Integer> tokenMapX = new HashMap<>();
-        Map<Object, Integer> tokenMapY = new HashMap<>();
-        for (Object b: tokensX) {
-            tokenMapX.put(b, tokenMapX.getOrDefault(b, 0) + 1);
+    private static int searchFragment(List<Fragment> fragments, int startIndex){
+        int index = -1;
+        for (int i=0; i<fragments.size(); i++) {
+            if (startIndex >= fragments.get(i).start && startIndex <= fragments.get(i).end) {
+                index = i;
+                break;
+            }
         }
-        for (Object b: tokensY) {
-            tokenMapY.put(b, tokenMapY.getOrDefault(b, 0) + 1);
-        }
-        List<Integer> vecX = new ArrayList<>();
-        List<Integer> vecY = new ArrayList<>();
-        for (Object b: tokenSet) {
-            vecX.add(tokenMapX.getOrDefault(b, 0));
-            vecY.add(tokenMapY.getOrDefault(b, 0));
-        }
+        return index;
+    }
 
-        long x=0, y=0, xy=0;
-        for (int i=0; i<tokenSet.size(); i++) {
-            xy += vecX.get(i) * vecY.get(i);
-            x += vecX.get(i) * vecX.get(i);
-            y += vecY.get(i) * vecY.get(i);
+    /**
+     * 计算克隆片段的重叠长度
+     * @param pairs
+     * @return
+     */
+    private static int calculateOverlapping(List<ClonePair> pairs){
+        int index = 0;
+        int startToken = 0;
+        int size = 0;
+        int totalSize = 0;
+
+        while (index < pairs.size()){
+            if (index == 0){
+                startToken = pairs.get(index).first;
+                size = pairs.get(index).size;
+                index++;
+                continue;
+            }
+            if (startToken + size >= pairs.get(index).first) {
+                if (startToken + size >= pairs.get(index).first + pairs.get(index).size){
+                }else{
+                    size = pairs.get(index).first - startToken + pairs.get(index).size - 1;
+                }
+                index++;
+            }else{
+                totalSize += size;
+                startToken = pairs.get(index).first;
+                size = pairs.get(index).size;
+                index++;
+            }
         }
-        return xy/(Math.sqrt(x) * Math.sqrt(y));
+        return Math.max(totalSize, size);
     }
 
     /**
@@ -67,9 +131,9 @@ public class CodeUtils {
      * @param stat
      * @return
      */
-    public static List<Object> lexer(String stat, boolean tokenize){
+    public static List<Byte> lexer(String stat){
         int index = 0;
-        List<Object> res = new ArrayList<>();
+        List<Byte> res = new ArrayList<>();
         String token = "";
         while (index < stat.length()){
             char c = stat.charAt(index);
@@ -84,11 +148,7 @@ public class CodeUtils {
                         break;
                     c = stat.charAt(index);
                 }
-                if (tokenize) {
-                    res.add(str2hash(token));
-                }else{
-                    res.add(token);
-                }
+                res.add(str2hash(token));
                 token = "";
                 continue;
             }
@@ -99,14 +159,11 @@ public class CodeUtils {
                         break;
                     c = stat.charAt(index);
                 }
-                if (tokenize) {
-                    res.add(str2hash(token));
-                }else{
-                    res.add(token);
-                }
+                res.add(str2hash(token));
                 token = "";
                 continue;
             }
+            res.add(str2hash(c+""));
             index++;
         }
         return res;
@@ -129,6 +186,127 @@ public class CodeUtils {
             h1 <<= 1;
             int h = h1 ^ h2;
             return (byte) (-3 - (h & 0x7f));
+        }
+    }
+
+
+    /**
+     * 后缀数组工具类
+     */
+    public static class SuffixArray{
+        private List<Byte> tokens;
+        private int[] sa;
+        private int[] height;
+
+        /**
+         * 初始化token列表
+         * @param tokens
+         */
+        public void init(List<Byte> tokens){
+            this.tokens = tokens;
+            sa = new int[tokens.size()];
+            height = new int[tokens.size()];
+        }
+
+        /**
+         * 构建后缀数组
+         */
+        private void buildSuffixArray(){
+            //获取所有后缀
+            List<List<Byte>> tokensList = new ArrayList<>();
+            for (int i=0; i<tokens.size(); i++){
+                tokensList.add(tokens.subList(i, tokens.size()));
+            }
+
+            //对所有后缀排序
+            Collections.sort(tokensList, new Comparator<List<Byte>>() {
+                @Override
+                public int compare(List<Byte> o1, List<Byte> o2) {
+                    int size = Math.min(o1.size(), o2.size());
+                    int result = (o1.size() < o2.size())? -1: 1;
+
+                    for (int i=0; i<size; i++){
+                        if (o1.get(i) < o2.get(i)){
+                            result = -1;
+                            break;
+                        }else if (o1.get(i) > o2.get(i)){
+                            result = 1;
+                            break;
+                        }
+                    }
+                    return result;
+                }
+            });
+
+            //计算后缀数组
+            for (int i=0; i<tokensList.size(); i++){
+                List<Byte> suffix = tokensList.get(i);
+                sa[i] = tokens.size() - suffix.size();
+            }
+            tokensList.clear();
+        }
+
+        /**
+         * 计算高度数组
+         */
+        private void calculateHeight(){
+            for (int i=1; i<sa.length; i++){
+                List<Byte> pre = tokens.subList(sa[i - 1], tokens.size());
+                List<Byte> cur = tokens.subList(sa[i], tokens.size());
+                int cnt = 0;
+                int size = Math.min(pre.size(), cur.size());
+                for (int j=0; j<size; j++){
+                    if (!pre.get(j).equals(cur.get(j))){
+                        break;
+                    }
+                    cnt++;
+                }
+                height[i] = cnt;
+            }
+        }
+
+        /**
+         * 获取检测结果
+         * @return
+         */
+        public List<Integer> process(){
+            buildSuffixArray();
+            calculateHeight();
+            List<Integer> results = new ArrayList<>();
+            for (int i=1; i<height.length; i++){
+                results.add(sa[i - 1]);
+                results.add(sa[i]);
+                results.add(height[i]);
+            }
+            return results;
+        }
+    }
+
+    /**
+     * 克隆片段
+     */
+    public static class Fragment{
+        public int start;
+        public int end;
+
+        public Fragment(int start, int end){
+            this.start = start;
+            this.end = end;
+        }
+    }
+
+    /**
+     * 克隆检测结果
+     */
+    public static class ClonePair{
+        public int first;
+        public int second;
+        public int size;
+
+        public ClonePair(int first, int second, int size) {
+            this.first = first;
+            this.second = second;
+            this.size = size;
         }
     }
 }
