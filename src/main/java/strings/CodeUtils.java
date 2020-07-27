@@ -193,6 +193,7 @@ public class CodeUtils {
     /**
      * 后缀数组工具类
      */
+    @SuppressWarnings("Duplicates")
     public static class SuffixArray{
         private List<Byte> tokens;
         private int[] sa;
@@ -212,38 +213,32 @@ public class CodeUtils {
          * 构建后缀数组
          */
         private void buildSuffixArray(){
-            //获取所有后缀
-            List<List<Byte>> tokensList = new ArrayList<>();
-            for (int i=0; i<tokens.size(); i++){
-                tokensList.add(tokens.subList(i, tokens.size()));
+            //初始化sa
+            for (int i=0; i<sa.length; i++){
+                sa[i] = i;
             }
-
-            //对所有后缀排序
-            Collections.sort(tokensList, new Comparator<List<Byte>>() {
-                @Override
-                public int compare(List<Byte> o1, List<Byte> o2) {
-                    int size = Math.min(o1.size(), o2.size());
-                    int result = (o1.size() < o2.size())? -1: 1;
-
-                    for (int i=0; i<size; i++){
-                        if (o1.get(i) < o2.get(i)){
-                            result = -1;
+            for(int i=0; i<tokens.size()-1; i++) {
+                for (int j=i+1; j<tokens.size(); j++){
+                    List<Byte> suffix1 = tokens.subList(sa[i], tokens.size());
+                    List<Byte> suffix2 = tokens.subList(sa[j], tokens.size());
+                    int size = Math.min(suffix1.size(), suffix2.size());
+                    boolean result = suffix1.size() < suffix2.size();
+                    for (int m=0; m<size; m++){
+                        if (suffix1.get(m) < suffix2.get(m)){
+                            result = true;
                             break;
-                        }else if (o1.get(i) > o2.get(i)){
-                            result = 1;
+                        }else if (suffix1.get(m) > suffix2.get(m)){
+                            result = false;
                             break;
                         }
                     }
-                    return result;
+                    if (!result){
+                        int tmp = sa[i];
+                        sa[i] = sa[j];
+                        sa[j] = tmp;
+                    }
                 }
-            });
-
-            //计算后缀数组
-            for (int i=0; i<tokensList.size(); i++){
-                List<Byte> suffix = tokensList.get(i);
-                sa[i] = tokens.size() - suffix.size();
             }
-            tokensList.clear();
         }
 
         /**

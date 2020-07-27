@@ -3,21 +3,78 @@
   <component name="ChangeListManager">
     <list default="true" id="126b89c9-1882-4bc2-a35b-eb9e3daee37e" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/strings/CodeUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/strings/CodeUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/strings/CodeUtils2.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/strings/CodeUtilsTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/strings/CodeUtilsTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/strings/SuffixArray.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/strings/SuffixArray.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/strings/SuffixArrayTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/strings/SuffixArrayTests.java" afterDir="false" />
     </list>
+    <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="DefaultGradleProjectSettings">
+    <option name="isMigrated" value="true" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/strings/SuffixArray.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="245">
+              <caret line="39" column="38" lean-forward="true" selection-start-line="39" selection-start-column="38" selection-end-line="39" selection-end-column="38" />
+              <folding>
+                <element signature="e#58#89#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/strings/SuffixArrayTests.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="251">
+              <caret line="30" selection-start-line="30" selection-end-line="30" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/strings/CodeUtils.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="361">
+              <caret line="238" column="15" lean-forward="true" selection-start-line="238" selection-start-column="15" selection-end-line="238" selection-end-column="15" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>o1</find>
+      <find>o2</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>suffix1</replace>
+      <replace>suffix2</replace>
+    </replaceStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/src/test/java/strings/SuffixArrayTests.java" />
+        <option value="$PROJECT_DIR$/src/main/java/strings/SuffixArray.java" />
       </list>
     </option>
   </component>
@@ -28,8 +85,64 @@
       </MavenImportingSettings>
     </option>
   </component>
+  <component name="ProjectFrameBounds">
+    <option name="y" value="23" />
+    <option name="width" value="1440" />
+    <option name="height" value="790" />
+  </component>
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="1" id="Add" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="Algorithm" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Algorithm" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Algorithm" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Algorithm" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Algorithm" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Algorithm" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Algorithm" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Algorithm" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Algorithm" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Algorithm" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="strings" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -43,7 +156,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="JUnit.SuffixArrayTests.testBuildSuffixArray">
     <configuration name="DiffTests.testDiff" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Algorithm" />
       <extension name="coverage">
@@ -60,8 +173,25 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="SuffixArrayTests.testBuildSuffixArray" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Algorithm" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="strings.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="strings" />
+      <option name="MAIN_CLASS_NAME" value="strings.SuffixArrayTests" />
+      <option name="METHOD_NAME" value="testBuildSuffixArray" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.SuffixArrayTests.testBuildSuffixArray" />
         <item itemvalue="JUnit.DiffTests.testDiff" />
       </list>
     </recent_temporary>
@@ -77,8 +207,85 @@
       <option name="presentableId" value="Default" />
       <updated>1593570947341</updated>
       <workItem from="1593570951862" duration="8213000" />
+      <workItem from="1594203605461" duration="640000" />
+      <workItem from="1594700329977" duration="15000" />
+      <workItem from="1594700388505" duration="4000" />
+      <workItem from="1594799244814" duration="8000" />
+      <workItem from="1595813899025" duration="3227000" />
     </task>
     <servers />
+  </component>
+  <component name="TestHistory">
+    <history-entry file="SuffixArrayTests_testBuildSuffixArray - 2020.07.08 at 18h 29m 59s.xml">
+      <configuration name="SuffixArrayTests.testBuildSuffixArray" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="SuffixArrayTests_testBuildSuffixArray - 2020.07.08 at 18h 30m 19s.xml">
+      <configuration name="SuffixArrayTests.testBuildSuffixArray" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="SuffixArrayTests_testBuildSuffixArray - 2020.07.27 at 09h 48m 26s.xml">
+      <configuration name="SuffixArrayTests.testBuildSuffixArray" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="SuffixArrayTests_testBuildSuffixArray - 2020.07.27 at 09h 52m 05s.xml">
+      <configuration name="SuffixArrayTests.testBuildSuffixArray" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="SuffixArrayTests_testBuildSuffixArray - 2020.07.27 at 09h 54m 22s.xml">
+      <configuration name="SuffixArrayTests.testBuildSuffixArray" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="SuffixArrayTests_testBuildSuffixArray - 2020.07.27 at 10h 05m 09s.xml">
+      <configuration name="SuffixArrayTests.testBuildSuffixArray" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="SuffixArrayTests_testBuildSuffixArray - 2020.07.27 at 10h 14m 19s.xml">
+      <configuration name="SuffixArrayTests.testBuildSuffixArray" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="SuffixArrayTests_testBuildSuffixArray - 2020.07.27 at 10h 24m 29s.xml">
+      <configuration name="SuffixArrayTests.testBuildSuffixArray" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="SuffixArrayTests_testBuildSuffixArray - 2020.07.27 at 10h 24m 57s.xml">
+      <configuration name="SuffixArrayTests.testBuildSuffixArray" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="SuffixArrayTests_testBuildSuffixArray - 2020.07.27 at 10h 25m 17s.xml">
+      <configuration name="SuffixArrayTests.testBuildSuffixArray" configurationId="JUnit" />
+    </history-entry>
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="3894000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="0" y="23" width="1440" height="790" extended-state="0" />
+    <editor active="true" />
+    <layout>
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2639485" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Designer" order="2" />
+      <window_info id="Image Layers" order="3" />
+      <window_info id="Capture Tool" order="4" />
+      <window_info id="UI Designer" order="5" />
+      <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.3295129" />
+      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.39971346" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Terminal" order="7" />
+      <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Tool Output" order="9" />
+      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
+      <window_info anchor="bottom" id="Messages" order="11" />
+      <window_info anchor="bottom" id="Database Changes" order="12" />
+      <window_info anchor="bottom" id="Version Control" order="13" />
+      <window_info anchor="bottom" id="ANTLR Preview" order="14" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Maven" order="3" />
+      <window_info anchor="right" id="Palette" order="4" />
+      <window_info anchor="right" id="Capture Analysis" order="5" />
+      <window_info anchor="right" id="Database" order="6" />
+      <window_info anchor="right" id="Palette&#9;" order="7" />
+      <window_info anchor="right" id="Theme Preview" order="8" />
+    </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -88,10 +295,78 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="RECENTLY_FILTERED_USER_GROUPS">
+                <collection />
+              </option>
+              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+                <collection />
+              </option>
+            </State>
           </value>
         </entry>
       </map>
     </option>
+    <option name="RECENT_FILTERS">
+      <map>
+        <entry key="Branch">
+          <value>
+            <list />
+          </value>
+        </entry>
+        <entry key="User">
+          <value>
+            <list />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/strings/SuffixArray.java</url>
+          <line>31</line>
+          <properties />
+          <option name="timeStamp" value="8" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/main/java/security/CipherUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1842">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/strings/SuffixArrayTests.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="251">
+          <caret line="30" selection-start-line="30" selection-end-line="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/strings/CodeUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="361">
+          <caret line="238" column="15" lean-forward="true" selection-start-line="238" selection-start-column="15" selection-end-line="238" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/strings/SuffixArray.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="245">
+          <caret line="39" column="38" lean-forward="true" selection-start-line="39" selection-start-column="38" selection-end-line="39" selection-end-column="38" />
+          <folding>
+            <element signature="e#58#89#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
   </component>
 </project>
