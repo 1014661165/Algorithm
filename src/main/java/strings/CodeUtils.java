@@ -33,9 +33,7 @@ public class CodeUtils {
             List<Integer> result = suffixArray.process();
 
             //处理检测结果
-            List<ClonePairFragment> clonePairs1 = new ArrayList<>();
-            List<ClonePairFragment> clonePairs2 = new ArrayList<>();
-
+            List<ClonePair> clonePairs = new ArrayList<>();
             for (int i = 0; i < result.size() / 3; i++) {
                 if (result.get(3 * i) == 0) {
                     continue;
@@ -58,19 +56,24 @@ public class CodeUtils {
                 if (cloneLen == 0){
                     continue;
                 }
-                if (firstFrom == 0){
-                    clonePairs1.add(new ClonePairFragment(x1, cloneLen));
-                    clonePairs2.add(new ClonePairFragment(x2, cloneLen));
-                }else{
-                    clonePairs1.add(new ClonePairFragment(x2, cloneLen));
-                    clonePairs2.add(new ClonePairFragment(x1, cloneLen));
-                }
+                clonePairs.add(new ClonePair(x1, x2 ,cloneLen));
             }
 
-            int overlapping1 = calculateOverlapping(clonePairs1);
-            int overlapping2 = calculateOverlapping(clonePairs2);
+            Collections.sort(clonePairs, new Comparator<ClonePair>() {
+                @Override
+                public int compare(ClonePair o1, ClonePair o2) {
+                    if (o1.first < o2.first){
+                        return -1;
+                    }else if (o1.first > o2.first){
+                        return 1;
+                    }
+                    return 0;
+                }
+            });
 
-            return Math.min(overlapping1, overlapping2) * 1f / Math.max(tokens1.size(), tokens2.size());
+            int overlapping = calculateOverlapping(clonePairs, tokens1.size(), tokens2.size());
+
+            return overlapping * 1f / Math.max(tokens1.size(), tokens2.size());
         }catch (Exception e){
             e.printStackTrace();
         }
@@ -99,45 +102,35 @@ public class CodeUtils {
      * @param pairs
      * @return
      */
-    private static int calculateOverlapping(List<ClonePairFragment> pairs){
+    private static int calculateOverlapping(List<ClonePair> pairs, int frag1Size, int frag2Size){
         int index = 0;
         int startToken = 0;
         int size = 0;
         int totalSize = 0;
 
-        Collections.sort(pairs, new Comparator<ClonePairFragment>() {
-            @Override
-            public int compare(ClonePairFragment o1, ClonePairFragment o2) {
-                if (o1.index < o2.index){
-                    return -1;
-                }else if (o1.index > o2.index){
-                    return 1;
-                }
-                return 0;
-            }
-        });
-
         while (index < pairs.size()){
             if (index == 0){
-                startToken = pairs.get(index).index;
+                startToken = pairs.get(index).first;
                 size = pairs.get(index).size;
                 index++;
                 continue;
             }
-            if (startToken + size >= pairs.get(index).index) {
-                if (startToken + size >= pairs.get(index).index + pairs.get(index).size){
+            if (startToken + size >= pairs.get(index).first) {
+                if (startToken + size >= pairs.get(index).first + pairs.get(index).size){
                 }else{
-                    size = pairs.get(index).index - startToken + pairs.get(index).size;
+                    size = pairs.get(index).first - startToken + pairs.get(index).size;
                 }
                 index++;
             }else{
                 totalSize += size;
-                startToken = pairs.get(index).index;
+                startToken = pairs.get(index).first;
                 size = pairs.get(index).size;
                 index++;
             }
         }
-        return Math.max(totalSize, size);
+        int minFragmentSize = Math.min(frag1Size, frag2Size);
+        int overlap =  Math.max(totalSize, size);
+        return Math.min(overlap, minFragmentSize);
     }
 
     /**
@@ -307,12 +300,14 @@ public class CodeUtils {
     /**
      * 克隆检测结果
      */
-    public static class ClonePairFragment{
-        public int index;
+    public static class ClonePair{
+        public int first;
+        public int second;
         public int size;
 
-        public ClonePairFragment(int index, int size) {
-            this.index = index;
+        public ClonePair(int first, int second, int size) {
+            this.first = first;
+            this.second = second;
             this.size = size;
         }
     }

@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="126b89c9-1882-4bc2-a35b-eb9e3daee37e" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/strings/CodeUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/strings/CodeUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/strings/CodeUtilsTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/strings/CodeUtilsTests.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -39,8 +37,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/strings/CodeUtils.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="441">
-              <caret line="72" selection-start-line="72" selection-end-line="72" />
+            <state relative-caret-position="371">
+              <caret line="73" column="93" selection-start-line="73" selection-start-column="93" selection-end-line="73" selection-end-column="93" />
             </state>
           </provider>
         </entry>
@@ -211,26 +209,11 @@
       <workItem from="1594700388505" duration="4000" />
       <workItem from="1594799244814" duration="8000" />
       <workItem from="1595813899025" duration="3423000" />
-      <workItem from="1596094019773" duration="5063000" />
+      <workItem from="1596094019773" duration="6201000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="CodeUtilsTests_testIsSimilarCode - 2020.07.30 at 16h 25m 26s.xml">
-      <configuration name="CodeUtilsTests.testIsSimilarCode" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="CodeUtilsTests_testIsSimilarCode - 2020.07.30 at 16h 25m 40s.xml">
-      <configuration name="CodeUtilsTests.testIsSimilarCode" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="CodeUtilsTests_testIsSimilarCode - 2020.07.30 at 16h 27m 29s.xml">
-      <configuration name="CodeUtilsTests.testIsSimilarCode" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="CodeUtilsTests_testIsSimilarCode - 2020.07.30 at 16h 27m 57s.xml">
-      <configuration name="CodeUtilsTests.testIsSimilarCode" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="CodeUtilsTests_testIsSimilarCode - 2020.07.30 at 16h 28m 35s.xml">
-      <configuration name="CodeUtilsTests.testIsSimilarCode" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="CodeUtilsTests_testIsSimilarCode - 2020.07.30 at 16h 30m 35s.xml">
       <configuration name="CodeUtilsTests.testIsSimilarCode" configurationId="JUnit" />
     </history-entry>
@@ -246,15 +229,30 @@
     <history-entry file="CodeUtilsTests_testIsSimilarCode - 2020.07.30 at 16h 43m 16s.xml">
       <configuration name="CodeUtilsTests.testIsSimilarCode" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="CodeUtilsTests_testIsSimilarCode - 2020.07.30 at 17h 15m 00s.xml">
+      <configuration name="CodeUtilsTests.testIsSimilarCode" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CodeUtilsTests_testIsSimilarCode - 2020.07.30 at 17h 17m 07s.xml">
+      <configuration name="CodeUtilsTests.testIsSimilarCode" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CodeUtilsTests_testIsSimilarCode - 2020.07.30 at 17h 22m 03s.xml">
+      <configuration name="CodeUtilsTests.testIsSimilarCode" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CodeUtilsTests_testIsSimilarCode - 2020.07.30 at 17h 25m 01s.xml">
+      <configuration name="CodeUtilsTests.testIsSimilarCode" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CodeUtilsTests_testIsSimilarCode - 2020.07.30 at 17h 25m 26s.xml">
+      <configuration name="CodeUtilsTests.testIsSimilarCode" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="9153000" />
+    <option name="totallyTimeSpent" value="10291000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26752505" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.26752505" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -263,8 +261,8 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32891566" />
-      <window_info anchor="bottom" id="Debug" order="3" visible="true" weight="0.3987952" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32891566" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.3987952" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -337,6 +335,12 @@
           <properties />
           <option name="timeStamp" value="7" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/strings/CodeUtils.java</url>
+          <line>73</line>
+          <properties />
+          <option name="timeStamp" value="10" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
     <watches-manager>
@@ -400,8 +404,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/strings/CodeUtils.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="441">
-          <caret line="72" selection-start-line="72" selection-end-line="72" />
+        <state relative-caret-position="371">
+          <caret line="73" column="93" selection-start-line="73" selection-start-column="93" selection-end-line="73" selection-end-column="93" />
         </state>
       </provider>
     </entry>
