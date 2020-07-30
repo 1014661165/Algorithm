@@ -11,10 +11,9 @@ public class CodeUtils {
      * 判断两端代码是否相似
      * @param code1 代码段1
      * @param code2 代码段2
-     * @param threshold 相似阈值
      * @return
      */
-    public static boolean isSimilarCode(String code1, String code2, double threshold){
+    public static float isSimilarCode(String code1, String code2){
         try{
             //token化
             List<Byte> tokens1 = lexer(code1);
@@ -34,7 +33,9 @@ public class CodeUtils {
             List<Integer> result = suffixArray.process();
 
             //处理检测结果
-            List<ClonePair> clonePairs = new ArrayList<>();
+            List<ClonePairFragment> clonePairs1 = new ArrayList<>();
+            List<ClonePairFragment> clonePairs2 = new ArrayList<>();
+
             for (int i = 0; i < result.size() / 3; i++) {
                 if (result.get(3 * i) == 0) {
                     continue;
@@ -43,36 +44,37 @@ public class CodeUtils {
                 int x2 = result.get(3 * i + 1);
                 int cloneLen = result.get(3 * i + 2);
                 int firstFrom = searchFragment(fragments, x1);
+                int firstTo = searchFragment(fragments, x1 + cloneLen - 1);
                 int secondFrom = searchFragment(fragments, x2);
+                int secondTo = searchFragment(fragments, x2 + cloneLen - 1);
+
                 if (firstFrom == secondFrom){
                     continue;
                 }
-                clonePairs.add(new ClonePair(x1, x2, cloneLen));
+                if (firstFrom != firstTo || secondFrom != secondTo){
+                    continue;
+                }
+
+                if (cloneLen == 0){
+                    continue;
+                }
+                if (firstFrom == 0){
+                    clonePairs1.add(new ClonePairFragment(x1, cloneLen));
+                    clonePairs2.add(new ClonePairFragment(x2, cloneLen));
+                }else{
+                    clonePairs1.add(new ClonePairFragment(x2, cloneLen));
+                    clonePairs2.add(new ClonePairFragment(x1, cloneLen));
+                }
             }
 
-            //处理克隆对，计算重叠长度
-            Collections.sort(clonePairs, new Comparator<ClonePair>() {
-                @Override
-                public int compare(ClonePair o1, ClonePair o2) {
-                    if (o1.first < o2.first){
-                        return -1;
-                    }else if (o1.first == o2.first){
-                        return 0;
-                    }else{
-                        return 1;
-                    }
-                }
-            });
+            int overlapping1 = calculateOverlapping(clonePairs1);
+            int overlapping2 = calculateOverlapping(clonePairs2);
 
-            int overlapping = calculateOverlapping(clonePairs);
-            int fragment1Size = fragments.get(0).end - fragments.get(0).start + 1;
-            int fragment2Size = fragments.get(1).end - fragments.get(1).start + 1;
-            double similarity = overlapping * 1d / Math.max(fragment1Size, fragment2Size);
-            return similarity >= threshold;
+            return Math.min(overlapping1, overlapping2) * 1f / Math.max(tokens1.size(), tokens2.size());
         }catch (Exception e){
             e.printStackTrace();
         }
-        return false;
+        return 0f;
     }
 
     /**
@@ -97,28 +99,40 @@ public class CodeUtils {
      * @param pairs
      * @return
      */
-    private static int calculateOverlapping(List<ClonePair> pairs){
+    private static int calculateOverlapping(List<ClonePairFragment> pairs){
         int index = 0;
         int startToken = 0;
         int size = 0;
         int totalSize = 0;
 
+        Collections.sort(pairs, new Comparator<ClonePairFragment>() {
+            @Override
+            public int compare(ClonePairFragment o1, ClonePairFragment o2) {
+                if (o1.index < o2.index){
+                    return -1;
+                }else if (o1.index > o2.index){
+                    return 1;
+                }
+                return 0;
+            }
+        });
+
         while (index < pairs.size()){
             if (index == 0){
-                startToken = pairs.get(index).first;
+                startToken = pairs.get(index).index;
                 size = pairs.get(index).size;
                 index++;
                 continue;
             }
-            if (startToken + size >= pairs.get(index).first) {
-                if (startToken + size >= pairs.get(index).first + pairs.get(index).size){
+            if (startToken + size >= pairs.get(index).index) {
+                if (startToken + size >= pairs.get(index).index + pairs.get(index).size){
                 }else{
-                    size = pairs.get(index).first - startToken + pairs.get(index).size - 1;
+                    size = pairs.get(index).index - startToken + pairs.get(index).size;
                 }
                 index++;
             }else{
                 totalSize += size;
-                startToken = pairs.get(index).first;
+                startToken = pairs.get(index).index;
                 size = pairs.get(index).size;
                 index++;
             }
@@ -293,14 +307,12 @@ public class CodeUtils {
     /**
      * 克隆检测结果
      */
-    public static class ClonePair{
-        public int first;
-        public int second;
+    public static class ClonePairFragment{
+        public int index;
         public int size;
 
-        public ClonePair(int first, int second, int size) {
-            this.first = first;
-            this.second = second;
+        public ClonePairFragment(int index, int size) {
+            this.index = index;
             this.size = size;
         }
     }

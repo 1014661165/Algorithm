@@ -3,8 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="126b89c9-1882-4bc2-a35b-eb9e3daee37e" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/strings/SuffixArray.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/strings/SuffixArray.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/strings/SuffixArrayTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/strings/SuffixArrayTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/strings/CodeUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/strings/CodeUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/strings/CodeUtilsTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/strings/CodeUtilsTests.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -18,14 +18,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/strings/SuffixArray.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="245">
-              <caret line="39" column="38" lean-forward="true" selection-start-line="39" selection-start-column="38" selection-end-line="39" selection-end-column="38" />
-              <folding>
-                <element signature="e#58#89#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="-52">
+              <caret line="12" selection-start-line="12" selection-end-line="12" />
             </state>
           </provider>
         </entry>
@@ -33,17 +30,26 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/strings/SuffixArrayTests.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="251">
-              <caret line="30" selection-start-line="30" selection-end-line="30" />
+            <state relative-caret-position="360">
+              <caret line="33" selection-start-line="33" selection-end-line="33" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/strings/CodeUtils.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="441">
+              <caret line="72" selection-start-line="72" selection-end-line="72" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/strings/CodeUtils.java">
+        <entry file="file://$PROJECT_DIR$/src/test/java/strings/CodeUtilsTests.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="361">
-              <caret line="238" column="15" lean-forward="true" selection-start-line="238" selection-start-column="15" selection-end-line="238" selection-end-column="15" />
+            <state relative-caret-position="135">
+              <caret line="9" selection-start-line="9" selection-end-line="9" />
             </state>
           </provider>
         </entry>
@@ -75,6 +81,8 @@
       <list>
         <option value="$PROJECT_DIR$/src/test/java/strings/SuffixArrayTests.java" />
         <option value="$PROJECT_DIR$/src/main/java/strings/SuffixArray.java" />
+        <option value="$PROJECT_DIR$/src/test/java/strings/CodeUtilsTests.java" />
+        <option value="$PROJECT_DIR$/src/main/java/strings/CodeUtils.java" />
       </list>
     </option>
   </component>
@@ -85,10 +93,9 @@
       </MavenImportingSettings>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="y" value="23" />
+  <component name="ProjectFrameBounds" extendedState="6" fullScreen="true">
     <option name="width" value="1440" />
-    <option name="height" value="790" />
+    <option name="height" value="900" />
   </component>
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="1" id="Add" />
@@ -98,8 +105,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -107,42 +112,19 @@
               <item name="Algorithm" type="b2602c69:ProjectViewProjectNode" />
               <item name="Algorithm" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="Algorithm" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Algorithm" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Algorithm" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Algorithm" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Algorithm" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Algorithm" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Algorithm" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Algorithm" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="strings" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -156,7 +138,23 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.SuffixArrayTests.testBuildSuffixArray">
+  <component name="RunManager" selected="JUnit.CodeUtilsTests.testIsSimilarCode">
+    <configuration name="CodeUtilsTests.testIsSimilarCode" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Algorithm" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="strings.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="strings" />
+      <option name="MAIN_CLASS_NAME" value="strings.CodeUtilsTests" />
+      <option name="METHOD_NAME" value="testIsSimilarCode" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="DiffTests.testDiff" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Algorithm" />
       <extension name="coverage">
@@ -191,6 +189,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.CodeUtilsTests.testIsSimilarCode" />
         <item itemvalue="JUnit.SuffixArrayTests.testBuildSuffixArray" />
         <item itemvalue="JUnit.DiffTests.testDiff" />
       </list>
@@ -211,50 +210,51 @@
       <workItem from="1594700329977" duration="15000" />
       <workItem from="1594700388505" duration="4000" />
       <workItem from="1594799244814" duration="8000" />
-      <workItem from="1595813899025" duration="3227000" />
+      <workItem from="1595813899025" duration="3423000" />
+      <workItem from="1596094019773" duration="5063000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="SuffixArrayTests_testBuildSuffixArray - 2020.07.08 at 18h 29m 59s.xml">
-      <configuration name="SuffixArrayTests.testBuildSuffixArray" configurationId="JUnit" />
+    <history-entry file="CodeUtilsTests_testIsSimilarCode - 2020.07.30 at 16h 25m 26s.xml">
+      <configuration name="CodeUtilsTests.testIsSimilarCode" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="SuffixArrayTests_testBuildSuffixArray - 2020.07.08 at 18h 30m 19s.xml">
-      <configuration name="SuffixArrayTests.testBuildSuffixArray" configurationId="JUnit" />
+    <history-entry file="CodeUtilsTests_testIsSimilarCode - 2020.07.30 at 16h 25m 40s.xml">
+      <configuration name="CodeUtilsTests.testIsSimilarCode" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="SuffixArrayTests_testBuildSuffixArray - 2020.07.27 at 09h 48m 26s.xml">
-      <configuration name="SuffixArrayTests.testBuildSuffixArray" configurationId="JUnit" />
+    <history-entry file="CodeUtilsTests_testIsSimilarCode - 2020.07.30 at 16h 27m 29s.xml">
+      <configuration name="CodeUtilsTests.testIsSimilarCode" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="SuffixArrayTests_testBuildSuffixArray - 2020.07.27 at 09h 52m 05s.xml">
-      <configuration name="SuffixArrayTests.testBuildSuffixArray" configurationId="JUnit" />
+    <history-entry file="CodeUtilsTests_testIsSimilarCode - 2020.07.30 at 16h 27m 57s.xml">
+      <configuration name="CodeUtilsTests.testIsSimilarCode" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="SuffixArrayTests_testBuildSuffixArray - 2020.07.27 at 09h 54m 22s.xml">
-      <configuration name="SuffixArrayTests.testBuildSuffixArray" configurationId="JUnit" />
+    <history-entry file="CodeUtilsTests_testIsSimilarCode - 2020.07.30 at 16h 28m 35s.xml">
+      <configuration name="CodeUtilsTests.testIsSimilarCode" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="SuffixArrayTests_testBuildSuffixArray - 2020.07.27 at 10h 05m 09s.xml">
-      <configuration name="SuffixArrayTests.testBuildSuffixArray" configurationId="JUnit" />
+    <history-entry file="CodeUtilsTests_testIsSimilarCode - 2020.07.30 at 16h 30m 35s.xml">
+      <configuration name="CodeUtilsTests.testIsSimilarCode" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="SuffixArrayTests_testBuildSuffixArray - 2020.07.27 at 10h 14m 19s.xml">
-      <configuration name="SuffixArrayTests.testBuildSuffixArray" configurationId="JUnit" />
+    <history-entry file="CodeUtilsTests_testIsSimilarCode - 2020.07.30 at 16h 38m 43s.xml">
+      <configuration name="CodeUtilsTests.testIsSimilarCode" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="SuffixArrayTests_testBuildSuffixArray - 2020.07.27 at 10h 24m 29s.xml">
-      <configuration name="SuffixArrayTests.testBuildSuffixArray" configurationId="JUnit" />
+    <history-entry file="CodeUtilsTests_testIsSimilarCode - 2020.07.30 at 16h 42m 49s.xml">
+      <configuration name="CodeUtilsTests.testIsSimilarCode" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="SuffixArrayTests_testBuildSuffixArray - 2020.07.27 at 10h 24m 57s.xml">
-      <configuration name="SuffixArrayTests.testBuildSuffixArray" configurationId="JUnit" />
+    <history-entry file="CodeUtilsTests_testIsSimilarCode - 2020.07.30 at 16h 42m 58s.xml">
+      <configuration name="CodeUtilsTests.testIsSimilarCode" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="SuffixArrayTests_testBuildSuffixArray - 2020.07.27 at 10h 25m 17s.xml">
-      <configuration name="SuffixArrayTests.testBuildSuffixArray" configurationId="JUnit" />
+    <history-entry file="CodeUtilsTests_testIsSimilarCode - 2020.07.30 at 16h 43m 16s.xml">
+      <configuration name="CodeUtilsTests.testIsSimilarCode" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="3894000" />
+    <option name="totallyTimeSpent" value="9153000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1440" height="790" extended-state="0" />
+    <frame x="0" y="0" width="1440" height="900" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2639485" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26752505" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -263,8 +263,8 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.3295129" />
-      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.39971346" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32891566" />
+      <window_info anchor="bottom" id="Debug" order="3" visible="true" weight="0.3987952" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -272,7 +272,7 @@
       <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Tool Output" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" order="11" />
+      <window_info anchor="bottom" id="Messages" order="11" weight="0.32891566" />
       <window_info anchor="bottom" id="Database Changes" order="12" />
       <window_info anchor="bottom" id="Version Control" order="13" />
       <window_info anchor="bottom" id="ANTLR Preview" order="14" />
@@ -326,13 +326,46 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/strings/SuffixArray.java</url>
-          <line>31</line>
+          <url>file://$PROJECT_DIR$/src/test/java/strings/CodeUtilsTests.java</url>
+          <line>9</line>
           <properties />
-          <option name="timeStamp" value="8" />
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/strings/CodeUtils.java</url>
+          <line>35</line>
+          <properties />
+          <option name="timeStamp" value="7" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
+    <watches-manager>
+      <configuration name="JUnit">
+        <watch expression="pairs.get(index).index" language="JAVA" />
+        <watch expression="pairs.get(index).size" language="JAVA" />
+      </configuration>
+    </watches-manager>
+  </component>
+  <component name="debuggerHistoryManager">
+    <expressions id="breakpointCondition">
+      <expression>
+        <expression-string>x1==39 &amp;&amp; x2 == 0 &amp;&amp; cloneLen == 38</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+    </expressions>
+    <expressions id="watch">
+      <expression>
+        <expression-string>pairs.get(index).size</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>pairs.get(index).index</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+    </expressions>
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/main/java/security/CipherUtil.java">
@@ -344,27 +377,31 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/strings/SuffixArray.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-52">
+          <caret line="12" selection-start-line="12" selection-end-line="12" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/strings/SuffixArrayTests.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="251">
-          <caret line="30" selection-start-line="30" selection-end-line="30" />
+        <state relative-caret-position="360">
+          <caret line="33" selection-start-line="33" selection-end-line="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/strings/CodeUtilsTests.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" selection-start-line="9" selection-end-line="9" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/strings/CodeUtils.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="361">
-          <caret line="238" column="15" lean-forward="true" selection-start-line="238" selection-start-column="15" selection-end-line="238" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/strings/SuffixArray.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="245">
-          <caret line="39" column="38" lean-forward="true" selection-start-line="39" selection-start-column="38" selection-end-line="39" selection-end-column="38" />
-          <folding>
-            <element signature="e#58#89#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="441">
+          <caret line="72" selection-start-line="72" selection-end-line="72" />
         </state>
       </provider>
     </entry>
