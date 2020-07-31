@@ -56,7 +56,11 @@ public class CodeUtils {
                 if (cloneLen == 0){
                     continue;
                 }
-                clonePairs.add(new ClonePair(x1, x2 ,cloneLen));
+                if (firstFrom == 0){
+                    clonePairs.add(new ClonePair(x1, x2 ,cloneLen));
+                }else{
+                    clonePairs.add(new ClonePair(x2, x1 ,cloneLen));
+                }
             }
 
             Collections.sort(clonePairs, new Comparator<ClonePair>() {
@@ -71,7 +75,7 @@ public class CodeUtils {
                 }
             });
 
-            int overlapping = calculateOverlapping(clonePairs, tokens1.size(), tokens2.size());
+            int overlapping = calculateOverlapping(clonePairs);
 
             return overlapping * 1f / Math.max(tokens1.size(), tokens2.size());
         }catch (Exception e){
@@ -102,35 +106,35 @@ public class CodeUtils {
      * @param pairs
      * @return
      */
-    private static int calculateOverlapping(List<ClonePair> pairs, int frag1Size, int frag2Size){
+    private static int calculateOverlapping(List<ClonePair> pairs){
         int index = 0;
         int startToken = 0;
         int size = 0;
         int totalSize = 0;
 
         while (index < pairs.size()){
+            int pairIndex = pairs.get(index).first;
+            int pairSize = pairs.get(index).size;
             if (index == 0){
-                startToken = pairs.get(index).first;
-                size = pairs.get(index).size;
+                startToken = pairIndex;
+                size = pairSize;
                 index++;
                 continue;
             }
-            if (startToken + size >= pairs.get(index).first) {
-                if (startToken + size >= pairs.get(index).first + pairs.get(index).size){
+            if (startToken + size >= pairIndex) {
+                if (startToken + size >= pairIndex + pairSize){
                 }else{
-                    size = pairs.get(index).first - startToken + pairs.get(index).size;
+                    size = pairIndex - startToken + pairSize;
                 }
                 index++;
             }else{
                 totalSize += size;
-                startToken = pairs.get(index).first;
-                size = pairs.get(index).size;
+                startToken = pairIndex;
+                size = pairSize;
                 index++;
             }
         }
-        int minFragmentSize = Math.min(frag1Size, frag2Size);
-        int overlap =  Math.max(totalSize, size);
-        return Math.min(overlap, minFragmentSize);
+        return Math.max(totalSize, size);
     }
 
     /**
