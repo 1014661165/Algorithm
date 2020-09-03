@@ -4,9 +4,7 @@
     <list default="true" id="126b89c9-1882-4bc2-a35b-eb9e3daee37e" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/strings/CodeUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/strings/CodeUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/strings/CodeUtils2.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/strings/CodeUtilsTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/strings/CodeUtilsTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/strings/JieBaTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/strings/JieBaTests.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -21,6 +19,9 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="MavenImportPreferences">
     <option name="importingSettings">
       <MavenImportingSettings>
@@ -28,8 +29,19 @@
       </MavenImportingSettings>
     </option>
   </component>
+  <component name="ProjectId" id="1gysiuBmgyhKYjQA9ByNAnmN4FO" />
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="1" id="Add" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\GitRepo\Algorithm\src\main\java" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -43,7 +55,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="JUnit.JieBaTests">
     <configuration name="DiffTests.testDiff" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Algorithm" />
       <extension name="coverage">
@@ -60,8 +72,41 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="JieBaTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Algorithm" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="strings.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="strings" />
+      <option name="MAIN_CLASS_NAME" value="strings.JieBaTests" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="JieBaTests.cutSentence" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Algorithm" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="strings.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="strings" />
+      <option name="MAIN_CLASS_NAME" value="strings.JieBaTests" />
+      <option name="METHOD_NAME" value="cutSentence" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.JieBaTests" />
+        <item itemvalue="JUnit.JieBaTests.cutSentence" />
         <item itemvalue="JUnit.DiffTests.testDiff" />
       </list>
     </recent_temporary>
@@ -77,6 +122,7 @@
       <option name="presentableId" value="Default" />
       <updated>1593570947341</updated>
       <workItem from="1593570951862" duration="8213000" />
+      <workItem from="1599098301569" duration="2584000" />
     </task>
     <servers />
   </component>
@@ -88,7 +134,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
