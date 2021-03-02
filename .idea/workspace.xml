@@ -4,7 +4,8 @@
     <list default="true" id="126b89c9-1882-4bc2-a35b-eb9e3daee37e" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/strings/JieBaTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/strings/JieBaTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/strings/DiffTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/strings/DiffTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/thread/MultiThreadTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/thread/MultiThreadTests.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -16,6 +17,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="JUnit4 Test Class" />
       </list>
     </option>
   </component>
@@ -36,9 +38,17 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../CodeCloneHelper" />
   </component>
   <component name="RecentsManager">
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="code" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\GitRepo\Algorithm\src\main\java" />
     </key>
@@ -55,7 +65,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.JieBaTests">
+  <component name="RunManager" selected="JUnit.JavaCodeUtilsTest.parseMethodSignature">
     <configuration name="DiffTests.testDiff" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Algorithm" />
       <extension name="coverage">
@@ -67,6 +77,22 @@
       <option name="PACKAGE_NAME" value="strings" />
       <option name="MAIN_CLASS_NAME" value="strings.DiffTests" />
       <option name="METHOD_NAME" value="testDiff" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="JavaCodeUtilsTest.parseMethodSignature" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Algorithm" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="code.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="code" />
+      <option name="MAIN_CLASS_NAME" value="code.JavaCodeUtilsTest" />
+      <option name="METHOD_NAME" value="parseMethodSignature" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -103,11 +129,29 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="MultiThreadTests.testCountDownLatch" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Algorithm" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="thread.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="thread" />
+      <option name="MAIN_CLASS_NAME" value="thread.MultiThreadTests" />
+      <option name="METHOD_NAME" value="testCountDownLatch" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.JavaCodeUtilsTest.parseMethodSignature" />
+        <item itemvalue="JUnit.DiffTests.testDiff" />
+        <item itemvalue="JUnit.MultiThreadTests.testCountDownLatch" />
         <item itemvalue="JUnit.JieBaTests" />
         <item itemvalue="JUnit.JieBaTests.cutSentence" />
-        <item itemvalue="JUnit.DiffTests.testDiff" />
       </list>
     </recent_temporary>
   </component>
@@ -123,6 +167,9 @@
       <updated>1593570947341</updated>
       <workItem from="1593570951862" duration="8213000" />
       <workItem from="1599098301569" duration="2584000" />
+      <workItem from="1609927538581" duration="2087000" />
+      <workItem from="1609988088926" duration="3269000" />
+      <workItem from="1614665154508" duration="14846000" />
     </task>
     <servers />
   </component>

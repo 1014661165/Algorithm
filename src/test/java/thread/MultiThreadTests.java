@@ -2,29 +2,38 @@ package thread;
 
 import org.junit.Test;
 
-import java.util.concurrent.CountDownLatch;
-import java.util.concurrent.ExecutorService;
-import java.util.concurrent.Executors;
+import java.util.concurrent.*;
+import java.util.concurrent.locks.Lock;
+import java.util.concurrent.locks.ReentrantLock;
 
 public class MultiThreadTests {
 
-    @Test
-    public void testCountDownLatch() throws InterruptedException {
+    static int ticket = 100;
+    static Lock lock = new ReentrantLock();
+    static CountDownLatch latch = new CountDownLatch(100);
 
-        int threadNum = 100;
-        ExecutorService service = Executors.newFixedThreadPool(threadNum);
-        final CountDownLatch latch = new CountDownLatch(threadNum);
-        for (int i=0; i<threadNum; i++){
-            int finalI = i;
-            service.execute(new Runnable() {
-                @Override
-                public void run() {
-                    System.out.println(finalI);
-                    latch.countDown();
-                }
-            });
+    @Test
+    public void testCountDownLatch() throws Exception {
+        ExecutorService executorService = Executors.newFixedThreadPool(32);
+
+        for (int i=0; i<100; i++){
+            executorService.execute(new Processor());
         }
         latch.await();
-        System.out.println(-threadNum);
+        System.out.println("main exit");
+    }
+
+    static class Processor implements Runnable{
+
+        @Override
+        public void run() {
+            if (ticket > 0){
+                lock.lock();
+                ticket--;
+                System.out.printf("name: %s  ticket: %d\n", Thread.currentThread().getName(), ticket);
+                lock.unlock();
+                latch.countDown();
+            }
+        }
     }
 }
