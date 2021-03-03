@@ -1,22 +1,22 @@
 package code;
+
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileReader;
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
 
 /**
- * Java代码工具类
+ * C++代码工具类
  */
-public class JavaCodeUtils {
+public class CppCodeUtils {
 
-    private static final String JAVA_SINGLE_LINE_COMMENT_PATTERN = "//[\\s\\S]*?\n";
-    private static final String JAVA_MULTI_LINE_COMMENT_PATTERN = "/\\*[\\s\\S]*?\\*/";
-    private static final String JAVA_STRING_PATTERN = "\"[\\s\\S]*?\"";
+    private static final String CPP_SINGLE_LINE_COMMENT_PATTERN = "//[\\s\\S]*?\n";
+    private static final String CPP_MULTI_LINE_COMMENT_PATTERN = "/\\*[\\s\\S]*?\\*/";
+    private static final String CPP_STRING_PATTERN = "\"[\\s\\S]*?\"";
 
     /**
-     * 解析方法签名
+     * 解析函数签名
      * @param path
      * @param startLine
      * @return
@@ -29,6 +29,7 @@ public class JavaCodeUtils {
         if (!file.exists()){
             return null;
         }
+
         try {
             //读取代码
             BufferedReader reader = new BufferedReader(new FileReader(file));
@@ -52,7 +53,7 @@ public class JavaCodeUtils {
             }
             char c = code.charAt(index);
 
-            //扫描左大括号到右小括号之间是否抛出异常
+            //扫描左大括号到右小括号之间是否存在const
             StringBuilder builder = new StringBuilder();
             while (c != ')'){
                 index--;
@@ -65,15 +66,10 @@ public class JavaCodeUtils {
                 }
             }
             String str = builder.reverse().toString().trim();
-            if (str.contains("=")){
-                return null;
-            }
-
-            if (!str.isEmpty() && str.contains("throws")){
-                str = str.replaceAll("throws", "");
-                str = str.replaceAll("[\\s]", "");
-                String[] exceptions = str.split(",");
-                methodSignature.setExceptions(Arrays.asList(exceptions));
+            if (!str.isEmpty()){
+                if (!str.equals("const")){
+                    return null;
+                }
             }
 
             //从右小括号扫描到左小括号，提取参数列表
@@ -117,12 +113,22 @@ public class JavaCodeUtils {
                             continue;
                         }
 
-                        String paramType = param.substring(0, param.lastIndexOf(" "));
-                        if (paramType.contains("@")){
-                            paramType = paramType.substring(paramType.lastIndexOf(" ")+1);
+                        String paramType = "";
+                        String paramName = "";
+                        if (param.contains("(") && param.contains(")")){
+                            //参数是闭包函数
+                            paramType = param.substring(0, param.indexOf(" "));
+                            paramName = param.substring(param.indexOf("(")+1, param.indexOf(")"));
+                            paramName = paramName.replaceAll("\\*", "");
+                        }else{
+                            paramType = param.substring(0, param.lastIndexOf(" "));
+                            paramName = param.substring(param.lastIndexOf(" ")+1);
+                            if (paramName.contains("*")){
+                                String tmp = paramType + paramName;
+                                paramType = tmp.substring(0, tmp.lastIndexOf("*")+1);
+                                paramName = tmp.substring(tmp.lastIndexOf("*")+1);
+                            }
                         }
-
-                        String paramName = param.substring(param.lastIndexOf(" ")+1);
                         methodSignature.getParams().add(new MethodSignature.MethodParam(paramType, paramName));
                         lastParam = "";
                         angleBrackets = 0;
@@ -134,7 +140,7 @@ public class JavaCodeUtils {
                 }
             }
 
-            //提取方法名
+            //提取方函数名
             builder.delete(0, builder.length());
             index = skipWhitespace(code, --index);
             c = code.charAt(index);
@@ -162,6 +168,21 @@ public class JavaCodeUtils {
                 c = code.charAt(index);
             }
             str = builder.reverse().toString().trim();
+            if (str.equals("__inline")){
+                builder.delete(0, builder.length());
+                index = skipWhitespace(code, index);
+                c = code.charAt(index);
+                while (!Character.isWhitespace(c)){
+                    builder.append(c);
+                    index--;
+                    if (index < 0){
+                        return null;
+                    }
+                    c = code.charAt(index);
+                }
+                str = builder.reverse().toString().trim();
+
+            }
             methodSignature.setReturnType(str);
             return methodSignature;
         }catch (Exception e){
@@ -207,9 +228,9 @@ public class JavaCodeUtils {
                 return null;
             }
             code = code.substring(leftBracketIndex+1, rightBracketIndex);
-            code = code.replaceAll(JAVA_SINGLE_LINE_COMMENT_PATTERN, "");
-            code = code.replaceAll(JAVA_MULTI_LINE_COMMENT_PATTERN, "");
-            code = code.replaceAll(JAVA_STRING_PATTERN, "");
+            code = code.replaceAll(CPP_SINGLE_LINE_COMMENT_PATTERN, "");
+            code = code.replaceAll(CPP_MULTI_LINE_COMMENT_PATTERN, "");
+            code = code.replaceAll(CPP_STRING_PATTERN, "");
 
             int index = 0;
             while (index < code.length()){
@@ -230,7 +251,6 @@ public class JavaCodeUtils {
         }
         return null;
     }
-
 
     /**
      * 跳过空格
