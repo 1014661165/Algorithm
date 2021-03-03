@@ -2,10 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="126b89c9-1882-4bc2-a35b-eb9e3daee37e" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/strings/DiffTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/strings/DiffTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/thread/MultiThreadTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/thread/MultiThreadTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/code/JavaCodeUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/code/JavaCodeUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/code/JavaMethodSignature.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/code/MethodSignature.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/code/JavaCodeUtilsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/code/JavaCodeUtilsTest.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -16,8 +17,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="JUnit4 Test Class" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -65,7 +66,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.JavaCodeUtilsTest.parseMethodSignature">
+  <component name="RunManager" selected="JUnit.JavaCodeUtilsTest.parseMethodBody">
     <configuration name="DiffTests.testDiff" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Algorithm" />
       <extension name="coverage">
@@ -77,6 +78,22 @@
       <option name="PACKAGE_NAME" value="strings" />
       <option name="MAIN_CLASS_NAME" value="strings.DiffTests" />
       <option name="METHOD_NAME" value="testDiff" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="JavaCodeUtilsTest.parseMethodBody" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Algorithm" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="code.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="code" />
+      <option name="MAIN_CLASS_NAME" value="code.JavaCodeUtilsTest" />
+      <option name="METHOD_NAME" value="parseMethodBody" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -113,22 +130,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="JieBaTests.cutSentence" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Algorithm" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="strings.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="strings" />
-      <option name="MAIN_CLASS_NAME" value="strings.JieBaTests" />
-      <option name="METHOD_NAME" value="cutSentence" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="MultiThreadTests.testCountDownLatch" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Algorithm" />
       <extension name="coverage">
@@ -147,11 +148,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.JavaCodeUtilsTest.parseMethodBody" />
         <item itemvalue="JUnit.JavaCodeUtilsTest.parseMethodSignature" />
         <item itemvalue="JUnit.DiffTests.testDiff" />
         <item itemvalue="JUnit.MultiThreadTests.testCountDownLatch" />
         <item itemvalue="JUnit.JieBaTests" />
-        <item itemvalue="JUnit.JieBaTests.cutSentence" />
       </list>
     </recent_temporary>
   </component>
@@ -169,7 +170,8 @@
       <workItem from="1599098301569" duration="2584000" />
       <workItem from="1609927538581" duration="2087000" />
       <workItem from="1609988088926" duration="3269000" />
-      <workItem from="1614665154508" duration="14846000" />
+      <workItem from="1614665154508" duration="15100000" />
+      <workItem from="1614733943459" duration="5168000" />
     </task>
     <servers />
   </component>

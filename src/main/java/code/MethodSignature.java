@@ -7,8 +7,10 @@ import java.util.ArrayList;
 import java.util.List;
 
 @Data
-public class JavaMethodSignature {
+public class MethodSignature {
 
+    private String path;
+    private int startLine;
     private String returnType;
     private String methodName;
     private List<MethodParam> params = new ArrayList<>();

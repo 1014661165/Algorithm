@@ -12,155 +12,225 @@ import java.util.List;
  */
 public class JavaCodeUtils {
 
+    private static final String JAVA_SINGLE_LINE_COMMENT_PATTERN = "//[\\s\\S]*?\n";
+    private static final String JAVA_MULTI_LINE_COMMENT_PATTERN = "/\\*[\\s\\S]*?\\*/";
+    private static final String JAVA_STRING_PATTERN = "\"[\\s\\S]*?\"";
+
     /**
      * 解析方法签名
      * @param path
-     * @param methodStartLine
+     * @param startLine
      * @return
      */
-    public static JavaMethodSignature parseMethodSignature(String  path, int methodStartLine ) throws IOException {
-        JavaMethodSignature javaMethodSignature = new JavaMethodSignature();
+    public static MethodSignature parseMethodSignature(String path, int startLine){
+        MethodSignature methodSignature = new MethodSignature();
+        methodSignature.setPath(path);
+        methodSignature.setStartLine(startLine);
         File file = new File(path);
         if (!file.exists()){
             return null;
         }
-
-        //读取代码
-        BufferedReader reader = new BufferedReader(new FileReader(file));
-        List<String> lines = new ArrayList<>();
-        String line = null;
-        int lineCount = 0;
-        while ((line = reader.readLine()) != null){
-            lineCount++;
-            if (lineCount > methodStartLine){
-                break;
+        try {
+            //读取代码
+            BufferedReader reader = new BufferedReader(new FileReader(file));
+            List<String> lines = new ArrayList<>();
+            String line = null;
+            int lineCount = 0;
+            while ((line = reader.readLine()) != null){
+                lineCount++;
+                if (lineCount > startLine){
+                    break;
+                }
+                lines.add(line);
             }
-            lines.add(line);
-        }
-        reader.close();
+            reader.close();
 
-        //以左大括号为锚点，向前扫描
-        String code = String.join("\n", lines);
-        int index = code.lastIndexOf("{");
-        if (index == -1){
-            return null;
-        }
-        char c = code.charAt(index);
-
-        //扫描左大括号到右小括号之间是否抛出异常
-        StringBuilder builder = new StringBuilder();
-        while (c != ')'){
-            index--;
-            if (index < 0){
+            //以左大括号为锚点，向前扫描
+            String code = String.join("\n", lines);
+            int index = code.lastIndexOf("{");
+            if (index == -1){
                 return null;
             }
-            c = code.charAt(index);
-            if (c != ')'){
+            char c = code.charAt(index);
+
+            //扫描左大括号到右小括号之间是否抛出异常
+            StringBuilder builder = new StringBuilder();
+            while (c != ')'){
+                index--;
+                if (index < 0){
+                    return null;
+                }
+                c = code.charAt(index);
+                if (c != ')'){
+                    builder.append(c);
+                }
+            }
+            String str = builder.reverse().toString().trim();
+            if (str.contains("=")){
+                return null;
+            }
+
+            if (!str.isEmpty() && str.contains("throws")){
+                str = str.replaceAll("throws", "");
+                str = str.replaceAll("[\\s]", "");
+                String[] exceptions = str.split(",");
+                methodSignature.setExceptions(Arrays.asList(exceptions));
+            }
+
+            //从右小括号扫描到左小括号，提取参数列表
+            builder.delete(0, builder.length());
+            int rightParenNum = 1;
+            while (rightParenNum != 0){
+                index--;
+                if (index < 0){
+                    return null;
+                }
+                c = code.charAt(index);
+                if (c == '('){
+                    rightParenNum--;
+                }else if (c == ')'){
+                    rightParenNum++;
+                }
                 builder.append(c);
             }
+            str = builder.deleteCharAt(builder.length()-1).reverse().toString().trim();
+            if (!str.isEmpty()){
+                str = str.replaceAll("[\\s]+", " ");
+                if (!str.contains(" ")){
+                    return null;
+                }
+
+                String[] params = str.split(",");
+                int pi = 0;
+                int angleBrackets = 0;
+                char[] brackets = new char[]{'<', '>', '(', ')'};
+                String lastParam = "";
+                while (pi < params.length){
+                    String param = params[pi].trim();
+                    int[] cnt = count(param, brackets);
+                    int sum = cnt[0] - cnt[1] + cnt[2] - cnt[3];
+                    if (sum + angleBrackets == 0){
+                        if (!lastParam.isEmpty()){
+                            param = lastParam + "," + param;
+                        }
+                        if (param.lastIndexOf(" ") == -1){
+                            continue;
+                        }
+
+                        String paramType = param.substring(0, param.lastIndexOf(" "));
+                        if (paramType.contains("@")){
+                            paramType = paramType.substring(paramType.lastIndexOf(" ")+1);
+                        }
+
+                        String paramName = param.substring(param.lastIndexOf(" ")+1);
+                        methodSignature.getParams().add(new MethodSignature.MethodParam(paramType, paramName));
+                        lastParam = "";
+                        angleBrackets = 0;
+                    }else{
+                        lastParam = (lastParam.isEmpty())? param: lastParam + "," + param;
+                        angleBrackets += sum;
+                    }
+                    pi++;
+                }
+            }
+
+            //提取方法名
+            builder.delete(0, builder.length());
+            index = skipWhitespace(code, --index);
+            c = code.charAt(index);
+            while (!Character.isWhitespace(c)){
+                builder.append(c);
+                index--;
+                if (index < 0){
+                    return null;
+                }
+                c = code.charAt(index);
+            }
+            str = builder.reverse().toString().trim();
+            methodSignature.setMethodName(str);
+
+            //提取返回类型
+            builder.delete(0, builder.length());
+            index = skipWhitespace(code, index);
+            c = code.charAt(index);
+            while (!Character.isWhitespace(c)){
+                builder.append(c);
+                index--;
+                if (index < 0){
+                    return null;
+                }
+                c = code.charAt(index);
+            }
+            str = builder.reverse().toString().trim();
+            methodSignature.setReturnType(str);
+            return methodSignature;
+        }catch (Exception e){
+            e.printStackTrace();
         }
-        String str = builder.reverse().toString().trim();
-        if (str.contains("=")){
+        return null;
+    }
+
+    /**
+     * 解析Java方法体
+     * @param path
+     * @param startLine
+     * @param endLine
+     * @return
+     */
+    public static MethodBody parseMethodBody(String path, int startLine, int endLine){
+        MethodBody methodBody = new MethodBody();
+        methodBody.setPath(path);
+        methodBody.setStartLine(startLine);
+        methodBody.setEndLine(endLine);
+        File file = new File(path);
+        if (!file.exists()){
             return null;
         }
-
-        if (!str.isEmpty() && str.contains("throws")){
-            str = str.replaceAll("throws", "");
-            str = str.replaceAll("[\\s]", "");
-            String[] exceptions = str.split(",");
-            javaMethodSignature.setExceptions(Arrays.asList(exceptions));
-        }
-
-        //从右小括号扫描到左小括号，提取参数列表
-        builder.delete(0, builder.length());
-        int rightParenNum = 1;
-        while (rightParenNum != 0){
-            index--;
-            if (index < 0){
-                return null;
-            }
-            c = code.charAt(index);
-            if (c == '('){
-                rightParenNum--;
-            }else if (c == ')'){
-                rightParenNum++;
-            }
-            builder.append(c);
-        }
-        str = builder.deleteCharAt(builder.length()-1).reverse().toString().trim();
-        if (!str.isEmpty()){
-            str = str.replaceAll("[\\s]+", " ");
-            if (!str.contains(" ")){
-                return null;
-            }
-
-            String[] params = str.split(",");
-            int pi = 0;
-            int angleBrackets = 0;
-            char[] brackets = new char[]{'<', '>', '(', ')'};
-            String lastParam = "";
-            while (pi < params.length){
-                String param = params[pi].trim();
-                int[] cnt = count(param, brackets);
-                int sum = cnt[0] - cnt[1] + cnt[2] - cnt[3];
-                if (sum + angleBrackets == 0){
-                    if (!lastParam.isEmpty()){
-                        param = lastParam + "," + param;
-                    }
-                    if (param.lastIndexOf(" ") == -1){
-                        continue;
-                    }
-
-                    String paramType = param.substring(0, param.lastIndexOf(" "));
-                    if (paramType.contains("@")){
-                        paramType = paramType.substring(paramType.lastIndexOf(" ")+1);
-                    }
-
-                    String paramName = param.substring(param.lastIndexOf(" ")+1);
-                    javaMethodSignature.getParams().add(new JavaMethodSignature.MethodParam(paramType, paramName));
-                    lastParam = "";
-                    angleBrackets = 0;
-                }else{
-                    lastParam = (lastParam.isEmpty())? param: lastParam + "," + param;
-                    angleBrackets += sum;
+        try {
+            BufferedReader reader = new BufferedReader(new FileReader(file));
+            List<String> lines = new ArrayList<>();
+            String line = null;
+            int cnt = 0;
+            while ((line = reader.readLine()) != null){
+                cnt++;
+                if (cnt >= startLine && cnt <= endLine){
+                    lines.add(line);
+                }else if (cnt > endLine){
+                    break;
                 }
-                pi++;
             }
-        }
-
-        //提取方法名
-        builder.delete(0, builder.length());
-        index = skipWhitespace(code, --index);
-        c = code.charAt(index);
-        while (!Character.isWhitespace(c)){
-            builder.append(c);
-            index--;
-            if (index < 0){
+            reader.close();
+            String code = String.join("\n", lines);
+            int leftBracketIndex = code.indexOf("{");
+            int rightBracketIndex = code.lastIndexOf("}");
+            if (leftBracketIndex == -1 || rightBracketIndex == -1){
                 return null;
             }
-            c = code.charAt(index);
-        }
-        str = builder.reverse().toString().trim();
-        javaMethodSignature.setMethodName(str);
+            code = code.substring(leftBracketIndex+1, rightBracketIndex);
+            code = code.replaceAll(JAVA_SINGLE_LINE_COMMENT_PATTERN, "");
+            code = code.replaceAll(JAVA_MULTI_LINE_COMMENT_PATTERN, "");
+            code = code.replaceAll(JAVA_STRING_PATTERN, "");
 
-        //提取返回类型
-        builder.delete(0, builder.length());
-        index = skipWhitespace(code, index);
-        c = code.charAt(index);
-        while (!Character.isWhitespace(c)){
-            builder.append(c);
-            index--;
-            if (index < 0){
-                return null;
+            int index = 0;
+            while (index < code.length()){
+                char c = code.charAt(index);
+                if (Character.isLetter(c) || c == '_'){
+                    StringBuilder builder = new StringBuilder();
+                    while (Character.isLetterOrDigit(c) || c == '_'){
+                        builder.append(c);
+                        c = code.charAt(++index);
+                    }
+                    methodBody.getIdentifiers().add(builder.toString());
+                }
+                index++;
             }
-            c = code.charAt(index);
+            return methodBody;
+        }catch (Exception e){
+            e.printStackTrace();
         }
-        str = builder.reverse().toString().trim();
-        javaMethodSignature.setReturnType(str);
-
-
-        return javaMethodSignature;
+        return null;
     }
+
 
     /**
      * 跳过空格
