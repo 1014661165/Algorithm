@@ -3,9 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="126b89c9-1882-4bc2-a35b-eb9e3daee37e" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/signatures.json" beforeDir="false" afterPath="$PROJECT_DIR$/signatures.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/code/JavaCodeUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/code/JavaCodeUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/code/JavaCodeUtilsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/code/JavaCodeUtilsTest.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -23,6 +20,7 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="ROOT_SYNC" value="DONT_SYNC" />
   </component>
   <component name="MavenImportPreferences">
     <option name="importingSettings">
@@ -40,7 +38,8 @@
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../CodeCloneHelper" />
+    <property name="last_opened_file_path" value="C:/softwares/git/bin/git.exe" />
+    <property name="settings.editor.selected.configurable" value="vcs.Git" />
   </component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.RecentsKey">
@@ -172,7 +171,7 @@
       <workItem from="1609988088926" duration="3269000" />
       <workItem from="1614665154508" duration="15100000" />
       <workItem from="1614733943459" duration="5645000" />
-      <workItem from="1614750715094" duration="5924000" />
+      <workItem from="1614750715094" duration="8284000" />
     </task>
     <servers />
   </component>
