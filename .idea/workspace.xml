@@ -4,6 +4,7 @@
     <list default="true" id="126b89c9-1882-4bc2-a35b-eb9e3daee37e" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bodies.json" beforeDir="false" afterPath="$PROJECT_DIR$/bodies.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/signatures.json" beforeDir="false" afterPath="$PROJECT_DIR$/signatures.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/code/CppCodeUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/code/CppCodeUtils.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/code/JavaCodeUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/code/JavaCodeUtils.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/code/JavaCodeUtilsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/code/JavaCodeUtilsTest.java" afterDir="false" />
@@ -17,8 +18,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="JUnit4 Test Class" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -68,7 +69,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.CppCodeUtilsTest.parseMethodBody">
+  <component name="RunManager" selected="JUnit.JavaScriptCodeUtilsTest.parseMethodBody">
     <configuration name="CppCodeUtilsTest.parseMethodBody" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Algorithm" />
       <extension name="coverage">
@@ -101,22 +102,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="DiffTests.testDiff" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Algorithm" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="strings.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="strings" />
-      <option name="MAIN_CLASS_NAME" value="strings.DiffTests" />
-      <option name="METHOD_NAME" value="testDiff" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="JavaCodeUtilsTest.parseMethodBody" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Algorithm" />
       <extension name="coverage">
@@ -133,7 +118,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="JavaCodeUtilsTest.parseMethodSignature" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="JavaScriptCodeUtilsTest.parseMethodBody" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Algorithm" />
       <extension name="coverage">
         <pattern>
@@ -142,7 +127,23 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="code" />
-      <option name="MAIN_CLASS_NAME" value="code.JavaCodeUtilsTest" />
+      <option name="MAIN_CLASS_NAME" value="code.JavaScriptCodeUtilsTest" />
+      <option name="METHOD_NAME" value="parseMethodBody" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="JavaScriptCodeUtilsTest.parseMethodSignature" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Algorithm" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="code.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="code" />
+      <option name="MAIN_CLASS_NAME" value="code.JavaScriptCodeUtilsTest" />
       <option name="METHOD_NAME" value="parseMethodSignature" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
@@ -151,11 +152,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.JavaScriptCodeUtilsTest.parseMethodBody" />
+        <item itemvalue="JUnit.JavaScriptCodeUtilsTest.parseMethodSignature" />
         <item itemvalue="JUnit.CppCodeUtilsTest.parseMethodBody" />
         <item itemvalue="JUnit.JavaCodeUtilsTest.parseMethodBody" />
         <item itemvalue="JUnit.CppCodeUtilsTest.parseMethodSignature" />
-        <item itemvalue="JUnit.JavaCodeUtilsTest.parseMethodSignature" />
-        <item itemvalue="JUnit.DiffTests.testDiff" />
       </list>
     </recent_temporary>
   </component>
@@ -177,7 +178,8 @@
       <workItem from="1614733943459" duration="5645000" />
       <workItem from="1614750715094" duration="8284000" />
       <workItem from="1614765464949" duration="246000" />
-      <workItem from="1614824894298" duration="1514000" />
+      <workItem from="1614824894298" duration="1830000" />
+      <workItem from="1614837321930" duration="2809000" />
     </task>
     <servers />
   </component>
@@ -210,6 +212,11 @@
           <url>file://$PROJECT_DIR$/src/main/java/code/CppCodeUtils.java</url>
           <line>91</line>
           <option name="timeStamp" value="18" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/code/JavaScriptCodeUtils.java</url>
+          <line>168</line>
+          <option name="timeStamp" value="19" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

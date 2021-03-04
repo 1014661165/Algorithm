@@ -1,7 +1,6 @@
 package code;
-import java.io.BufferedReader;
+
 import java.io.File;
-import java.io.FileReader;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
@@ -32,18 +31,18 @@ public class JavaCodeUtils {
         }
         try {
             //读取代码
-            BufferedReader reader = new BufferedReader(new FileReader(file));
+            Scanner scanner = new Scanner(file);
             List<String> lines = new ArrayList<>();
-            String line = null;
             int lineCount = 0;
-            while ((line = reader.readLine()) != null){
+            while (scanner.hasNextLine()){
+                String line = scanner.nextLine();
                 lineCount++;
                 if (lineCount > startLine){
                     break;
                 }
                 lines.add(line);
             }
-            reader.close();
+            scanner.close();
 
             //以左大括号为锚点，向前扫描
             String code = String.join("\n", lines);
