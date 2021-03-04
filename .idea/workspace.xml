@@ -178,7 +178,7 @@
       <workItem from="1614765464949" duration="246000" />
       <workItem from="1614824894298" duration="1830000" />
       <workItem from="1614837321930" duration="3314000" />
-      <workItem from="1614846386606" duration="4528000" />
+      <workItem from="1614846386606" duration="4830000" />
     </task>
     <servers />
   </component>
@@ -216,17 +216,6 @@
           <url>file://$PROJECT_DIR$/src/main/java/code/JavaScriptCodeUtils.java</url>
           <line>171</line>
           <option name="timeStamp" value="19" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <condition expression="tmp[1].equals(&quot;c:\\Users\\10146\\Downloads\\dataset\\TheAlgorithm-Python\\temp\\a.py&quot;)" language="JAVA" />
-          <url>file://$PROJECT_DIR$/src/test/java/code/PythonCodeUtilsTest.java</url>
-          <line>27</line>
-          <option name="timeStamp" value="20" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/code/PythonCodeUtils.java</url>
-          <line>48</line>
-          <option name="timeStamp" value="21" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
