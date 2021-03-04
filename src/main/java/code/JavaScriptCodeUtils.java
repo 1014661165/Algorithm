@@ -94,6 +94,9 @@ public class JavaScriptCodeUtils {
 
                         String paramType = "";
                         String paramName = param;
+                        if (paramName.contains("=")){
+                            paramName = paramName.substring(0, paramName.indexOf("="));
+                        }
                         methodSignature.getParams().add(new MethodSignature.MethodParam(paramType, paramName));
                         lastParam = "";
                         angleBrackets = 0;
