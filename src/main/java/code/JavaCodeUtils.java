@@ -5,6 +5,7 @@ import java.io.FileReader;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
+import java.util.Scanner;
 
 /**
  * Java代码工具类
@@ -187,19 +188,20 @@ public class JavaCodeUtils {
             return null;
         }
         try {
-            BufferedReader reader = new BufferedReader(new FileReader(file));
+            Scanner scanner = new Scanner(file);
             List<String> lines = new ArrayList<>();
-            String line = null;
             int cnt = 0;
-            while ((line = reader.readLine()) != null){
+            while (scanner.hasNextLine()){
                 cnt++;
+                String line = scanner.nextLine();
                 if (cnt >= startLine && cnt <= endLine){
                     lines.add(line);
                 }else if (cnt > endLine){
                     break;
                 }
             }
-            reader.close();
+            scanner.close();
+
             String code = String.join("\n", lines);
             int leftBracketIndex = code.indexOf("{");
             int rightBracketIndex = code.lastIndexOf("}");
@@ -211,19 +213,17 @@ public class JavaCodeUtils {
             code = code.replaceAll(JAVA_MULTI_LINE_COMMENT_PATTERN, "");
             code = code.replaceAll(JAVA_STRING_PATTERN, "");
 
-            int index = 0;
-            while (index < code.length()){
-                char c = code.charAt(index);
-                if (Character.isLetter(c) || c == '_'){
-                    StringBuilder builder = new StringBuilder();
-                    while (Character.isLetterOrDigit(c) || c == '_'){
-                        builder.append(c);
-                        c = code.charAt(++index);
-                    }
-                    methodBody.getIdentifiers().add(builder.toString());
+            scanner = new Scanner(code);
+            String pattern = "[A-Za-z_]+[A-Za-z0-9_]*";
+            while (scanner.hasNextLine()){
+                scanner.nextLine();
+                String token = scanner.findInLine(pattern);
+                while (token != null){
+                    methodBody.getIdentifiers().add(token);
+                    token = scanner.findInLine(pattern);
                 }
-                index++;
             }
+            scanner.close();
             return methodBody;
         }catch (Exception e){
             e.printStackTrace();

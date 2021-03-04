@@ -57,5 +57,7 @@ public class JavaCodeUtilsTest {
         MethodBody methodBody1244 = bodies.get(3);
         System.out.println(methodBody3.getIdentifiers().equals(methodBody1244.getIdentifiers()));
         FileUtils.writeStringToFile(new File("bodies.json"), objectMapper.writerWithDefaultPrettyPrinter().writeValueAsString(bodies));
+
+
     }
 }
