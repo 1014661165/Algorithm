@@ -7,13 +7,16 @@ import org.junit.Test;
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileReader;
-import java.io.IOException;
-import java.util.*;
+import java.util.ArrayList;
+import java.util.List;
 
-public class JavaCodeUtilsTest {
+import static org.junit.Assert.*;
+
+public class GolangCodeUtilsTest {
 
     @Test
     public void parseMethodSignature() throws Exception{
+
         ObjectMapper objectMapper = new ObjectMapper();
         String measureIndexPath = "C:\\Users\\10146\\Downloads\\test\\test\\detect\\result\\MeasureIndex.csv";
         File measureIndexFile = new File(measureIndexPath);
@@ -22,7 +25,7 @@ public class JavaCodeUtilsTest {
         List<MethodSignature> signatures = new ArrayList<>();
         while ((line = reader.readLine()) != null){
             String[] tmp = line.split(",");
-            MethodSignature methodSignature = JavaCodeUtils.parseMethodSignature(tmp[1], Integer.parseInt(tmp[2]));
+            MethodSignature methodSignature = GolangCodeUtils.parseMethodSignature(tmp[1], Integer.parseInt(tmp[2]));
             signatures.add(methodSignature);
         }
         reader.close();
@@ -32,7 +35,8 @@ public class JavaCodeUtilsTest {
     }
 
     @Test
-    public void parseMethodBody() throws Exception{
+    public void parseMethodBody()throws Exception {
+
         ObjectMapper objectMapper = new ObjectMapper();
         String measureIndexPath = "C:\\Users\\10146\\Downloads\\test\\test\\detect\\result\\MeasureIndex.csv";
         File measureIndexFile = new File(measureIndexPath);
@@ -41,7 +45,7 @@ public class JavaCodeUtilsTest {
         List<MethodBody> bodies = new ArrayList<>();
         while ((line = reader.readLine()) != null){
             String[] tmp = line.split(",");
-            MethodBody methodBody = JavaCodeUtils.parseMethodBody(tmp[1], Integer.parseInt(tmp[2]), Integer.parseInt(tmp[3]));
+            MethodBody methodBody = GolangCodeUtils.parseMethodBody(tmp[1], Integer.parseInt(tmp[2]), Integer.parseInt(tmp[3]));
             bodies.add(methodBody);
         }
         reader.close();

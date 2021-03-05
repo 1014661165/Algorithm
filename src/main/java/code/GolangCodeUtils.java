@@ -6,15 +6,13 @@ import java.util.List;
 import java.util.Scanner;
 
 /**
- * Python代码工具类
+ * Golang代码工具类
  */
-public class PythonCodeUtils {
+public class GolangCodeUtils {
 
-    private static final String PYTHON_SINGLE_LINE_COMMENT_PATTERN = "#[\\s\\S]*?\n";
-    private static final String PYTHON_MULTI_LINE_COMMENT_PATTERN = "'''[\\s\\S]*?'''";
-    private static final String PYTHON_MULTI_LINE_COMMENT_PATTERN2 = "\"\"\"[\\s\\S]*?\"\"\"";
-    private static final String PYTHON_STRING_PATTERN = "\"[\\s\\S]*?\"";
-    private static final String PYTHON_STRING_PATTERN2 = "'[\\s\\S]*?'";
+    private static final String GOLANG_SINGLE_LINE_COMMENT_PATTERN = "//[\\s\\S]*?\n";
+    private static final String GOLANG_MULTI_LINE_COMMENT_PATTERN = "/\\*[\\s\\S]*?\\*/";
+    private static final String GOLANG_STRING_PATTERN = "\"[\\s\\S]*?\"";
 
     /**
      * 解析方法签名
@@ -36,36 +34,51 @@ public class PythonCodeUtils {
             Scanner scanner = new Scanner(file);
             List<String> lines = new ArrayList<>();
             int lineCount = 0;
-            int brackets = 0;
             while (scanner.hasNextLine()){
                 String line = scanner.nextLine();
-                int[] cnt = count(line, '(', ')');
-                int sum = cnt[0] - cnt[1];
-                brackets += sum;
-
                 lineCount++;
-                if (lineCount > startLine && sum + brackets == 0){
+                if (lineCount > startLine){
                     break;
                 }
                 lines.add(line);
             }
             scanner.close();
 
-            //以def为锚点向后扫描
+            //以func为锚点向后扫描
             String code = String.join("\n", lines);
-            int index = code.lastIndexOf("def ");
+            int index = code.lastIndexOf("func ");
             if (index == -1){
                 return null;
             }
 
-            index += 3;
+            index += 4;
             index = skipWhitespace(code, index);
             if (index == code.length()){
                 return null;
             }
 
-            //拼接函数名
+            //跳过成员函数声明
             char c = code.charAt(index);
+            if (c == '('){
+                int leftParen = 1;
+                while (leftParen != 0){
+                    index++;
+                    if (index >= code.length()){
+                        return null;
+                    }
+                    c = code.charAt(index);
+                    if (c == '('){
+                        leftParen++;
+                    }else if (c == ')'){
+                        leftParen--;
+                    }
+                }
+                index++;
+                index = skipWhitespace(code, index);
+            }
+
+            //拼接函数名
+            c = code.charAt(index);
             StringBuilder builder = new StringBuilder();
             while (Character.isLetterOrDigit(c) || c == '_'){
                 builder.append(c);
@@ -100,46 +113,47 @@ public class PythonCodeUtils {
             }
             String str = builder.deleteCharAt(builder.length()-1).toString().trim();
             if (!str.isEmpty()){
-                str = str.replaceAll("[\\s]+", "");
+                str = str.replaceAll("[\\s]+", " ");
                 String[] params = str.split(",");
-                for (String param: params){
-                    if (param.contains(":")){
-                        //带参数类型
-                        String[] tmp = param.split(":");
-                        methodSignature.getParams().add(new MethodSignature.MethodParam(tmp[1], tmp[0]));
-                    }else if (param.contains("=")){
-                        //带默认值
-                        String[] tmp = param.split("=");
-                        methodSignature.getParams().add(new MethodSignature.MethodParam("", tmp[0]));
+                List<Integer> lastParamIndices = new ArrayList<>();
+                for (int i=0; i<params.length; i++){
+                    String param = params[i].trim();
+                    if (param.contains(" ")){
+                        String paramName = param.substring(0, param.lastIndexOf(" "));
+                        String paramType = param.substring(param.lastIndexOf(" ")+1);
+                        methodSignature.getParams().add(new MethodSignature.MethodParam(paramType, paramName));
+                        if (lastParamIndices.size() != 0){
+                            lastParamIndices.stream().forEach(s->methodSignature.getParams().get(s).setParamType(paramType));
+                            lastParamIndices.clear();
+                        }
                     }else{
                         methodSignature.getParams().add(new MethodSignature.MethodParam("", param));
+                        lastParamIndices.add(i);
                     }
                 }
             }
 
-            //从)扫描到:,提取返回类型
+            //提取返回类型
             builder = new StringBuilder();
-            while (c != ':'){
+            while (c != '{'){
                 index++;
                 if (index >= code.length()){
                     return null;
                 }
                 c = code.charAt(index);
-                if (c != ':'){
+                if (c != '{'){
                     builder.append(c);
                 }
             }
             str = builder.toString().trim();
             if (!str.isEmpty()){
-                String returnType = str.substring(str.indexOf("->")+2);
-                methodSignature.setReturnType(returnType);
+                methodSignature.setReturnType(str);
             }
         }catch (Exception e){
             e.printStackTrace();
         }
         return methodSignature;
     }
-
 
     /**
      * 解析方法体
@@ -173,17 +187,15 @@ public class PythonCodeUtils {
             scanner.close();
 
             String code = String.join("\n", lines);
-            int defIndex = code.indexOf("def ");
-            if (defIndex == -1){
+            int leftBracketIndex = code.indexOf("{");
+            int rightBracketIndex = code.lastIndexOf("}");
+            if (leftBracketIndex == -1 || rightBracketIndex == -1){
                 return null;
             }
-
-            code = code.substring(defIndex);
-            code = code.replaceAll(PYTHON_SINGLE_LINE_COMMENT_PATTERN, "");
-            code = code.replaceAll(PYTHON_MULTI_LINE_COMMENT_PATTERN, "");
-            code = code.replaceAll(PYTHON_MULTI_LINE_COMMENT_PATTERN2, "");
-            code = code.replaceAll(PYTHON_STRING_PATTERN, "");
-            code = code.replaceAll(PYTHON_STRING_PATTERN2, "");
+            code = code.substring(leftBracketIndex+1, rightBracketIndex);
+            code = code.replaceAll(GOLANG_SINGLE_LINE_COMMENT_PATTERN, "");
+            code = code.replaceAll(GOLANG_MULTI_LINE_COMMENT_PATTERN, "");
+            code = code.replaceAll(GOLANG_STRING_PATTERN, "");
 
             scanner = new Scanner(code);
             String pattern = "[A-Za-z_]+[A-Za-z0-9_]*";
@@ -220,24 +232,5 @@ public class PythonCodeUtils {
             c = code.charAt(res);
         }
         return res;
-    }
-
-    /**
-     * 统计字符串s中C字符的个数
-     * @param s
-     * @param chars
-     * @return
-     */
-    private static int[] count(String s, char ...chars){
-        int[] cnt = new int[chars.length];
-        for (char sc: s.toCharArray()){
-            for (int i=0; i<chars.length; i++){
-                if (sc == chars[i]){
-                    cnt[i]++;
-                    break;
-                }
-            }
-        }
-        return cnt;
     }
 }
