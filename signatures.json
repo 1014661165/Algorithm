@@ -1,0 +1,1278 @@
+[ {
+  "path" : "c:\\Users\\10146\\Downloads\\dataset\\TheAlgorithm-Go\\ciphers\\CaesarCipher.go",
+  "startLine" : 10,
+  "returnType" : null,
+  "methodName" : "main",
+  "params" : [ ],
+  "exceptions" : [ ]
+}, {
+  "path" : "c:\\Users\\10146\\Downloads\\dataset\\TheAlgorithm-Go\\ciphers\\CaesarCipher.go",
+  "startLine" : 24,
+  "returnType" : "(string, error)",
+  "methodName" : "caesarCipher",
+  "params" : [ {
+    "paramType" : "string",
+    "paramName" : "input"
+  }, {
+    "paramType" : "int",
+    "paramName" : "key"
+  } ],
+  "exceptions" : [ ]
+}, {
+  "path" : "c:\\Users\\10146\\Downloads\\dataset\\TheAlgorithm-Go\\ciphers\\diffieHellmanKeyExchange.go",
+  "startLine" : 8,
+  "returnType" : null,
+  "methodName" : "main",
+  "params" : [ ],
+  "exceptions" : [ ]
+}, {
+  "path" : "c:\\Users\\10146\\Downloads\\dataset\\TheAlgorithm-Go\\ciphers\\diffieHellmanKeyExchange.go",
+  "startLine" : 52,
+  "returnType" : "int",
+  "methodName" : "modularExponentiation",
+  "params" : [ {
+    "paramType" : "int",
+    "paramName" : "b"
+  }, {
+    "paramType" : "int",
+    "paramName" : "e"
+  }, {
+    "paramType" : "int",
+    "paramName" : "mod"
+  } ],
+  "exceptions" : [ ]
+}, {
+  "path" : "c:\\Users\\10146\\Downloads\\dataset\\TheAlgorithm-Go\\ciphers\\Rot13.go",
+  "startLine" : 9,
+  "returnType" : "string",
+  "methodName" : "rot13",
+  "params" : [ {
+    "paramType" : "string",
+    "paramName" : "input"
+  } ],
+  "exceptions" : [ ]
+}, {
+  "path" : "c:\\Users\\10146\\Downloads\\dataset\\TheAlgorithm-Go\\ciphers\\RSAcipher(Big).go",
+  "startLine" : 16,
+  "returnType" : null,
+  "methodName" : "main",
+  "params" : [ ],
+  "exceptions" : [ ]
+}, {
+  "path" : "c:\\Users\\10146\\Downloads\\dataset\\TheAlgorithm-Go\\ciphers\\RSAcipher(Big).go",
+  "startLine" : 64,
+  "returnType" : "*big.Int",
+  "methodName" : "lcmBig",
+  "params" : [ {
+    "paramType" : "*big.Int",
+    "paramName" : "x"
+  }, {
+    "paramType" : "*big.Int",
+    "paramName" : "y"
+  } ],
+  "exceptions" : [ ]
+}, {
+  "path" : "c:\\Users\\10146\\Downloads\\dataset\\TheAlgorithm-Go\\ciphers\\RSAcipher(Big).go",
+  "startLine" : 95,
+  "returnType" : "string",
+  "methodName" : "stringEncode",
+  "params" : [ {
+    "paramType" : "[]int",
+    "paramName" : "slice"
+  } ],
+  "exceptions" : [ ]
+}, {
+  "path" : "c:\\Users\\10146\\Downloads\\dataset\\TheAlgorithm-Go\\ciphers\\RSAcipher(Big).go",
+  "startLine" : 116,
+  "returnType" : "[]int",
+  "methodName" : "stringDecode",
+  "params" : [ {
+    "paramType" : "*big.Int",
+    "paramName" : "decryptedBig"
+  } ],
+  "exceptions" : [ ]
+}, {
+  "path" : "c:\\Users\\10146\\Downloads\\dataset\\TheAlgorithm-Go\\ciphers\\RSAcipher.go",
+  "startLine" : 11,
+  "returnType" : "int",
+  "methodName" : "generatePrimes",
+  "params" : [ {
+    "paramType" : "int",
+    "paramName" : "limit"
+  } ],
+  "exceptions" : [ ]
+}, {
+  "path" : "c:\\Users\\10146\\Downloads\\dataset\\TheAlgorithm-Go\\ciphers\\RSAcipher.go",
+  "startLine" : 36,
+  "returnType" : "(primes []int)",
+  "methodName" : "prime",
+  "params" : [ {
+    "paramType" : "int",
+    "paramName" : "limit"
+  } ],
+  "exceptions" : [ ]
+}, {
+  "path" : "c:\\Users\\10146\\Downloads\\dataset\\TheAlgorithm-Go\\ciphers\\RSAcipher.go",
+  "startLine" : 91,
+  "returnType" : "int",
+  "methodName" : "modularExponentiation",
+  "params" : [ {
+    "paramType" : "int",
+    "paramName" : "b"
+  }, {
+    "paramType" : "int",
+    "paramName" : "e"
+  }, {
+    "paramType" : "int",
+    "paramName" : "mod"
+  } ],
+  "exceptions" : [ ]
+}, {
+  "path" : "c:\\Users\\10146\\Downloads\\dataset\\TheAlgorithm-Go\\ciphers\\RSAcipher.go",
+  "startLine" : 142,
+  "returnType" : null,
+  "methodName" : "main",
+  "params" : [ ],
+  "exceptions" : [ ]
+}, {
+  "path" : "c:\\Users\\10146\\Downloads\\dataset\\TheAlgorithm-Go\\ciphers\\xorCipher.go",
+  "startLine" : 35,
+  "returnType" : null,
+  "methodName" : "main",
+  "params" : [ ],
+  "exceptions" : [ ]
+}, {
+  "path" : "c:\\Users\\10146\\Downloads\\dataset\\TheAlgorithm-Go\\data-structures\\binary-tree\\binary-search-tree.go",
+  "startLine" : 39,
+  "returnType" : "*node",
+  "methodName" : "insert",
+  "params" : [ {
+    "paramType" : "*node",
+    "paramName" : "root"
+  }, {
+    "paramType" : "int",
+    "paramName" : "val"
+  } ],
+  "exceptions" : [ ]
+}, {
+  "path" : "c:\\Users\\10146\\Downloads\\dataset\\TheAlgorithm-Go\\data-structures\\binary-tree\\binary-search-tree.go",
+  "startLine" : 59,
+  "returnType" : "*node",
+  "methodName" : "bst_delete",
+  "params" : [ {
+    "paramType" : "*node",
+    "paramName" : "root"
+  }, {
+    "paramType" : "int",
+    "paramName" : "val"
+  } ],
+  "exceptions" : [ ]
+}, {
+  "path" : "c:\\Users\\10146\\Downloads\\dataset\\TheAlgorithm-Go\\data-structures\\binary-tree\\binary-search-tree.go",
+  "startLine" : 97,
+  "returnType" : null,
+  "methodName" : "main",
+  "params" : [ ],
+  "exceptions" : [ ]
+}, {
+  "path" : "c:\\Users\\10146\\Downloads\\dataset\\TheAlgorithm-Go\\data-structures\\binary-tree\\binary-tree.go",
+  "startLine" : 58,
+  "returnType" : null,
+  "methodName" : "levelorder",
+  "params" : [ {
+    "paramType" : "*node",
+    "paramName" : "root"
+  } ],
+  "exceptions" : [ ]
+}, {
+  "path" : "c:\\Users\\10146\\Downloads\\dataset\\TheAlgorithm-Go\\data-structures\\dynamic-array\\dynamic_array.go",
+  "startLine" : 36,
+  "returnType" : "error",
+  "methodName" : "remove",
+  "params" : [ {
+    "paramType" : "int",
+    "paramName" : "index"
+  } ],
+  "exceptions" : [ ]
+}, {
+  "path" : "c:\\Users\\10146\\Downloads\\dataset\\TheAlgorithm-Go\\data-structures\\dynamic-array\\dynamic_array.go",
+  "startLine" : 76,
+  "returnType" : null,
+  "methodName" : "newCapacity",
+  "params" : [ ],
+  "exceptions" : [ ]
+}, {
+  "path" : "c:\\Users\\10146\\Downloads\\dataset\\TheAlgorithm-Go\\data-structures\\hash-map\\hash_map.go",
+  "startLine" : 43,
+  "returnType" : "interface",
+  "methodName" : "putValue",
+  "params" : [ {
+    "paramType" : "uint64",
+    "paramName" : "hash"
+  }, {
+    "paramType" : "interface{}",
+    "paramName" : "key"
+  }, {
+    "paramType" : "interface{}",
+    "paramName" : "value"
+  } ],
+  "exceptions" : [ ]
+}, {
+  "path" : "c:\\Users\\10146\\Downloads\\dataset\\TheAlgorithm-Go\\data-structures\\hash-map\\hash_map.go",
+  "startLine" : 83,
+  "returnType" : null,
+  "methodName" : "resize",
+  "params" : [ ],
+  "exceptions" : [ ]
+}, {
+  "path" : "c:\\Users\\10146\\Downloads\\dataset\\TheAlgorithm-Go\\data-structures\\hash-map\\hash_map.go",
+  "startLine" : 115,
+  "returnType" : "uint64",
+  "methodName" : "hash",
+  "params" : [ {
+    "paramType" : "interface{}",
+    "paramName" : "key"
+  } ],
+  "exceptions" : [ ]
+}, {
+  "path" : "c:\\Users\\10146\\Downloads\\dataset\\TheAlgorithm-Go\\data-structures\\linked-list\\double-linkedlist.go",
+  "startLine" : 34,
+  "returnType" : null,
+  "methodName" : "addAtEnd",
+  "params" : [ {
+    "paramType" : "int",
+    "paramName" : "val"
+  } ],
+  "exceptions" : [ ]
+}, {
+  "path" : "c:\\Users\\10146\\Downloads\\dataset\\TheAlgorithm-Go\\data-structures\\linked-list\\double-linkedlist.go",
+  "startLine" : 64,
+  "returnType" : "int",
+  "methodName" : "delAtEnd",
+  "params" : [ ],
+  "exceptions" : [ ]
+}, {
+  "path" : "c:\\Users\\10146\\Downloads\\dataset\\TheAlgorithm-Go\\data-structures\\linked-list\\double-linkedlist.go",
+  "startLine" : 118,
+  "returnType" : null,
+  "methodName" : "displayReverse",
+  "params" : [ ],
+  "exceptions" : [ ]
+}, {
+  "path" : "c:\\Users\\10146\\Downloads\\dataset\\TheAlgorithm-Go\\data-structures\\linked-list\\Linkedlist.go",
+  "startLine" : 14,
+  "returnType" : "*node",
+  "methodName" : "pushFront",
+  "params" : [ {
+    "paramType" : "int",
+    "paramName" : "val"
+  } ],
+  "exceptions" : [ ]
+}, {
+  "path" : "c:\\Users\\10146\\Downloads\\dataset\\TheAlgorithm-Go\\data-structures\\linked-list\\Linkedlist.go",
+  "startLine" : 38,
+  "returnType" : "*node",
+  "methodName" : "pushBack",
+  "params" : [ {
+    "paramType" : "int",
+    "paramName" : "val"
+  } ],
+  "exceptions" : [ ]
+}, {
+  "path" : "c:\\Users\\10146\\Downloads\\dataset\\TheAlgorithm-Go\\data-structures\\linked-list\\Linkedlist.go",
+  "startLine" : 89,
+  "returnType" : null,
+  "methodName" : "main",
+  "params" : [ ],
+  "exceptions" : [ ]
+}, {
+  "path" : "c:\\Users\\10146\\Downloads\\dataset\\TheAlgorithm-Go\\data-structures\\linked-list\\single-linkedlist.go",
+  "startLine" : 54,
+  "returnType" : "int",
+  "methodName" : "delAtEnd",
+  "params" : [ ],
+  "exceptions" : [ ]
+}, {
+  "path" : "c:\\Users\\10146\\Downloads\\dataset\\TheAlgorithm-Go\\data-structures\\trie\\trie.go",
+  "startLine" : 22,
+  "returnType" : null,
+  "methodName" : "Insert",
+  "params" : [ {
+    "paramType" : "string",
+    "paramName" : "s"
+  } ],
+  "exceptions" : [ ]
+}, {
+  "path" : "c:\\Users\\10146\\Downloads\\dataset\\TheAlgorithm-Go\\data-structures\\trie\\trie_test.go",
+  "startLine" : 7,
+  "returnType" : null,
+  "methodName" : "TestTrie",
+  "params" : [ {
+    "paramType" : "*testing.T",
+    "paramName" : "t"
+  } ],
+  "exceptions" : [ ]
+}, {
+  "path" : "c:\\Users\\10146\\Downloads\\dataset\\TheAlgorithm-Go\\data-structures\\trie\\trie_test.go",
+  "startLine" : 45,
+  "returnType" : null,
+  "methodName" : "BenchmarkTrie",
+  "params" : [ {
+    "paramType" : "*testing.B",
+    "paramName" : "b"
+  } ],
+  "exceptions" : [ ]
+}, {
+  "path" : "c:\\Users\\10146\\Downloads\\dataset\\TheAlgorithm-Go\\dynamic-programming\\binomial-coeffecient.go",
+  "startLine" : 8,
+  "returnType" : null,
+  "methodName" : "main",
+  "params" : [ ],
+  "exceptions" : [ ]
+}, {
+  "path" : "c:\\Users\\10146\\Downloads\\dataset\\TheAlgorithm-Go\\dynamic-programming\\binomial-coeffecient.go",
+  "startLine" : 23,
+  "returnType" : "int",
+  "methodName" : "bin2",
+  "params" : [ {
+    "paramType" : "int",
+    "paramName" : "n"
+  }, {
+    "paramType" : "int",
+    "paramName" : "k"
+  } ],
+  "exceptions" : [ ]
+}, {
+  "path" : "c:\\Users\\10146\\Downloads\\dataset\\TheAlgorithm-Go\\dynamic-programming\\knapsack.go",
+  "startLine" : 17,
+  "returnType" : "int",
+  "methodName" : "solve",
+  "params" : [ {
+    "paramType" : "int",
+    "paramName" : "maxWeight"
+  }, {
+    "paramType" : "[]int",
+    "paramName" : "weights"
+  }, {
+    "paramType" : "[]int",
+    "paramName" : "values"
+  } ],
+  "exceptions" : [ ]
+}, {
+  "path" : "c:\\Users\\10146\\Downloads\\dataset\\TheAlgorithm-Go\\dynamic-programming\\longest-palindromic-subsequence.go",
+  "startLine" : 17,
+  "returnType" : "int",
+  "methodName" : "lpsRec",
+  "params" : [ {
+    "paramType" : "string",
+    "paramName" : "word"
+  }, {
+    "paramType" : "int",
+    "paramName" : "i"
+  }, {
+    "paramType" : "int",
+    "paramName" : "j"
+  } ],
+  "exceptions" : [ ]
+}, {
+  "path" : "c:\\Users\\10146\\Downloads\\dataset\\TheAlgorithm-Go\\dynamic-programming\\longest-palindromic-subsequence.go",
+  "startLine" : 30,
+  "returnType" : "int",
+  "methodName" : "lpsDp",
+  "params" : [ {
+    "paramType" : "string",
+    "paramName" : "word"
+  } ],
+  "exceptions" : [ ]
+}, {
+  "path" : "c:\\Users\\10146\\Downloads\\dataset\\TheAlgorithm-Go\\dynamic-programming\\longestCommonSubsequence.go",
+  "startLine" : 18,
+  "returnType" : "int",
+  "methodName" : "longestCommonSubsequence",
+  "params" : [ {
+    "paramType" : "string",
+    "paramName" : "a"
+  }, {
+    "paramType" : "string",
+    "paramName" : "b"
+  }, {
+    "paramType" : "int",
+    "paramName" : "m"
+  }, {
+    "paramType" : "int",
+    "paramName" : "n"
+  } ],
+  "exceptions" : [ ]
+}, {
+  "path" : "c:\\Users\\10146\\Downloads\\dataset\\TheAlgorithm-Go\\dynamic-programming\\matrix-multiplication.go",
+  "startLine" : 18,
+  "returnType" : "int",
+  "methodName" : "matrixChainRec",
+  "params" : [ {
+    "paramType" : "[]int",
+    "paramName" : "D"
+  }, {
+    "paramType" : "int",
+    "paramName" : "i"
+  }, {
+    "paramType" : "int",
+    "paramName" : "j"
+  } ],
+  "exceptions" : [ ]
+}, {
+  "path" : "c:\\Users\\10146\\Downloads\\dataset\\TheAlgorithm-Go\\dynamic-programming\\matrix-multiplication.go",
+  "startLine" : 31,
+  "returnType" : "int",
+  "methodName" : "matrixChainDp",
+  "params" : [ {
+    "paramType" : "[]int",
+    "paramName" : "D"
+  } ],
+  "exceptions" : [ ]
+}, {
+  "path" : "c:\\Users\\10146\\Downloads\\dataset\\TheAlgorithm-Go\\dynamic-programming\\rod-cutting.go",
+  "startLine" : 21,
+  "returnType" : "int",
+  "methodName" : "cutRodRec",
+  "params" : [ {
+    "paramType" : "[]int",
+    "paramName" : "price"
+  }, {
+    "paramType" : "int",
+    "paramName" : "length"
+  } ],
+  "exceptions" : [ ]
+}, {
+  "path" : "c:\\Users\\10146\\Downloads\\dataset\\TheAlgorithm-Go\\dynamic-programming\\rod-cutting.go",
+  "startLine" : 34,
+  "returnType" : "int",
+  "methodName" : "cutRodDp",
+  "params" : [ {
+    "paramType" : "[]int",
+    "paramName" : "price"
+  }, {
+    "paramType" : "int",
+    "paramName" : "length"
+  } ],
+  "exceptions" : [ ]
+}, {
+  "path" : "c:\\Users\\10146\\Downloads\\dataset\\TheAlgorithm-Go\\graphs\\floyd_warshall.go",
+  "startLine" : 18,
+  "returnType" : "Matrix",
+  "methodName" : "FloydWarshall",
+  "params" : [ {
+    "paramType" : "Matrix",
+    "paramName" : "graph"
+  } ],
+  "exceptions" : [ ]
+}, {
+  "path" : "c:\\Users\\10146\\Downloads\\dataset\\TheAlgorithm-Go\\graphs\\floyd_warshall.go",
+  "startLine" : 51,
+  "returnType" : null,
+  "methodName" : "main",
+  "params" : [ ],
+  "exceptions" : [ ]
+}, {
+  "path" : "c:\\Users\\10146\\Downloads\\dataset\\TheAlgorithm-Go\\math\\fastExponent.go",
+  "startLine" : 5,
+  "returnType" : "float64",
+  "methodName" : "fastExponentiation",
+  "params" : [ {
+    "paramType" : "int",
+    "paramName" : "b"
+  }, {
+    "paramType" : "int",
+    "paramName" : "e"
+  } ],
+  "exceptions" : [ ]
+}, {
+  "path" : "c:\\Users\\10146\\Downloads\\dataset\\TheAlgorithm-Go\\math\\Sieve.go",
+  "startLine" : 7,
+  "returnType" : null,
+  "methodName" : "main",
+  "params" : [ ],
+  "exceptions" : [ ]
+}, {
+  "path" : "c:\\Users\\10146\\Downloads\\dataset\\TheAlgorithm-Go\\other\\monte_carlo_pi\\monte_carlo_pi.go",
+  "startLine" : 12,
+  "returnType" : null,
+  "methodName" : "main",
+  "params" : [ ],
+  "exceptions" : [ ]
+}, {
+  "path" : "c:\\Users\\10146\\Downloads\\dataset\\TheAlgorithm-Go\\other\\PasswordGenerator.go",
+  "startLine" : 15,
+  "returnType" : "string",
+  "methodName" : "generatePassword",
+  "params" : [ {
+    "paramType" : "int",
+    "paramName" : "minLength"
+  }, {
+    "paramType" : "int",
+    "paramName" : "maxLength"
+  } ],
+  "exceptions" : [ ]
+}, {
+  "path" : "c:\\Users\\10146\\Downloads\\dataset\\TheAlgorithm-Go\\other\\PasswordGenerator.go",
+  "startLine" : 42,
+  "returnType" : null,
+  "methodName" : "main",
+  "params" : [ ],
+  "exceptions" : [ ]
+}, {
+  "path" : "c:\\Users\\10146\\Downloads\\dataset\\TheAlgorithm-Go\\other\\PrimeNumbers.go",
+  "startLine" : 21,
+  "returnType" : "bool",
+  "methodName" : "isPrime",
+  "params" : [ {
+    "paramType" : "int64",
+    "paramName" : "n"
+  } ],
+  "exceptions" : [ ]
+}, {
+  "path" : "c:\\Users\\10146\\Downloads\\dataset\\TheAlgorithm-Go\\other\\PrimeNumbers.go",
+  "startLine" : 60,
+  "returnType" : "(primeArr []int64)",
+  "methodName" : "primesInRange",
+  "params" : [ {
+    "paramType" : "int64",
+    "paramName" : "min"
+  }, {
+    "paramType" : "int64",
+    "paramName" : "max"
+  } ],
+  "exceptions" : [ ]
+}, {
+  "path" : "c:\\Users\\10146\\Downloads\\dataset\\TheAlgorithm-Go\\other\\PrimeNumbers.go",
+  "startLine" : 80,
+  "returnType" : null,
+  "methodName" : "main",
+  "params" : [ ],
+  "exceptions" : [ ]
+}, {
+  "path" : "c:\\Users\\10146\\Downloads\\dataset\\TheAlgorithm-Go\\other\\prime_numbers.go",
+  "startLine" : 21,
+  "returnType" : "bool",
+  "methodName" : "isPrime",
+  "params" : [ {
+    "paramType" : "int64",
+    "paramName" : "n"
+  } ],
+  "exceptions" : [ ]
+}, {
+  "path" : "c:\\Users\\10146\\Downloads\\dataset\\TheAlgorithm-Go\\other\\prime_numbers.go",
+  "startLine" : 60,
+  "returnType" : "(primeArr []int64)",
+  "methodName" : "primesInRange",
+  "params" : [ {
+    "paramType" : "int64",
+    "paramName" : "min"
+  }, {
+    "paramType" : "int64",
+    "paramName" : "max"
+  } ],
+  "exceptions" : [ ]
+}, {
+  "path" : "c:\\Users\\10146\\Downloads\\dataset\\TheAlgorithm-Go\\other\\prime_numbers.go",
+  "startLine" : 80,
+  "returnType" : null,
+  "methodName" : "main",
+  "params" : [ ],
+  "exceptions" : [ ]
+}, {
+  "path" : "c:\\Users\\10146\\Downloads\\dataset\\TheAlgorithm-Go\\other\\string_combinations.go",
+  "startLine" : 21,
+  "returnType" : null,
+  "methodName" : "Combine",
+  "params" : [ {
+    "paramType" : "int",
+    "paramName" : "seed"
+  } ],
+  "exceptions" : [ ]
+}, {
+  "path" : "c:\\Users\\10146\\Downloads\\dataset\\TheAlgorithm-Go\\searches\\binary_search.go",
+  "startLine" : 3,
+  "returnType" : "int",
+  "methodName" : "binarySearch",
+  "params" : [ {
+    "paramType" : "[]int",
+    "paramName" : "array"
+  }, {
+    "paramType" : "int",
+    "paramName" : "target"
+  }, {
+    "paramType" : "int",
+    "paramName" : "lowIndex"
+  }, {
+    "paramType" : "int",
+    "paramName" : "highIndex"
+  } ],
+  "exceptions" : [ ]
+}, {
+  "path" : "c:\\Users\\10146\\Downloads\\dataset\\TheAlgorithm-Go\\searches\\binary_search.go",
+  "startLine" : 17,
+  "returnType" : "int",
+  "methodName" : "iterBinarySearch",
+  "params" : [ {
+    "paramType" : "[]int",
+    "paramName" : "array"
+  }, {
+    "paramType" : "int",
+    "paramName" : "target"
+  }, {
+    "paramType" : "int",
+    "paramName" : "lowIndex"
+  }, {
+    "paramType" : "int",
+    "paramName" : "highIndex"
+  } ],
+  "exceptions" : [ ]
+}, {
+  "path" : "c:\\Users\\10146\\Downloads\\dataset\\TheAlgorithm-Go\\searches\\breadth_first_search.go",
+  "startLine" : 23,
+  "returnType" : "bool",
+  "methodName" : "breadthFirstSearch",
+  "params" : [ {
+    "paramType" : "int",
+    "paramName" : "start"
+  }, {
+    "paramType" : "int",
+    "paramName" : "end"
+  }, {
+    "paramType" : "[]int",
+    "paramName" : "nodes"
+  }, {
+    "paramType" : "[][]bool",
+    "paramName" : "edges"
+  } ],
+  "exceptions" : [ ]
+}, {
+  "path" : "c:\\Users\\10146\\Downloads\\dataset\\TheAlgorithm-Go\\searches\\breadth_first_search.go",
+  "startLine" : 50,
+  "returnType" : null,
+  "methodName" : "main",
+  "params" : [ ],
+  "exceptions" : [ ]
+}, {
+  "path" : "c:\\Users\\10146\\Downloads\\dataset\\TheAlgorithm-Go\\searches\\depth_first_search.go",
+  "startLine" : 23,
+  "returnType" : "([]int, bool)",
+  "methodName" : "dfs",
+  "params" : [ {
+    "paramType" : "int",
+    "paramName" : "start"
+  }, {
+    "paramType" : "int",
+    "paramName" : "end"
+  }, {
+    "paramType" : "[]int",
+    "paramName" : "nodes"
+  }, {
+    "paramType" : "[][]bool",
+    "paramName" : "edges"
+  } ],
+  "exceptions" : [ ]
+}, {
+  "path" : "c:\\Users\\10146\\Downloads\\dataset\\TheAlgorithm-Go\\searches\\depth_first_search.go",
+  "startLine" : 50,
+  "returnType" : null,
+  "methodName" : "main",
+  "params" : [ ],
+  "exceptions" : [ ]
+}, {
+  "path" : "c:\\Users\\10146\\Downloads\\dataset\\TheAlgorithm-Go\\searches\\linear_search.go",
+  "startLine" : 14,
+  "returnType" : null,
+  "methodName" : "main",
+  "params" : [ ],
+  "exceptions" : [ ]
+}, null, {
+  "path" : "c:\\Users\\10146\\Downloads\\dataset\\TheAlgorithm-Go\\searches\\search_test.go",
+  "startLine" : 21,
+  "returnType" : null,
+  "methodName" : "TestBinarySearch",
+  "params" : [ {
+    "paramType" : "*testing.T",
+    "paramName" : "t"
+  } ],
+  "exceptions" : [ ]
+}, {
+  "path" : "c:\\Users\\10146\\Downloads\\dataset\\TheAlgorithm-Go\\sorts\\bubble_sort.go",
+  "startLine" : 7,
+  "returnType" : "[]int",
+  "methodName" : "bubbleSort",
+  "params" : [ {
+    "paramType" : "[]int",
+    "paramName" : "arr"
+  } ],
+  "exceptions" : [ ]
+}, {
+  "path" : "c:\\Users\\10146\\Downloads\\dataset\\TheAlgorithm-Go\\sorts\\counting_sort.go",
+  "startLine" : 3,
+  "returnType" : "[]int",
+  "methodName" : "CountingSort",
+  "params" : [ {
+    "paramType" : "[]int",
+    "paramName" : "arr"
+  }, {
+    "paramType" : "int",
+    "paramName" : "max"
+  } ],
+  "exceptions" : [ ]
+}, {
+  "path" : "c:\\Users\\10146\\Downloads\\dataset\\TheAlgorithm-Go\\sorts\\heap_sort.go",
+  "startLine" : 17,
+  "returnType" : null,
+  "methodName" : "MaxHeapify",
+  "params" : [ {
+    "paramType" : "int",
+    "paramName" : "i"
+  } ],
+  "exceptions" : [ ]
+}, {
+  "path" : "c:\\Users\\10146\\Downloads\\dataset\\TheAlgorithm-Go\\sorts\\heap_sort.go",
+  "startLine" : 36,
+  "returnType" : "[]int",
+  "methodName" : "heapSort",
+  "params" : [ {
+    "paramType" : "[]int",
+    "paramName" : "slice"
+  } ],
+  "exceptions" : [ ]
+}, {
+  "path" : "c:\\Users\\10146\\Downloads\\dataset\\TheAlgorithm-Go\\sorts\\insertion_sort.go",
+  "startLine" : 4,
+  "returnType" : "[]int",
+  "methodName" : "insertionSort",
+  "params" : [ {
+    "paramType" : "[]int",
+    "paramName" : "arr"
+  } ],
+  "exceptions" : [ ]
+}, {
+  "path" : "c:\\Users\\10146\\Downloads\\dataset\\TheAlgorithm-Go\\sorts\\merge_sort.go",
+  "startLine" : 4,
+  "returnType" : "[]int",
+  "methodName" : "merge",
+  "params" : [ {
+    "paramType" : "[]int",
+    "paramName" : "a"
+  }, {
+    "paramType" : "[]int",
+    "paramName" : "b"
+  } ],
+  "exceptions" : [ ]
+}, {
+  "path" : "c:\\Users\\10146\\Downloads\\dataset\\TheAlgorithm-Go\\sorts\\merge_sort.go",
+  "startLine" : 36,
+  "returnType" : "[]int",
+  "methodName" : "Mergesort",
+  "params" : [ {
+    "paramType" : "[]int",
+    "paramName" : "items"
+  } ],
+  "exceptions" : [ ]
+}, {
+  "path" : "c:\\Users\\10146\\Downloads\\dataset\\TheAlgorithm-Go\\sorts\\quick_sort.go",
+  "startLine" : 8,
+  "returnType" : "[]int",
+  "methodName" : "quickSort",
+  "params" : [ {
+    "paramType" : "[]int",
+    "paramName" : "arr"
+  } ],
+  "exceptions" : [ ]
+}, {
+  "path" : "c:\\Users\\10146\\Downloads\\dataset\\TheAlgorithm-Go\\sorts\\selection_sort.go",
+  "startLine" : 4,
+  "returnType" : "[]int",
+  "methodName" : "selectionSort",
+  "params" : [ {
+    "paramType" : "[]int",
+    "paramName" : "arr"
+  } ],
+  "exceptions" : [ ]
+}, {
+  "path" : "c:\\Users\\10146\\Downloads\\dataset\\TheAlgorithm-Go\\sorts\\shell_sort.go",
+  "startLine" : 4,
+  "returnType" : "[]int",
+  "methodName" : "shellSort",
+  "params" : [ {
+    "paramType" : "[]int",
+    "paramName" : "arr"
+  } ],
+  "exceptions" : [ ]
+}, null, {
+  "path" : "c:\\Users\\10146\\Downloads\\dataset\\TheAlgorithm-Go\\sorts\\sorts_case_test.go",
+  "startLine" : 34,
+  "returnType" : "[]int",
+  "methodName" : "makeRandArray",
+  "params" : [ {
+    "paramType" : "int",
+    "paramName" : "size"
+  } ],
+  "exceptions" : [ ]
+}, {
+  "path" : "c:\\Users\\10146\\Downloads\\dataset\\TheAlgorithm-Go\\sorts\\sorts_test.go",
+  "startLine" : 7,
+  "returnType" : null,
+  "methodName" : "TestBubble",
+  "params" : [ {
+    "paramType" : "*testing.T",
+    "paramName" : "t"
+  } ],
+  "exceptions" : [ ]
+}, {
+  "path" : "c:\\Users\\10146\\Downloads\\dataset\\TheAlgorithm-Go\\sorts\\sorts_test.go",
+  "startLine" : 20,
+  "returnType" : null,
+  "methodName" : "TestSelection",
+  "params" : [ {
+    "paramType" : "*testing.T",
+    "paramName" : "t"
+  } ],
+  "exceptions" : [ ]
+}, {
+  "path" : "c:\\Users\\10146\\Downloads\\dataset\\TheAlgorithm-Go\\sorts\\sorts_test.go",
+  "startLine" : 33,
+  "returnType" : null,
+  "methodName" : "TestInsertion",
+  "params" : [ {
+    "paramType" : "*testing.T",
+    "paramName" : "t"
+  } ],
+  "exceptions" : [ ]
+}, {
+  "path" : "c:\\Users\\10146\\Downloads\\dataset\\TheAlgorithm-Go\\sorts\\sorts_test.go",
+  "startLine" : 46,
+  "returnType" : null,
+  "methodName" : "TestMerge",
+  "params" : [ {
+    "paramType" : "*testing.T",
+    "paramName" : "t"
+  } ],
+  "exceptions" : [ ]
+}, {
+  "path" : "c:\\Users\\10146\\Downloads\\dataset\\TheAlgorithm-Go\\sorts\\sorts_test.go",
+  "startLine" : 59,
+  "returnType" : null,
+  "methodName" : "TestHeap",
+  "params" : [ {
+    "paramType" : "*testing.T",
+    "paramName" : "t"
+  } ],
+  "exceptions" : [ ]
+}, {
+  "path" : "c:\\Users\\10146\\Downloads\\dataset\\TheAlgorithm-Go\\sorts\\sorts_test.go",
+  "startLine" : 72,
+  "returnType" : null,
+  "methodName" : "TestQuick",
+  "params" : [ {
+    "paramType" : "*testing.T",
+    "paramName" : "t"
+  } ],
+  "exceptions" : [ ]
+}, {
+  "path" : "c:\\Users\\10146\\Downloads\\dataset\\TheAlgorithm-Go\\sorts\\sorts_test.go",
+  "startLine" : 85,
+  "returnType" : null,
+  "methodName" : "TestShell",
+  "params" : [ {
+    "paramType" : "*testing.T",
+    "paramName" : "t"
+  } ],
+  "exceptions" : [ ]
+}, {
+  "path" : "c:\\Users\\10146\\Downloads\\dataset\\TheAlgorithm-Go\\strings\\levenshteinDistance.go",
+  "startLine" : 13,
+  "returnType" : "int",
+  "methodName" : "levenshteinDistance",
+  "params" : [ {
+    "paramType" : "string",
+    "paramName" : "str1"
+  }, {
+    "paramType" : "string",
+    "paramName" : "str2"
+  }, {
+    "paramType" : "int",
+    "paramName" : "icost"
+  }, {
+    "paramType" : "int",
+    "paramName" : "scost"
+  }, {
+    "paramType" : "int",
+    "paramName" : "dcost"
+  } ],
+  "exceptions" : [ ]
+}, {
+  "path" : "c:\\Users\\10146\\Downloads\\dataset\\TheAlgorithm-Go\\strings\\levenshteinDistance.go",
+  "startLine" : 58,
+  "returnType" : null,
+  "methodName" : "main",
+  "params" : [ ],
+  "exceptions" : [ ]
+}, {
+  "path" : "c:\\Users\\10146\\Downloads\\dataset\\TheAlgorithm-Go\\strings\\multiple string matching\\ac.go",
+  "startLine" : 18,
+  "returnType" : null,
+  "methodName" : "main",
+  "params" : [ ],
+  "exceptions" : [ ]
+}, {
+  "path" : "c:\\Users\\10146\\Downloads\\dataset\\TheAlgorithm-Go\\strings\\multiple string matching\\ac.go",
+  "startLine" : 48,
+  "returnType" : null,
+  "methodName" : "ahoCorasick",
+  "params" : [ {
+    "paramType" : "string",
+    "paramName" : "t"
+  }, {
+    "paramType" : "[]string",
+    "paramName" : "p"
+  } ],
+  "exceptions" : [ ]
+}, {
+  "path" : "c:\\Users\\10146\\Downloads\\dataset\\TheAlgorithm-Go\\strings\\multiple string matching\\ac.go",
+  "startLine" : 102,
+  "returnType" : "(acToReturn map[int]map[uint8]int, f map[int][]int, s []int)",
+  "methodName" : "buildAc",
+  "params" : [ {
+    "paramType" : "[]string",
+    "paramName" : "p"
+  } ],
+  "exceptions" : [ ]
+}, {
+  "path" : "c:\\Users\\10146\\Downloads\\dataset\\TheAlgorithm-Go\\strings\\multiple string matching\\ac.go",
+  "startLine" : 150,
+  "returnType" : "(trie map[int]map[uint8]int, stateIsTerminal []bool, f map[int][]int)",
+  "methodName" : "constructTrie",
+  "params" : [ {
+    "paramType" : "[]string",
+    "paramName" : "p"
+  } ],
+  "exceptions" : [ ]
+}, {
+  "path" : "c:\\Users\\10146\\Downloads\\dataset\\TheAlgorithm-Go\\strings\\multiple string matching\\ac.go",
+  "startLine" : 208,
+  "returnType" : "string",
+  "methodName" : "getWord",
+  "params" : [ {
+    "paramType" : "int",
+    "paramName" : "begin"
+  }, {
+    "paramType" : "int",
+    "paramName" : "end"
+  }, {
+    "paramType" : "string",
+    "paramName" : "t"
+  } ],
+  "exceptions" : [ ]
+}, {
+  "path" : "c:\\Users\\10146\\Downloads\\dataset\\TheAlgorithm-Go\\strings\\multiple string matching\\adac.go",
+  "startLine" : 18,
+  "returnType" : null,
+  "methodName" : "main",
+  "params" : [ ],
+  "exceptions" : [ ]
+}, {
+  "path" : "c:\\Users\\10146\\Downloads\\dataset\\TheAlgorithm-Go\\strings\\multiple string matching\\adac.go",
+  "startLine" : 48,
+  "returnType" : null,
+  "methodName" : "ahoCorasick",
+  "params" : [ {
+    "paramType" : "string",
+    "paramName" : "t"
+  }, {
+    "paramType" : "[]string",
+    "paramName" : "p"
+  } ],
+  "exceptions" : [ ]
+}, {
+  "path" : "c:\\Users\\10146\\Downloads\\dataset\\TheAlgorithm-Go\\strings\\multiple string matching\\adac.go",
+  "startLine" : 92,
+  "returnType" : "(acToReturn map[int]map[uint8]int, f map[int][]int)",
+  "methodName" : "buildExtendedAc",
+  "params" : [ {
+    "paramType" : "[]string",
+    "paramName" : "p"
+  } ],
+  "exceptions" : [ ]
+}, {
+  "path" : "c:\\Users\\10146\\Downloads\\dataset\\TheAlgorithm-Go\\strings\\multiple string matching\\adac.go",
+  "startLine" : 157,
+  "returnType" : "(trie map[int]map[uint8]int, stateIsTerminal []bool, f map[int][]int)",
+  "methodName" : "constructTrie",
+  "params" : [ {
+    "paramType" : "[]string",
+    "paramName" : "p"
+  } ],
+  "exceptions" : [ ]
+}, {
+  "path" : "c:\\Users\\10146\\Downloads\\dataset\\TheAlgorithm-Go\\strings\\multiple string matching\\adac.go",
+  "startLine" : 211,
+  "returnType" : "string",
+  "methodName" : "getWord",
+  "params" : [ {
+    "paramType" : "int",
+    "paramName" : "begin"
+  }, {
+    "paramType" : "int",
+    "paramName" : "end"
+  }, {
+    "paramType" : "string",
+    "paramName" : "t"
+  } ],
+  "exceptions" : [ ]
+}, {
+  "path" : "c:\\Users\\10146\\Downloads\\dataset\\TheAlgorithm-Go\\strings\\multiple string matching\\sbom.go",
+  "startLine" : 18,
+  "returnType" : null,
+  "methodName" : "main",
+  "params" : [ ],
+  "exceptions" : [ ]
+}, {
+  "path" : "c:\\Users\\10146\\Downloads\\dataset\\TheAlgorithm-Go\\strings\\multiple string matching\\sbom.go",
+  "startLine" : 48,
+  "returnType" : null,
+  "methodName" : "sbom",
+  "params" : [ {
+    "paramType" : "string",
+    "paramName" : "t"
+  }, {
+    "paramType" : "[]string",
+    "paramName" : "p"
+  } ],
+  "exceptions" : [ ]
+}, {
+  "path" : "c:\\Users\\10146\\Downloads\\dataset\\TheAlgorithm-Go\\strings\\multiple string matching\\sbom.go",
+  "startLine" : 112,
+  "returnType" : "(orToReturn map[int]map[uint8]int, f map[int][]int)",
+  "methodName" : "buildOracleMultiple",
+  "params" : [ {
+    "paramType" : "[]string",
+    "paramName" : "p"
+  } ],
+  "exceptions" : [ ]
+}, {
+  "path" : "c:\\Users\\10146\\Downloads\\dataset\\TheAlgorithm-Go\\strings\\multiple string matching\\sbom.go",
+  "startLine" : 138,
+  "returnType" : "(trie map[int]map[uint8]int, stateIsTerminal []bool, f map[int][]int)",
+  "methodName" : "constructTrie",
+  "params" : [ {
+    "paramType" : "[]string",
+    "paramName" : "p"
+  } ],
+  "exceptions" : [ ]
+}, {
+  "path" : "c:\\Users\\10146\\Downloads\\dataset\\TheAlgorithm-Go\\strings\\multiple string matching\\sbom.go",
+  "startLine" : 220,
+  "returnType" : "string",
+  "methodName" : "getCommonPrefix",
+  "params" : [ {
+    "paramType" : "[]string",
+    "paramName" : "p"
+  }, {
+    "paramType" : "[]int",
+    "paramName" : "f"
+  }, {
+    "paramType" : "int",
+    "paramName" : "lmin"
+  } ],
+  "exceptions" : [ ]
+}, {
+  "path" : "c:\\Users\\10146\\Downloads\\dataset\\TheAlgorithm-Go\\strings\\multiple string matching\\sbom.go",
+  "startLine" : 231,
+  "returnType" : "(trimmedP []string)",
+  "methodName" : "trimToLength",
+  "params" : [ {
+    "paramType" : "[]string",
+    "paramName" : "p"
+  }, {
+    "paramType" : "int",
+    "paramName" : "length"
+  } ],
+  "exceptions" : [ ]
+}, {
+  "path" : "c:\\Users\\10146\\Downloads\\dataset\\TheAlgorithm-Go\\strings\\multiple string matching\\sbom.go",
+  "startLine" : 245,
+  "returnType" : "string",
+  "methodName" : "getWord",
+  "params" : [ {
+    "paramType" : "int",
+    "paramName" : "begin"
+  }, {
+    "paramType" : "int",
+    "paramName" : "end"
+  }, {
+    "paramType" : "string",
+    "paramName" : "t"
+  } ],
+  "exceptions" : [ ]
+}, {
+  "path" : "c:\\Users\\10146\\Downloads\\dataset\\TheAlgorithm-Go\\strings\\multiple string matching\\sbom.go",
+  "startLine" : 257,
+  "returnType" : "(lmin int)",
+  "methodName" : "computeMinLength",
+  "params" : [ {
+    "paramType" : "[]string",
+    "paramName" : "p"
+  } ],
+  "exceptions" : [ ]
+}, {
+  "path" : "c:\\Users\\10146\\Downloads\\dataset\\TheAlgorithm-Go\\strings\\naiveStringSearch.go",
+  "startLine" : 17,
+  "returnType" : "[]int",
+  "methodName" : "naivePatternSearch",
+  "params" : [ {
+    "paramType" : "string",
+    "paramName" : "text"
+  }, {
+    "paramType" : "string",
+    "paramName" : "pattern"
+  } ],
+  "exceptions" : [ ]
+}, {
+  "path" : "c:\\Users\\10146\\Downloads\\dataset\\TheAlgorithm-Go\\strings\\naiveStringSearch.go",
+  "startLine" : 35,
+  "returnType" : null,
+  "methodName" : "main",
+  "params" : [ ],
+  "exceptions" : [ ]
+}, {
+  "path" : "c:\\Users\\10146\\Downloads\\dataset\\TheAlgorithm-Go\\strings\\single string matching\\bom.go",
+  "startLine" : 25,
+  "returnType" : null,
+  "methodName" : "main",
+  "params" : [ ],
+  "exceptions" : [ ]
+}, {
+  "path" : "c:\\Users\\10146\\Downloads\\dataset\\TheAlgorithm-Go\\strings\\single string matching\\bom.go",
+  "startLine" : 73,
+  "returnType" : null,
+  "methodName" : "bom",
+  "params" : [ {
+    "paramType" : "string",
+    "paramName" : "t"
+  }, {
+    "paramType" : "string",
+    "paramName" : "p"
+  } ],
+  "exceptions" : [ ]
+}, {
+  "path" : "c:\\Users\\10146\\Downloads\\dataset\\TheAlgorithm-Go\\strings\\single string matching\\bom.go",
+  "startLine" : 126,
+  "returnType" : "(oracle map[int]map[uint8]int)",
+  "methodName" : "oracleOnLine",
+  "params" : [ {
+    "paramType" : "string",
+    "paramName" : "p"
+  } ],
+  "exceptions" : [ ]
+}, {
+  "path" : "c:\\Users\\10146\\Downloads\\dataset\\TheAlgorithm-Go\\strings\\single string matching\\bom.go",
+  "startLine" : 142,
+  "returnType" : "(oracleToReturn map[int]map[uint8]int, orPToReturn string)",
+  "methodName" : "oracleAddLetter",
+  "params" : [ {
+    "paramType" : "map[int]map[uint8]int",
+    "paramName" : "oracle"
+  }, {
+    "paramType" : "[]int",
+    "paramName" : "supply"
+  }, {
+    "paramType" : "string",
+    "paramName" : "orP"
+  }, {
+    "paramType" : "uint8",
+    "paramName" : "o"
+  } ],
+  "exceptions" : [ ]
+}, {
+  "path" : "c:\\Users\\10146\\Downloads\\dataset\\TheAlgorithm-Go\\strings\\single string matching\\bom.go",
+  "startLine" : 211,
+  "returnType" : null,
+  "methodName" : "prettyPrint",
+  "params" : [ {
+    "paramType" : "int",
+    "paramName" : "current"
+  }, {
+    "paramType" : "int",
+    "paramName" : "j"
+  }, {
+    "paramType" : "int",
+    "paramName" : "n"
+  }, {
+    "paramType" : "int",
+    "paramName" : "pos"
+  }, {
+    "paramType" : "string",
+    "paramName" : "t"
+  }, {
+    "paramType" : "map[int]map[uint8]int",
+    "paramName" : "oracle"
+  } ],
+  "exceptions" : [ ]
+}, {
+  "path" : "c:\\Users\\10146\\Downloads\\dataset\\TheAlgorithm-Go\\strings\\single string matching\\horspool.go",
+  "startLine" : 19,
+  "returnType" : null,
+  "methodName" : "main",
+  "params" : [ ],
+  "exceptions" : [ ]
+}, {
+  "path" : "c:\\Users\\10146\\Downloads\\dataset\\TheAlgorithm-Go\\strings\\single string matching\\horspool.go",
+  "startLine" : 58,
+  "returnType" : null,
+  "methodName" : "horspool",
+  "params" : [ {
+    "paramType" : "string",
+    "paramName" : "t"
+  }, {
+    "paramType" : "string",
+    "paramName" : "p"
+  } ],
+  "exceptions" : [ ]
+}, {
+  "path" : "c:\\Users\\10146\\Downloads\\dataset\\TheAlgorithm-Go\\strings\\single string matching\\horspool.go",
+  "startLine" : 93,
+  "returnType" : "(d map[uint8]int)",
+  "methodName" : "preprocess",
+  "params" : [ {
+    "paramType" : "string",
+    "paramName" : "t"
+  }, {
+    "paramType" : "string",
+    "paramName" : "p"
+  } ],
+  "exceptions" : [ ]
+}, {
+  "path" : "c:\\Users\\10146\\Downloads\\dataset\\TheAlgorithm-Go\\strings\\single string matching\\kmp.go",
+  "startLine" : 19,
+  "returnType" : null,
+  "methodName" : "main",
+  "params" : [ ],
+  "exceptions" : [ ]
+}, {
+  "path" : "c:\\Users\\10146\\Downloads\\dataset\\TheAlgorithm-Go\\strings\\single string matching\\kmp.go",
+  "startLine" : 59,
+  "returnType" : null,
+  "methodName" : "knp",
+  "params" : [ {
+    "paramType" : "string",
+    "paramName" : "text"
+  }, {
+    "paramType" : "string",
+    "paramName" : "word"
+  } ],
+  "exceptions" : [ ]
+}, {
+  "path" : "c:\\Users\\10146\\Downloads\\dataset\\TheAlgorithm-Go\\strings\\single string matching\\kmp.go",
+  "startLine" : 87,
+  "returnType" : "(t []int)",
+  "methodName" : "kmp_table",
+  "params" : [ {
+    "paramType" : "string",
+    "paramName" : "word"
+  } ],
+  "exceptions" : [ ]
+} ]

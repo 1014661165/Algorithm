@@ -1,0 +1,591 @@
+[ {
+  "path" : "c:\\Users\\10146\\Downloads\\dataset\\TheAlgorithm-Go\\ciphers\\CaesarCipher.go",
+  "startLine" : 10,
+  "endLine" : 21,
+  "identifiers" : [ "cipherKey", "flag", "Int", "input", "flag", "String", "flag", "Parse", "if", "cipherKey", "cipherKey", "flag", "PrintDefaults", "else", "fmt", "Println", "caesarCipher", "input", "cipherKey" ]
+}, {
+  "path" : "c:\\Users\\10146\\Downloads\\dataset\\TheAlgorithm-Go\\ciphers\\CaesarCipher.go",
+  "startLine" : 24,
+  "endLine" : 42,
+  "identifiers" : [ "var", "outputBuffer", "bytes", "Buffer", "for", "_", "r", "range", "strings", "ToLower", "input", "newByte", "int", "r", "if", "newByte", "a", "newByte", "z", "newByte", "key", "if", "newByte", "z", "newByte", "else", "if", "newByte", "a", "newByte", "outputBuffer", "WriteString", "string", "newByte", "return", "outputBuffer", "String" ]
+}, {
+  "path" : "c:\\Users\\10146\\Downloads\\dataset\\TheAlgorithm-Go\\ciphers\\diffieHellmanKeyExchange.go",
+  "startLine" : 8,
+  "endLine" : 50,
+  "identifiers" : [ "bit", "p", "rand", "Intn", "bit", "g", "rand", "Intn", "AliceSecret", "rand", "Intn", "bit", "BobSecret", "rand", "Intn", "bit", "fmt", "Printf", "AliceSecret", "fmt", "Printf", "BobSecret", "AliceSends", "modularExponentiation", "g", "AliceSecret", "p", "BobSends", "modularExponentiation", "g", "BobSecret", "p", "AliceComputes", "modularExponentiation", "BobSends", "AliceSecret", "p", "BobComputes", "modularExponentiation", "AliceSends", "BobSecret", "p", "fmt", "Printf", "AliceComputes", "fmt", "Printf", "BobComputes", "if", "AliceComputes", "BobComputes", "sharedKey", "AliceComputes", "fmt", "Println", "sharedKey" ]
+}, {
+  "path" : "c:\\Users\\10146\\Downloads\\dataset\\TheAlgorithm-Go\\ciphers\\diffieHellmanKeyExchange.go",
+  "startLine" : 52,
+  "endLine" : 69,
+  "identifiers" : [ "if", "mod", "return", "r", "b", "b", "mod", "for", "e", "if", "e", "r", "r", "b", "mod", "e", "e", "b", "b", "b", "mod", "return", "r" ]
+}, {
+  "path" : "c:\\Users\\10146\\Downloads\\dataset\\TheAlgorithm-Go\\ciphers\\Rot13.go",
+  "startLine" : 9,
+  "endLine" : 28,
+  "identifiers" : [ "var", "outputBuffer", "bytes", "Buffer", "for", "_", "r", "range", "strings", "ToLower", "input", "newByte", "int", "r", "if", "newByte", "a", "newByte", "z", "newByte", "if", "newByte", "z", "newByte", "else", "if", "newByte", "a", "newByte", "outputBuffer", "WriteString", "string", "newByte", "return", "outputBuffer", "String" ]
+}, {
+  "path" : "c:\\Users\\10146\\Downloads\\dataset\\TheAlgorithm-Go\\ciphers\\RSAcipher(Big).go",
+  "startLine" : 16,
+  "endLine" : 50,
+  "identifiers" : [ "p", "_", "crypto", "Prime", "crypto", "Reader", "q", "_", "crypto", "Prime", "crypto", "Reader", "if", "primeCheck", "p", "primeCheck", "q", "fmt", "Println", "n", "new", "big", "Int", "Mul", "p", "q", "one", "big", "NewInt", "delta", "lcmBig", "p", "Sub", "p", "one", "q", "Sub", "q", "one", "e", "_", "crypto", "Prime", "crypto", "Reader", "delta", "BitLen", "d", "big", "NewInt", "d", "ModInverse", "e", "delta", "cleartext", "runes", "rune", "cleartext", "ASCIIs", "toASCII", "runes", "stringEncoded", "stringEncode", "ASCIIs", "bigNum", "_", "new", "big", "Int", "SetString", "stringEncoded", "fmt", "Printf", "cleartext", "fmt", "Printf", "bigNum", "encrypted", "encryptBig", "bigNum", "e", "n", "fmt", "Printf", "encrypted", "decrypted", "decryptBig", "encrypted", "d", "n", "fmt", "Printf", "decrypted", "decryptASCIIs", "stringDecode", "decrypted", "fmt", "Printf", "toRune", "decryptASCIIs" ]
+}, {
+  "path" : "c:\\Users\\10146\\Downloads\\dataset\\TheAlgorithm-Go\\ciphers\\RSAcipher(Big).go",
+  "startLine" : 64,
+  "endLine" : 70,
+  "identifiers" : [ "gcd", "new", "big", "Int", "GCD", "nil", "nil", "x", "y", "temp", "new", "big", "Int", "Mul", "x", "y", "lcm", "new", "big", "Int", "Div", "temp", "gcd", "return", "lcm" ]
+}, {
+  "path" : "c:\\Users\\10146\\Downloads\\dataset\\TheAlgorithm-Go\\ciphers\\RSAcipher(Big).go",
+  "startLine" : 95,
+  "endLine" : 114,
+  "identifiers" : [ "var", "out", "string", "for", "_", "v", "range", "slice", "if", "v", "out", "append", "out", "strconv", "Itoa", "v", "continue", "out", "append", "out", "strconv", "Itoa", "v", "var", "str", "string", "for", "_", "v", "range", "out", "str", "v", "if", "str", "str", "str", "return", "str" ]
+}, {
+  "path" : "c:\\Users\\10146\\Downloads\\dataset\\TheAlgorithm-Go\\ciphers\\RSAcipher(Big).go",
+  "startLine" : 116,
+  "endLine" : 128,
+  "identifiers" : [ "str", "decryptedBig", "String", "if", "len", "str", "str", "str", "var", "ASCII", "int", "for", "i", "i", "len", "str", "i", "temp", "_", "strconv", "Atoi", "str", "i", "i", "ASCII", "append", "ASCII", "temp", "return", "ASCII" ]
+}, {
+  "path" : "c:\\Users\\10146\\Downloads\\dataset\\TheAlgorithm-Go\\ciphers\\RSAcipher.go",
+  "startLine" : 11,
+  "endLine" : 35,
+  "identifiers" : [ "primes", "prime", "limit", "var", "choice", "int", "choice", "append", "choice", "for", "k", "rand", "Intn", "int", "limit", "i", "choice", "rand", "Intn", "len", "choice", "c", "k", "i", "found", "true", "for", "_", "v", "range", "primes", "if", "c", "v", "found", "false", "break", "if", "found", "return", "c" ]
+}, {
+  "path" : "c:\\Users\\10146\\Downloads\\dataset\\TheAlgorithm-Go\\ciphers\\RSAcipher.go",
+  "startLine" : 36,
+  "endLine" : 65,
+  "identifiers" : [ "sqrtLimit", "int", "math", "Ceil", "math", "Sqrt", "float64", "limit", "exit", "false", "primes", "append", "primes", "lastIndex", "for", "primes", "lastIndex", "sqrtLimit", "if", "exit", "true", "break", "for", "i", "primes", "lastIndex", "i", "primes", "lastIndex", "primes", "lastIndex", "i", "found", "true", "for", "_", "v", "range", "primes", "if", "i", "v", "found", "false", "break", "if", "found", "primes", "append", "primes", "i", "lastIndex", "if", "i", "sqrtLimit", "exit", "true", "break", "return" ]
+}, {
+  "path" : "c:\\Users\\10146\\Downloads\\dataset\\TheAlgorithm-Go\\ciphers\\RSAcipher.go",
+  "startLine" : 91,
+  "endLine" : 106,
+  "identifiers" : [ "if", "mod", "return", "r", "b", "b", "mod", "for", "e", "if", "e", "r", "r", "b", "mod", "e", "e", "b", "b", "b", "mod", "return", "r" ]
+}, {
+  "path" : "c:\\Users\\10146\\Downloads\\dataset\\TheAlgorithm-Go\\ciphers\\RSAcipher.go",
+  "startLine" : 142,
+  "endLine" : 173,
+  "identifiers" : [ "rand", "Seed", "time", "Now", "UTC", "UnixNano", "bits", "p", "generatePrimes", "bits", "q", "generatePrimes", "bits", "for", "p", "q", "q", "generatePrimes", "bits", "n", "p", "q", "delta", "lcm", "p", "q", "e", "generatePrimes", "delta", "d", "modularMultiplicativeInverse", "e", "delta", "fmt", "Printf", "p", "q", "e", "d", "str", "message", "rune", "str", "asciiSlice", "toASCII", "message", "fmt", "Printf", "asciiSlice", "encrypted", "encryptRSA", "asciiSlice", "e", "n", "fmt", "Printf", "encrypted", "decrypted", "decryptRSA", "encrypted", "d", "n", "fmt", "Printf", "decrypted", "fmt", "Printf", "toRune", "decrypted" ]
+}, {
+  "path" : "c:\\Users\\10146\\Downloads\\dataset\\TheAlgorithm-Go\\ciphers\\xorCipher.go",
+  "startLine" : 35,
+  "endLine" : 44,
+  "identifiers" : [ "str", "key", "temp", "rune", "str", "message", "toASCII", "temp", "encrypted", "encrypt", "key", "message", "decrypted", "decrypt", "key", "encrypted", "plaintext", "decodeToString", "decrypted", "fmt", "Println", "plaintext" ]
+}, {
+  "path" : "c:\\Users\\10146\\Downloads\\dataset\\TheAlgorithm-Go\\data-structures\\binary-tree\\binary-search-tree.go",
+  "startLine" : 39,
+  "endLine" : 49,
+  "identifiers" : [ "if", "root", "nil", "return", "newNode", "val", "if", "val", "root", "val", "root", "left", "insert", "root", "left", "val", "else", "root", "right", "insert", "root", "right", "val", "return", "root" ]
+}, {
+  "path" : "c:\\Users\\10146\\Downloads\\dataset\\TheAlgorithm-Go\\data-structures\\binary-tree\\binary-search-tree.go",
+  "startLine" : 59,
+  "endLine" : 82,
+  "identifiers" : [ "if", "root", "nil", "return", "nil", "if", "val", "root", "val", "root", "left", "bst_delete", "root", "left", "val", "else", "if", "val", "root", "val", "root", "right", "bst_delete", "root", "right", "val", "else", "if", "root", "left", "nil", "return", "root", "right", "else", "if", "root", "right", "nil", "return", "root", "left", "else", "n", "root", "right", "d", "inorderSuccessor", "n", "d", "left", "root", "left", "return", "root", "right", "return", "root" ]
+}, {
+  "path" : "c:\\Users\\10146\\Downloads\\dataset\\TheAlgorithm-Go\\data-structures\\binary-tree\\binary-search-tree.go",
+  "startLine" : 97,
+  "endLine" : 125,
+  "identifiers" : [ "t", "btree", "nil", "inorder", "t", "root", "t", "root", "insert", "t", "root", "t", "root", "insert", "t", "root", "t", "root", "insert", "t", "root", "t", "root", "insert", "t", "root", "t", "root", "insert", "t", "root", "t", "root", "insert", "t", "root", "t", "root", "insert", "t", "root", "t", "root", "insert", "t", "root", "fmt", "Print", "t", "depth", "inorder", "t", "root", "fmt", "Print", "t", "root", "bst_delete", "t", "root", "inorder", "t", "root", "fmt", "Print", "t", "root", "bst_delete", "t", "root", "inorder", "t", "root", "fmt", "Print", "t", "root", "bst_delete", "t", "root", "inorder", "t", "root", "fmt", "Print", "t", "root", "bst_delete", "t", "root", "inorder", "t", "root", "fmt", "Print", "fmt", "Print", "t", "depth" ]
+}, {
+  "path" : "c:\\Users\\10146\\Downloads\\dataset\\TheAlgorithm-Go\\data-structures\\binary-tree\\binary-tree.go",
+  "startLine" : 58,
+  "endLine" : 74,
+  "identifiers" : [ "var", "q", "node", "var", "n", "node", "q", "append", "q", "root", "for", "len", "q", "n", "q", "q", "q", "fmt", "Print", "n", "val", "if", "n", "left", "nil", "q", "append", "q", "n", "left", "if", "n", "right", "nil", "q", "append", "q", "n", "right" ]
+}, {
+  "path" : "c:\\Users\\10146\\Downloads\\dataset\\TheAlgorithm-Go\\data-structures\\dynamic-array\\dynamic_array.go",
+  "startLine" : 36,
+  "endLine" : 49,
+  "identifiers" : [ "err", "da", "checkRangeFromIndex", "index", "if", "err", "nil", "return", "err", "copy", "da", "elementData", "index", "da", "elementData", "index", "da", "size", "da", "elementData", "da", "size", "nil", "da", "size", "return", "nil" ]
+}, {
+  "path" : "c:\\Users\\10146\\Downloads\\dataset\\TheAlgorithm-Go\\data-structures\\dynamic-array\\dynamic_array.go",
+  "startLine" : 76,
+  "endLine" : 88,
+  "identifiers" : [ "if", "da", "capacity", "da", "capacity", "defaultCapacity", "else", "da", "capacity", "da", "capacity", "newDataElement", "make", "interface", "da", "capacity", "copy", "newDataElement", "da", "elementData", "da", "elementData", "newDataElement" ]
+}, {
+  "path" : "c:\\Users\\10146\\Downloads\\dataset\\TheAlgorithm-Go\\data-structures\\hash-map\\hash_map.go",
+  "startLine" : 43,
+  "endLine" : 67,
+  "identifiers" : [ "if", "hm", "capacity", "hm", "capacity", "defaultCapacity", "hm", "table", "make", "node", "defaultCapacity", "node", "hm", "getNodeByHash", "hash", "if", "node", "nil", "hm", "table", "hash", "newNode", "key", "value", "else", "if", "node", "key", "key", "hm", "table", "hash", "newNodeWithNext", "key", "value", "node", "return", "value", "else", "hm", "resize", "return", "hm", "putValue", "hash", "key", "value", "hm", "size", "return", "value" ]
+}, {
+  "path" : "c:\\Users\\10146\\Downloads\\dataset\\TheAlgorithm-Go\\data-structures\\hash-map\\hash_map.go",
+  "startLine" : 83,
+  "endLine" : 98,
+  "identifiers" : [ "hm", "capacity", "tempTable", "hm", "table", "hm", "table", "make", "node", "hm", "capacity", "for", "i", "i", "len", "tempTable", "i", "node", "tempTable", "i", "if", "node", "nil", "continue", "hm", "table", "hm", "hash", "node", "key", "node" ]
+}, {
+  "path" : "c:\\Users\\10146\\Downloads\\dataset\\TheAlgorithm-Go\\data-structures\\hash-map\\hash_map.go",
+  "startLine" : 115,
+  "endLine" : 122,
+  "identifiers" : [ "h", "fnv", "New64a", "h", "Write", "byte", "fmt", "Sprintf", "key", "hashValue", "h", "Sum64", "return", "hm", "capacity", "hashValue", "hashValue" ]
+}, {
+  "path" : "c:\\Users\\10146\\Downloads\\dataset\\TheAlgorithm-Go\\data-structures\\linked-list\\double-linkedlist.go",
+  "startLine" : 34,
+  "endLine" : 47,
+  "identifiers" : [ "n", "newNode", "val", "if", "ll", "head", "nil", "ll", "head", "n", "return", "cur", "ll", "head", "for", "cur", "next", "nil", "cur", "cur", "next", "cur", "next", "n", "n", "prev", "cur" ]
+}, {
+  "path" : "c:\\Users\\10146\\Downloads\\dataset\\TheAlgorithm-Go\\data-structures\\linked-list\\double-linkedlist.go",
+  "startLine" : 64,
+  "endLine" : 83,
+  "identifiers" : [ "if", "ll", "head", "nil", "return", "if", "ll", "head", "next", "nil", "return", "ll", "delAtBeg", "cur", "ll", "head", "for", "cur", "next", "next", "nil", "cur", "cur", "next", "retval", "cur", "next", "val", "cur", "next", "nil", "return", "retval" ]
+}, {
+  "path" : "c:\\Users\\10146\\Downloads\\dataset\\TheAlgorithm-Go\\data-structures\\linked-list\\double-linkedlist.go",
+  "startLine" : 118,
+  "endLine" : 131,
+  "identifiers" : [ "if", "ll", "head", "nil", "return", "var", "cur", "node", "for", "cur", "ll", "head", "cur", "next", "nil", "cur", "cur", "next", "for", "cur", "nil", "cur", "cur", "prev", "fmt", "Print", "cur", "val", "fmt", "Print" ]
+}, {
+  "path" : "c:\\Users\\10146\\Downloads\\dataset\\TheAlgorithm-Go\\data-structures\\linked-list\\Linkedlist.go",
+  "startLine" : 14,
+  "endLine" : 36,
+  "identifiers" : [ "if", "head", "nil", "l", "v", "val", "l", "next", "nil", "head", "l", "return", "l", "else", "nnode", "new", "node", "nnode", "head", "nnode2", "node", "v", "val", "next", "nnode", "head", "nnode2", "return", "head" ]
+}, {
+  "path" : "c:\\Users\\10146\\Downloads\\dataset\\TheAlgorithm-Go\\data-structures\\linked-list\\Linkedlist.go",
+  "startLine" : 38,
+  "endLine" : 56,
+  "identifiers" : [ "if", "head", "nil", "l", "v", "val", "l", "next", "nil", "head", "l", "return", "l", "else", "for", "l", "next", "nil", "l", "l", "next", "l", "next", "new", "node", "l", "next", "v", "val", "l", "next", "next", "nil", "return", "l" ]
+}, {
+  "path" : "c:\\Users\\10146\\Downloads\\dataset\\TheAlgorithm-Go\\data-structures\\linked-list\\Linkedlist.go",
+  "startLine" : 89,
+  "endLine" : 102,
+  "identifiers" : [ "lista", "new", "node", "lista", "pushBack", "pushBack", "pushBack", "lista", "pushBack", "lista", "pushFront", "lista", "popFront", "lista", "popBack", "for", "head", "nil", "fmt", "Printf", "head", "v", "head", "head", "next" ]
+}, {
+  "path" : "c:\\Users\\10146\\Downloads\\dataset\\TheAlgorithm-Go\\data-structures\\linked-list\\single-linkedlist.go",
+  "startLine" : 54,
+  "endLine" : 72,
+  "identifiers" : [ "if", "ll", "head", "nil", "return", "if", "ll", "head", "next", "nil", "return", "ll", "delAtBeg", "cur", "ll", "head", "for", "cur", "next", "next", "nil", "cur", "cur", "next", "retval", "cur", "next", "val", "cur", "next", "nil", "return", "retval" ]
+}, {
+  "path" : "c:\\Users\\10146\\Downloads\\dataset\\TheAlgorithm-Go\\data-structures\\trie\\trie.go",
+  "startLine" : 22,
+  "endLine" : 33,
+  "identifiers" : [ "curr", "n", "for", "_", "c", "range", "s", "next", "ok", "curr", "children", "c", "if", "ok", "next", "NewNode", "curr", "children", "c", "next", "curr", "next", "curr", "isLeaf", "true" ]
+}, {
+  "path" : "c:\\Users\\10146\\Downloads\\dataset\\TheAlgorithm-Go\\data-structures\\trie\\trie_test.go",
+  "startLine" : 7,
+  "endLine" : 43,
+  "identifiers" : [ "n", "NewNode", "insertWords", "string", "checkWords", "map", "string", "bool", "false", "false", "true", "for", "_", "w", "range", "insertWords", "n", "insert", "w", "t", "Logf", "s", "w", "for", "k", "v", "range", "checkWords", "ok", "n", "find", "k", "if", "ok", "v", "t", "Fatalf", "s", "k", "map", "bool", "string", "true", "false", "v", "t", "Logf", "s", "k", "map", "bool", "string", "true", "false", "ok" ]
+}, {
+  "path" : "c:\\Users\\10146\\Downloads\\dataset\\TheAlgorithm-Go\\data-structures\\trie\\trie_test.go",
+  "startLine" : 45,
+  "endLine" : 56,
+  "identifiers" : [ "for", "i", "i", "b", "N", "i", "n", "NewNode", "n", "insert", "n", "insert", "n", "find", "n", "find", "n", "find" ]
+}, {
+  "path" : "c:\\Users\\10146\\Downloads\\dataset\\TheAlgorithm-Go\\dynamic-programming\\binomial-coeffecient.go",
+  "startLine" : 8,
+  "endLine" : 21,
+  "identifiers" : [ "myArrayOfK", "int", "var", "x", "int", "fmt", "Println", "bin2", "for", "_", "element", "range", "myArrayOfK", "start", "time", "Now", "x", "bin2", "element", "elapsed", "time", "Since", "start", "fmt", "Println", "element", "x", "elapsed" ]
+}, {
+  "path" : "c:\\Users\\10146\\Downloads\\dataset\\TheAlgorithm-Go\\dynamic-programming\\binomial-coeffecient.go",
+  "startLine" : 23,
+  "endLine" : 40,
+  "identifiers" : [ "var", "i", "j", "int", "B", "make", "int", "n", "for", "i", "range", "B", "B", "i", "make", "int", "k", "for", "i", "i", "n", "i", "for", "j", "j", "min", "i", "k", "j", "if", "j", "j", "i", "B", "i", "j", "else", "B", "i", "j", "B", "i", "j", "B", "i", "j", "return", "B", "n", "k" ]
+}, {
+  "path" : "c:\\Users\\10146\\Downloads\\dataset\\TheAlgorithm-Go\\dynamic-programming\\knapsack.go",
+  "startLine" : 17,
+  "endLine" : 35,
+  "identifiers" : [ "n", "len", "weights", "m", "maxWeight", "dp", "make", "int", "n", "for", "i", "range", "dp", "dp", "i", "make", "int", "m", "for", "i", "i", "len", "weights", "i", "for", "j", "j", "maxWeight", "j", "if", "weights", "i", "j", "dp", "i", "j", "dp", "i", "j", "else", "dp", "i", "j", "max", "dp", "i", "j", "weights", "i", "values", "i", "dp", "i", "j", "return", "dp", "n", "m" ]
+}, {
+  "path" : "c:\\Users\\10146\\Downloads\\dataset\\TheAlgorithm-Go\\dynamic-programming\\longest-palindromic-subsequence.go",
+  "startLine" : 17,
+  "endLine" : 28,
+  "identifiers" : [ "if", "i", "j", "return", "if", "i", "j", "return", "if", "word", "i", "word", "j", "return", "lpsRec", "word", "i", "j", "return", "max", "lpsRec", "word", "i", "j", "lpsRec", "word", "i", "j" ]
+}, {
+  "path" : "c:\\Users\\10146\\Downloads\\dataset\\TheAlgorithm-Go\\dynamic-programming\\longest-palindromic-subsequence.go",
+  "startLine" : 30,
+  "endLine" : 56,
+  "identifiers" : [ "N", "len", "word", "dp", "make", "int", "N", "for", "i", "i", "N", "i", "dp", "i", "make", "int", "N", "dp", "i", "i", "for", "l", "l", "N", "l", "for", "i", "i", "N", "l", "i", "j", "i", "l", "if", "word", "i", "word", "j", "if", "l", "dp", "i", "j", "else", "dp", "i", "j", "dp", "i", "j", "else", "dp", "i", "j", "max", "dp", "i", "j", "dp", "i", "j", "return", "dp", "N" ]
+}, {
+  "path" : "c:\\Users\\10146\\Downloads\\dataset\\TheAlgorithm-Go\\dynamic-programming\\longestCommonSubsequence.go",
+  "startLine" : 18,
+  "endLine" : 41,
+  "identifiers" : [ "lcs", "make", "int", "m", "for", "i", "i", "m", "i", "lcs", "i", "make", "int", "n", "for", "i", "i", "m", "i", "for", "j", "j", "n", "j", "if", "i", "j", "lcs", "i", "j", "else", "if", "a", "i", "b", "j", "lcs", "i", "j", "lcs", "i", "j", "else", "lcs", "i", "j", "max", "lcs", "i", "j", "lcs", "i", "j", "return", "lcs", "m", "n" ]
+}, {
+  "path" : "c:\\Users\\10146\\Downloads\\dataset\\TheAlgorithm-Go\\dynamic-programming\\matrix-multiplication.go",
+  "startLine" : 18,
+  "endLine" : 29,
+  "identifiers" : [ "if", "i", "j", "return", "q", "for", "k", "i", "k", "j", "k", "prod", "matrixChainRec", "D", "i", "k", "matrixChainRec", "D", "k", "j", "D", "i", "D", "k", "D", "j", "q", "min", "prod", "q", "return", "q" ]
+}, {
+  "path" : "c:\\Users\\10146\\Downloads\\dataset\\TheAlgorithm-Go\\dynamic-programming\\matrix-multiplication.go",
+  "startLine" : 31,
+  "endLine" : 53,
+  "identifiers" : [ "N", "len", "D", "dp", "make", "int", "N", "for", "i", "i", "N", "i", "dp", "i", "make", "int", "N", "dp", "i", "i", "for", "l", "l", "N", "l", "for", "i", "i", "N", "l", "i", "j", "i", "l", "dp", "i", "j", "for", "k", "i", "k", "j", "k", "prod", "dp", "i", "k", "dp", "k", "j", "D", "i", "D", "k", "D", "j", "dp", "i", "j", "min", "prod", "dp", "i", "j", "return", "dp", "N" ]
+}, {
+  "path" : "c:\\Users\\10146\\Downloads\\dataset\\TheAlgorithm-Go\\dynamic-programming\\rod-cutting.go",
+  "startLine" : 21,
+  "endLine" : 31,
+  "identifiers" : [ "if", "length", "return", "q", "for", "i", "i", "length", "i", "q", "max", "q", "price", "i", "cutRodRec", "price", "length", "i", "return", "q" ]
+}, {
+  "path" : "c:\\Users\\10146\\Downloads\\dataset\\TheAlgorithm-Go\\dynamic-programming\\rod-cutting.go",
+  "startLine" : 34,
+  "endLine" : 47,
+  "identifiers" : [ "r", "make", "int", "length", "r", "for", "j", "j", "length", "j", "q", "for", "i", "i", "j", "i", "q", "max", "q", "price", "i", "r", "j", "i", "r", "j", "q", "return", "r", "length" ]
+}, {
+  "path" : "c:\\Users\\10146\\Downloads\\dataset\\TheAlgorithm-Go\\graphs\\floyd_warshall.go",
+  "startLine" : 18,
+  "endLine" : 49,
+  "identifiers" : [ "if", "len", "graph", "len", "graph", "len", "graph", "return", "nil", "numVertecies", "len", "graph", "result", "make", "Matrix", "numVertecies", "for", "i", "i", "numVertecies", "i", "result", "i", "make", "float64", "numVertecies", "for", "j", "j", "numVertecies", "j", "result", "i", "j", "graph", "i", "j", "for", "k", "k", "numVertecies", "k", "for", "i", "i", "numVertecies", "i", "for", "j", "j", "numVertecies", "j", "if", "result", "i", "j", "result", "i", "k", "result", "k", "j", "result", "i", "j", "result", "i", "k", "result", "k", "j", "return", "result" ]
+}, {
+  "path" : "c:\\Users\\10146\\Downloads\\dataset\\TheAlgorithm-Go\\graphs\\floyd_warshall.go",
+  "startLine" : 51,
+  "endLine" : 64,
+  "identifiers" : [ "var", "graph", "Matrix", "graph", "Matrix", "maxValue", "maxValue", "maxValue", "maxValue", "maxValue", "maxValue", "maxValue", "result", "FloydWarshall", "graph", "for", "i", "i", "len", "result", "i", "fmt", "Printf", "result", "i" ]
+}, {
+  "path" : "c:\\Users\\10146\\Downloads\\dataset\\TheAlgorithm-Go\\math\\fastExponent.go",
+  "startLine" : 5,
+  "endLine" : 27,
+  "identifiers" : [ "if", "e", "return", "if", "e", "return", "float64", "b", "if", "e", "e", "println", "return", "fastExponentiation", "b", "e", "r", "for", "e", "if", "e", "r", "r", "b", "e", "e", "b", "b", "b", "return", "float64", "r" ]
+}, {
+  "path" : "c:\\Users\\10146\\Downloads\\dataset\\TheAlgorithm-Go\\math\\Sieve.go",
+  "startLine" : 7,
+  "endLine" : 28,
+  "identifiers" : [ "var", "l", "f", "int", "l", "channel", "make", "chan", "int", "l", "channelTwo", "make", "chan", "int", "l", "var", "nums", "bool", "for", "i", "i", "l", "i", "nums", "append", "nums", "true", "f", "go", "crossOff", "channel", "channelTwo", "f", "l", "go", "nextF", "f", "channelTwo", "nums", "for", "select", "case", "index", "channel", "nums", "index", "false" ]
+}, {
+  "path" : "c:\\Users\\10146\\Downloads\\dataset\\TheAlgorithm-Go\\other\\monte_carlo_pi\\monte_carlo_pi.go",
+  "startLine" : 12,
+  "endLine" : 50,
+  "identifiers" : [ "cpus", "runtime", "NumCPU", "monteCarlo", "func", "iterations", "cpus", "int", "float64", "start", "time", "Now", "flow", "make", "chan", "int", "int", "math", "Floor", "float64", "cpus", "var", "wg", "sync", "WaitGroup", "var", "total", "int", "miniFunc", "func", "iters", "int", "flow", "chan", "int", "defer", "wg", "Done", "var", "inside", "int", "for", "i", "i", "iters", "i", "x", "rand", "Float64", "y", "rand", "Float64", "if", "math", "Hypot", "x", "y", "inside", "flow", "inside", "fuxc", "func", "flow", "chan", "int", "defer", "wg", "Done", "for", "i", "i", "int", "math", "Floor", "float64", "cpus", "i", "total", "flow", "wg", "Add", "int", "math", "Floor", "float64", "cpus", "for", "i", "i", "int", "math", "Floor", "float64", "cpus", "i", "go", "miniFunc", "int", "math", "Ceil", "float64", "iterations", "int", "math", "Floor", "float64", "cpus", "flow", "wg", "Add", "go", "fuxc", "flow", "wg", "Wait", "fmt", "Printf", "time", "Since", "start", "return", "float64", "total", "float64", "iterations", "fmt", "Println", "monteCarlo", "cpus" ]
+}, {
+  "path" : "c:\\Users\\10146\\Downloads\\dataset\\TheAlgorithm-Go\\other\\PasswordGenerator.go",
+  "startLine" : 15,
+  "endLine" : 40,
+  "identifiers" : [ "var", "chars", "byte", "var", "length", "rand", "Intn", "maxLength", "minLength", "minLength", "newPassword", "make", "byte", "length", "randomData", "make", "byte", "length", "length", "clen", "byte", "len", "chars", "maxrb", "byte", "len", "chars", "i", "for", "if", "_", "err", "io", "ReadFull", "crand", "Reader", "randomData", "err", "nil", "panic", "err", "for", "_", "c", "range", "randomData", "if", "c", "maxrb", "continue", "newPassword", "i", "chars", "c", "clen", "i", "if", "i", "length", "return", "string", "newPassword" ]
+}, {
+  "path" : "c:\\Users\\10146\\Downloads\\dataset\\TheAlgorithm-Go\\other\\PasswordGenerator.go",
+  "startLine" : 42,
+  "endLine" : 54,
+  "identifiers" : [ "rand", "Seed", "time", "Now", "Unix", "fmt", "Print", "var", "minLength", "int", "fmt", "Scanf", "minLength", "fmt", "Print", "var", "maxLength", "int", "fmt", "Scanf", "maxLength", "fmt", "Printf", "generatePassword", "minLength", "maxLength" ]
+}, {
+  "path" : "c:\\Users\\10146\\Downloads\\dataset\\TheAlgorithm-Go\\other\\PrimeNumbers.go",
+  "startLine" : 21,
+  "endLine" : 42,
+  "identifiers" : [ "var", "i", "limit", "int64", "if", "n", "return", "false", "if", "n", "return", "true", "if", "math", "Mod", "float64", "n", "return", "false", "limit", "int64", "math", "Ceil", "math", "Sqrt", "float64", "n", "for", "i", "i", "limit", "i", "if", "math", "Mod", "float64", "n", "float64", "i", "return", "false", "return", "true" ]
+}, {
+  "path" : "c:\\Users\\10146\\Downloads\\dataset\\TheAlgorithm-Go\\other\\PrimeNumbers.go",
+  "startLine" : 60,
+  "endLine" : 78,
+  "identifiers" : [ "defer", "utils", "TimeTrack", "time", "Now", "c", "make", "chan", "numberResult", "defer", "close", "c", "go", "initGoCalculations", "min", "max", "c", "for", "i", "min", "i", "max", "i", "r", "c", "if", "r", "isPrime", "primeArr", "append", "primeArr", "r", "number", "return" ]
+}, {
+  "path" : "c:\\Users\\10146\\Downloads\\dataset\\TheAlgorithm-Go\\other\\PrimeNumbers.go",
+  "startLine" : 80,
+  "endLine" : 85,
+  "identifiers" : [ "min", "_", "strconv", "ParseInt", "os", "Args", "max", "_", "strconv", "ParseInt", "os", "Args", "fmt", "Println", "primesInRange", "min", "max" ]
+}, {
+  "path" : "c:\\Users\\10146\\Downloads\\dataset\\TheAlgorithm-Go\\other\\prime_numbers.go",
+  "startLine" : 21,
+  "endLine" : 42,
+  "identifiers" : [ "var", "i", "limit", "int64", "if", "n", "return", "false", "if", "n", "return", "true", "if", "math", "Mod", "float64", "n", "return", "false", "limit", "int64", "math", "Ceil", "math", "Sqrt", "float64", "n", "for", "i", "i", "limit", "i", "if", "math", "Mod", "float64", "n", "float64", "i", "return", "false", "return", "true" ]
+}, {
+  "path" : "c:\\Users\\10146\\Downloads\\dataset\\TheAlgorithm-Go\\other\\prime_numbers.go",
+  "startLine" : 60,
+  "endLine" : 78,
+  "identifiers" : [ "defer", "utils", "TimeTrack", "time", "Now", "c", "make", "chan", "numberResult", "defer", "close", "c", "go", "initGoCalculations", "min", "max", "c", "for", "i", "min", "i", "max", "i", "r", "c", "if", "r", "isPrime", "primeArr", "append", "primeArr", "r", "number", "return" ]
+}, {
+  "path" : "c:\\Users\\10146\\Downloads\\dataset\\TheAlgorithm-Go\\other\\prime_numbers.go",
+  "startLine" : 80,
+  "endLine" : 85,
+  "identifiers" : [ "min", "_", "strconv", "ParseInt", "os", "Args", "max", "_", "strconv", "ParseInt", "os", "Args", "fmt", "Println", "primesInRange", "min", "max" ]
+}, {
+  "path" : "c:\\Users\\10146\\Downloads\\dataset\\TheAlgorithm-Go\\other\\string_combinations.go",
+  "startLine" : 21,
+  "endLine" : 32,
+  "identifiers" : [ "inLen", "len", "c", "in", "for", "i", "seed", "i", "inLen", "i", "c", "out", "append", "c", "out", "c", "in", "i", "fmt", "Println", "string", "c", "out", "c", "Combine", "i", "c", "out", "c", "out", "len", "c", "out", "c", "out", "append", "c", "out", "c", "in", "inLen", "fmt", "Println", "string", "c", "out", "c", "out", "c", "out", "len", "c", "out" ]
+}, {
+  "path" : "c:\\Users\\10146\\Downloads\\dataset\\TheAlgorithm-Go\\searches\\binary_search.go",
+  "startLine" : 3,
+  "endLine" : 15,
+  "identifiers" : [ "if", "highIndex", "lowIndex", "return", "mid", "int", "lowIndex", "highIndex", "lowIndex", "if", "array", "mid", "target", "return", "binarySearch", "array", "target", "lowIndex", "mid", "else", "if", "array", "mid", "target", "return", "binarySearch", "array", "target", "mid", "highIndex", "else", "return", "mid" ]
+}, {
+  "path" : "c:\\Users\\10146\\Downloads\\dataset\\TheAlgorithm-Go\\searches\\binary_search.go",
+  "startLine" : 17,
+  "endLine" : 32,
+  "identifiers" : [ "startIndex", "lowIndex", "endIndex", "highIndex", "var", "mid", "int", "for", "startIndex", "endIndex", "mid", "int", "startIndex", "endIndex", "startIndex", "if", "array", "mid", "target", "endIndex", "mid", "else", "if", "array", "mid", "target", "startIndex", "mid", "else", "return", "mid", "return" ]
+}, {
+  "path" : "c:\\Users\\10146\\Downloads\\dataset\\TheAlgorithm-Go\\searches\\breadth_first_search.go",
+  "startLine" : 23,
+  "endLine" : 48,
+  "identifiers" : [ "var", "route", "int", "var", "queue", "int", "startIdx", "getIdx", "start", "nodes", "queue", "append", "queue", "startIdx", "for", "len", "queue", "now", "queue", "route", "append", "route", "nodes", "now", "if", "len", "queue", "queue", "queue", "else", "queue", "queue", "for", "i", "i", "len", "edges", "now", "i", "if", "edges", "now", "i", "notExist", "i", "queue", "queue", "append", "queue", "i", "edges", "now", "i", "false", "edges", "i", "now", "false", "if", "route", "len", "route", "end", "return", "true", "return", "false" ]
+}, {
+  "path" : "c:\\Users\\10146\\Downloads\\dataset\\TheAlgorithm-Go\\searches\\breadth_first_search.go",
+  "startLine" : 50,
+  "endLine" : 72,
+  "identifiers" : [ "nodes", "int", "edges", "bool", "false", "true", "true", "false", "false", "false", "true", "false", "false", "true", "false", "false", "true", "false", "false", "true", "false", "false", "false", "true", "true", "false", "true", "false", "false", "false", "false", "true", "false", "true", "false", "false", "false", "false", "true", "false", "start", "end", "result", "breadthFirstSearch", "start", "end", "nodes", "edges", "fmt", "Println", "result" ]
+}, {
+  "path" : "c:\\Users\\10146\\Downloads\\dataset\\TheAlgorithm-Go\\searches\\depth_first_search.go",
+  "startLine" : 23,
+  "endLine" : 48,
+  "identifiers" : [ "var", "route", "int", "var", "stack", "int", "startIdx", "getIdx", "start", "nodes", "stack", "append", "stack", "startIdx", "for", "len", "stack", "now", "stack", "len", "stack", "route", "append", "route", "nodes", "now", "if", "len", "stack", "stack", "stack", "len", "stack", "else", "stack", "stack", "len", "stack", "for", "i", "i", "len", "edges", "now", "i", "if", "edges", "now", "i", "notExist", "i", "stack", "stack", "append", "stack", "i", "edges", "now", "i", "false", "edges", "i", "now", "false", "if", "route", "len", "route", "end", "return", "route", "true", "return", "nil", "false" ]
+}, {
+  "path" : "c:\\Users\\10146\\Downloads\\dataset\\TheAlgorithm-Go\\searches\\depth_first_search.go",
+  "startLine" : 50,
+  "endLine" : 72,
+  "identifiers" : [ "nodes", "int", "edges", "bool", "false", "true", "true", "false", "false", "false", "true", "false", "false", "true", "false", "false", "true", "false", "false", "true", "false", "false", "false", "true", "true", "false", "true", "false", "false", "false", "false", "true", "false", "true", "false", "false", "false", "false", "true", "false", "start", "end", "route", "_", "dfs", "start", "end", "nodes", "edges", "fmt", "Println", "route" ]
+}, {
+  "path" : "c:\\Users\\10146\\Downloads\\dataset\\TheAlgorithm-Go\\searches\\linear_search.go",
+  "startLine" : 14,
+  "endLine" : 25,
+  "identifiers" : [ "fmt", "Println", "array", "int", "index", "linearSearch", "array", "if", "index", "fmt", "Println", "else", "fmt", "Println", "index", "fmt", "Println", "index", "array", "index" ]
+}, {
+  "path" : "c:\\Users\\10146\\Downloads\\dataset\\TheAlgorithm-Go\\searches\\search_test.go",
+  "startLine" : 12,
+  "endLine" : 19,
+  "identifiers" : [ "int", "int", "int" ]
+}, {
+  "path" : "c:\\Users\\10146\\Downloads\\dataset\\TheAlgorithm-Go\\searches\\search_test.go",
+  "startLine" : 21,
+  "endLine" : 28,
+  "identifiers" : [ "for", "_", "test", "range", "searchTests", "actual", "binarySearch", "test", "data", "test", "key", "len", "test", "data", "if", "actual", "test", "expected", "t", "Errorf", "test", "name" ]
+}, {
+  "path" : "c:\\Users\\10146\\Downloads\\dataset\\TheAlgorithm-Go\\sorts\\bubble_sort.go",
+  "startLine" : 7,
+  "endLine" : 19,
+  "identifiers" : [ "swapped", "true", "for", "swapped", "swapped", "false", "for", "i", "i", "len", "arr", "i", "if", "arr", "i", "arr", "i", "arr", "i", "arr", "i", "arr", "i", "arr", "i", "swapped", "true", "return", "arr" ]
+}, {
+  "path" : "c:\\Users\\10146\\Downloads\\dataset\\TheAlgorithm-Go\\sorts\\counting_sort.go",
+  "startLine" : 3,
+  "endLine" : 17,
+  "identifiers" : [ "counts", "make", "int", "max", "result", "make", "int", "for", "_", "item", "range", "arr", "counts", "item", "for", "i", "i", "len", "counts", "i", "count", "counts", "i", "for", "j", "j", "count", "j", "result", "append", "result", "i", "return", "result" ]
+}, {
+  "path" : "c:\\Users\\10146\\Downloads\\dataset\\TheAlgorithm-Go\\sorts\\heap_sort.go",
+  "startLine" : 17,
+  "endLine" : 32,
+  "identifiers" : [ "l", "r", "i", "i", "max", "i", "if", "l", "h", "size", "h", "slice", "l", "h", "slice", "max", "max", "l", "if", "r", "h", "size", "h", "slice", "r", "h", "slice", "max", "max", "r", "if", "max", "i", "h", "slice", "i", "h", "slice", "max", "h", "slice", "max", "h", "slice", "i", "h", "MaxHeapify", "max" ]
+}, {
+  "path" : "c:\\Users\\10146\\Downloads\\dataset\\TheAlgorithm-Go\\sorts\\heap_sort.go",
+  "startLine" : 36,
+  "endLine" : 51,
+  "identifiers" : [ "h", "buildMaxHeap", "slice", "for", "i", "len", "h", "slice", "i", "i", "h", "slice", "h", "slice", "i", "h", "slice", "i", "h", "slice", "h", "heapSize", "h", "MaxHeapify", "return", "h", "slice" ]
+}, {
+  "path" : "c:\\Users\\10146\\Downloads\\dataset\\TheAlgorithm-Go\\sorts\\insertion_sort.go",
+  "startLine" : 4,
+  "endLine" : 15,
+  "identifiers" : [ "for", "out", "out", "len", "arr", "out", "temp", "arr", "out", "in", "out", "for", "in", "arr", "in", "temp", "in", "arr", "in", "arr", "in", "arr", "in", "temp", "return", "arr" ]
+}, {
+  "path" : "c:\\Users\\10146\\Downloads\\dataset\\TheAlgorithm-Go\\sorts\\merge_sort.go",
+  "startLine" : 4,
+  "endLine" : 33,
+  "identifiers" : [ "var", "r", "make", "int", "len", "a", "len", "b", "var", "i", "var", "j", "for", "i", "len", "a", "j", "len", "b", "if", "a", "i", "b", "j", "r", "i", "j", "a", "i", "i", "else", "r", "i", "j", "b", "j", "j", "for", "i", "len", "a", "r", "i", "j", "a", "i", "i", "for", "j", "len", "b", "r", "i", "j", "b", "j", "j", "return", "r" ]
+}, {
+  "path" : "c:\\Users\\10146\\Downloads\\dataset\\TheAlgorithm-Go\\sorts\\merge_sort.go",
+  "startLine" : 36,
+  "endLine" : 48,
+  "identifiers" : [ "if", "len", "items", "return", "items", "var", "middle", "len", "items", "var", "a", "Mergesort", "items", "middle", "var", "b", "Mergesort", "items", "middle", "return", "merge", "a", "b" ]
+}, {
+  "path" : "c:\\Users\\10146\\Downloads\\dataset\\TheAlgorithm-Go\\sorts\\quick_sort.go",
+  "startLine" : 8,
+  "endLine" : 38,
+  "identifiers" : [ "if", "len", "arr", "return", "arr", "median", "arr", "rand", "Intn", "len", "arr", "lowPart", "make", "int", "len", "arr", "highPart", "make", "int", "len", "arr", "middlePart", "make", "int", "len", "arr", "for", "_", "item", "range", "arr", "switch", "case", "item", "median", "lowPart", "append", "lowPart", "item", "case", "item", "median", "middlePart", "append", "middlePart", "item", "case", "item", "median", "highPart", "append", "highPart", "item", "lowPart", "quickSort", "lowPart", "highPart", "quickSort", "highPart", "lowPart", "append", "lowPart", "middlePart", "lowPart", "append", "lowPart", "highPart", "return", "lowPart" ]
+}, {
+  "path" : "c:\\Users\\10146\\Downloads\\dataset\\TheAlgorithm-Go\\sorts\\selection_sort.go",
+  "startLine" : 4,
+  "endLine" : 19,
+  "identifiers" : [ "for", "i", "i", "len", "arr", "i", "min", "i", "for", "j", "i", "j", "len", "arr", "j", "if", "arr", "j", "arr", "min", "min", "j", "tmp", "arr", "i", "arr", "i", "arr", "min", "arr", "min", "tmp", "return", "arr" ]
+}, {
+  "path" : "c:\\Users\\10146\\Downloads\\dataset\\TheAlgorithm-Go\\sorts\\shell_sort.go",
+  "startLine" : 4,
+  "endLine" : 13,
+  "identifiers" : [ "for", "d", "int", "len", "arr", "d", "d", "for", "i", "d", "i", "len", "arr", "i", "for", "j", "i", "j", "d", "arr", "j", "d", "arr", "j", "j", "d", "arr", "j", "arr", "j", "d", "arr", "j", "d", "arr", "j", "return", "arr" ]
+}, {
+  "path" : "c:\\Users\\10146\\Downloads\\dataset\\TheAlgorithm-Go\\sorts\\sorts_case_test.go",
+  "startLine" : 18,
+  "endLine" : 32,
+  "identifiers" : [ "int", "int", "int", "int", "int", "int", "int", "int", "arr", "getSortedVersion", "arr" ]
+}, {
+  "path" : "c:\\Users\\10146\\Downloads\\dataset\\TheAlgorithm-Go\\sorts\\sorts_case_test.go",
+  "startLine" : 34,
+  "endLine" : 41,
+  "identifiers" : [ "vals", "make", "int", "size", "for", "i", "i", "size", "i", "temp", "_", "rand", "Int", "rand", "Reader", "big", "NewInt", "int64", "size", "vals", "i", "int", "temp", "Int64", "return", "vals" ]
+}, {
+  "path" : "c:\\Users\\10146\\Downloads\\dataset\\TheAlgorithm-Go\\sorts\\sorts_test.go",
+  "startLine" : 7,
+  "endLine" : 18,
+  "identifiers" : [ "for", "_", "test", "range", "sortTests", "actual", "bubbleSort", "test", "input", "pos", "sorted", "compareSlices", "actual", "test", "expected", "if", "sorted", "if", "pos", "t", "Errorf", "test", "name", "t", "Errorf", "test", "name", "pos" ]
+}, {
+  "path" : "c:\\Users\\10146\\Downloads\\dataset\\TheAlgorithm-Go\\sorts\\sorts_test.go",
+  "startLine" : 20,
+  "endLine" : 31,
+  "identifiers" : [ "for", "_", "test", "range", "sortTests", "actual", "selectionSort", "test", "input", "pos", "sorted", "compareSlices", "actual", "test", "expected", "if", "sorted", "if", "pos", "t", "Errorf", "test", "name", "t", "Errorf", "test", "name", "pos" ]
+}, {
+  "path" : "c:\\Users\\10146\\Downloads\\dataset\\TheAlgorithm-Go\\sorts\\sorts_test.go",
+  "startLine" : 33,
+  "endLine" : 44,
+  "identifiers" : [ "for", "_", "test", "range", "sortTests", "actual", "insertionSort", "test", "input", "pos", "sorted", "compareSlices", "actual", "test", "expected", "if", "sorted", "if", "pos", "t", "Errorf", "test", "name", "t", "Errorf", "test", "name", "pos" ]
+}, {
+  "path" : "c:\\Users\\10146\\Downloads\\dataset\\TheAlgorithm-Go\\sorts\\sorts_test.go",
+  "startLine" : 46,
+  "endLine" : 57,
+  "identifiers" : [ "for", "_", "test", "range", "sortTests", "actual", "Mergesort", "test", "input", "pos", "sorted", "compareSlices", "actual", "test", "expected", "if", "sorted", "if", "pos", "t", "Errorf", "test", "name", "t", "Errorf", "test", "name", "pos" ]
+}, {
+  "path" : "c:\\Users\\10146\\Downloads\\dataset\\TheAlgorithm-Go\\sorts\\sorts_test.go",
+  "startLine" : 59,
+  "endLine" : 70,
+  "identifiers" : [ "for", "_", "test", "range", "sortTests", "actual", "heapSort", "test", "input", "pos", "sorted", "compareSlices", "actual", "test", "expected", "if", "sorted", "if", "pos", "t", "Errorf", "test", "name", "t", "Errorf", "test", "name", "pos" ]
+}, {
+  "path" : "c:\\Users\\10146\\Downloads\\dataset\\TheAlgorithm-Go\\sorts\\sorts_test.go",
+  "startLine" : 72,
+  "endLine" : 83,
+  "identifiers" : [ "for", "_", "test", "range", "sortTests", "actual", "quickSort", "test", "input", "pos", "sorted", "compareSlices", "actual", "test", "expected", "if", "sorted", "if", "pos", "t", "Errorf", "test", "name", "t", "Errorf", "test", "name", "pos" ]
+}, {
+  "path" : "c:\\Users\\10146\\Downloads\\dataset\\TheAlgorithm-Go\\sorts\\sorts_test.go",
+  "startLine" : 85,
+  "endLine" : 96,
+  "identifiers" : [ "for", "_", "test", "range", "sortTests", "actual", "shellSort", "test", "input", "pos", "sorted", "compareSlices", "actual", "test", "expected", "if", "sorted", "if", "pos", "t", "Errorf", "test", "name", "t", "Errorf", "test", "name", "pos" ]
+}, {
+  "path" : "c:\\Users\\10146\\Downloads\\dataset\\TheAlgorithm-Go\\strings\\levenshteinDistance.go",
+  "startLine" : 13,
+  "endLine" : 49,
+  "identifiers" : [ "row1", "make", "int", "len", "str2", "row2", "make", "int", "len", "str2", "var", "tmp", "int", "for", "i", "i", "len", "str2", "i", "row1", "i", "i", "icost", "for", "i", "i", "len", "str1", "i", "row2", "i", "dcost", "for", "j", "j", "len", "str2", "j", "if", "str1", "i", "str2", "j", "row2", "j", "row1", "j", "else", "ins", "row2", "j", "icost", "del", "row1", "j", "dcost", "sub", "row1", "j", "scost", "if", "ins", "del", "ins", "sub", "row2", "j", "ins", "else", "if", "del", "sub", "row2", "j", "del", "else", "row2", "j", "sub", "tmp", "row1", "row1", "row2", "row2", "tmp", "return", "row1", "len", "row1" ]
+}, {
+  "path" : "c:\\Users\\10146\\Downloads\\dataset\\TheAlgorithm-Go\\strings\\levenshteinDistance.go",
+  "startLine" : 58,
+  "endLine" : 73,
+  "identifiers" : [ "str1", "str2", "strDistance1", "levenshteinDistance", "str1", "str2", "fmt", "Printf", "s", "s", "str1", "str2", "strDistance1", "strDistance2", "levenshteinDistance", "str1", "str2", "fmt", "Printf", "s", "s", "str1", "str2", "strDistance2", "return" ]
+}, {
+  "path" : "c:\\Users\\10146\\Downloads\\dataset\\TheAlgorithm-Go\\strings\\multiple string matching\\ac.go",
+  "startLine" : 18,
+  "endLine" : 44,
+  "identifiers" : [ "patFile", "err", "ioutil", "ReadFile", "if", "err", "nil", "log", "Fatal", "err", "textFile", "err", "ioutil", "ReadFile", "if", "err", "nil", "log", "Fatal", "err", "patterns", "strings", "Split", "string", "patFile", "fmt", "Printf", "if", "debugMode", "true", "fmt", "Printf", "len", "patterns", "for", "i", "i", "len", "patterns", "i", "if", "len", "patterns", "i", "len", "textFile", "log", "Fatal", "i", "if", "debugMode", "true", "fmt", "Printf", "patterns", "i", "if", "debugMode", "true", "fmt", "Printf", "len", "textFile", "textFile", "ahoCorasick", "string", "textFile", "patterns" ]
+}, {
+  "path" : "c:\\Users\\10146\\Downloads\\dataset\\TheAlgorithm-Go\\strings\\multiple string matching\\ac.go",
+  "startLine" : 48,
+  "endLine" : 99,
+  "identifiers" : [ "startTime", "time", "Now", "occurences", "make", "map", "int", "int", "ac", "f", "s", "buildAc", "p", "if", "debugMode", "true", "fmt", "Printf", "current", "for", "pos", "pos", "len", "t", "pos", "if", "debugMode", "true", "fmt", "Printf", "pos", "t", "pos", "for", "getTransition", "current", "t", "pos", "ac", "s", "current", "current", "s", "current", "if", "getTransition", "current", "t", "pos", "ac", "current", "getTransition", "current", "t", "pos", "ac", "fmt", "Printf", "else", "current", "if", "debugMode", "true", "fmt", "Printf", "_", "ok", "f", "current", "if", "ok", "for", "i", "range", "f", "current", "if", "p", "f", "current", "i", "getWord", "pos", "len", "p", "f", "current", "i", "pos", "t", "if", "debugMode", "true", "fmt", "Printf", "pos", "len", "p", "f", "current", "i", "p", "f", "current", "i", "p", "f", "current", "i", "newOccurences", "intArrayCapUp", "occurences", "f", "current", "i", "occurences", "f", "current", "i", "newOccurences", "occurences", "f", "current", "i", "len", "newOccurences", "pos", "len", "p", "f", "current", "i", "elapsed", "time", "Since", "startTime", "fmt", "Printf", "elapsed", "Seconds", "for", "key", "value", "range", "occurences", "fmt", "Printf", "len", "value", "p", "key", "for", "i", "range", "value", "fmt", "Printf", "value", "i", "if", "i", "len", "value", "fmt", "Printf", "fmt", "Printf", "return" ]
+}, {
+  "path" : "c:\\Users\\10146\\Downloads\\dataset\\TheAlgorithm-Go\\strings\\multiple string matching\\ac.go",
+  "startLine" : 102,
+  "endLine" : 147,
+  "identifiers" : [ "acTrie", "stateIsTerminal", "f", "constructTrie", "p", "s", "make", "int", "len", "stateIsTerminal", "i", "acToReturn", "acTrie", "s", "i", "if", "debugMode", "true", "fmt", "Printf", "for", "current", "current", "len", "stateIsTerminal", "current", "o", "parent", "getParent", "current", "acTrie", "down", "s", "parent", "for", "stateExists", "down", "acToReturn", "getTransition", "down", "o", "acToReturn", "down", "s", "down", "if", "stateExists", "down", "acToReturn", "s", "current", "getTransition", "down", "o", "acToReturn", "if", "stateIsTerminal", "s", "current", "true", "stateIsTerminal", "current", "true", "f", "current", "arrayUnion", "f", "current", "f", "s", "current", "if", "debugMode", "true", "fmt", "Printf", "current", "for", "i", "range", "f", "current", "fmt", "Printf", "f", "current", "i", "else", "s", "current", "i", "if", "debugMode", "true", "fmt", "Printf", "for", "i", "range", "s", "fmt", "Printf", "i", "s", "i", "fmt", "Printf", "for", "i", "j", "range", "f", "fmt", "Printf", "i", "for", "k", "range", "j", "fmt", "Printf", "j", "k", "return", "acToReturn", "f", "s" ]
+}, {
+  "path" : "c:\\Users\\10146\\Downloads\\dataset\\TheAlgorithm-Go\\strings\\multiple string matching\\ac.go",
+  "startLine" : 150,
+  "endLine" : 191,
+  "identifiers" : [ "trie", "make", "map", "int", "map", "uint8", "int", "stateIsTerminal", "make", "bool", "f", "make", "map", "int", "int", "state", "if", "debugMode", "true", "fmt", "Printf", "createNewState", "trie", "for", "i", "i", "len", "p", "i", "current", "j", "for", "j", "len", "p", "i", "getTransition", "current", "p", "i", "j", "trie", "current", "getTransition", "current", "p", "i", "j", "trie", "j", "for", "j", "len", "p", "i", "stateIsTerminal", "boolArrayCapUp", "stateIsTerminal", "createNewState", "state", "trie", "stateIsTerminal", "state", "false", "createTransition", "current", "p", "i", "j", "state", "trie", "current", "state", "j", "state", "if", "stateIsTerminal", "current", "newArray", "intArrayCapUp", "f", "current", "newArray", "len", "newArray", "i", "f", "current", "newArray", "if", "debugMode", "true", "fmt", "Printf", "i", "else", "stateIsTerminal", "current", "true", "f", "current", "int", "i", "if", "debugMode", "true", "fmt", "Printf", "current", "i", "return", "trie", "stateIsTerminal", "f" ]
+}, {
+  "path" : "c:\\Users\\10146\\Downloads\\dataset\\TheAlgorithm-Go\\strings\\multiple string matching\\ac.go",
+  "startLine" : 208,
+  "endLine" : 217,
+  "identifiers" : [ "for", "end", "len", "t", "return", "d", "make", "uint8", "end", "begin", "for", "j", "i", "begin", "i", "end", "i", "j", "i", "j", "d", "j", "t", "i", "return", "string", "d" ]
+}, {
+  "path" : "c:\\Users\\10146\\Downloads\\dataset\\TheAlgorithm-Go\\strings\\multiple string matching\\adac.go",
+  "startLine" : 18,
+  "endLine" : 44,
+  "identifiers" : [ "patFile", "err", "ioutil", "ReadFile", "if", "err", "nil", "log", "Fatal", "err", "textFile", "err", "ioutil", "ReadFile", "if", "err", "nil", "log", "Fatal", "err", "patterns", "strings", "Split", "string", "patFile", "fmt", "Printf", "if", "debugMode", "true", "fmt", "Printf", "len", "patterns", "for", "i", "i", "len", "patterns", "i", "if", "len", "patterns", "i", "len", "textFile", "log", "Fatal", "i", "if", "debugMode", "true", "fmt", "Printf", "patterns", "i", "if", "debugMode", "true", "fmt", "Printf", "len", "textFile", "textFile", "ahoCorasick", "string", "textFile", "patterns" ]
+}, {
+  "path" : "c:\\Users\\10146\\Downloads\\dataset\\TheAlgorithm-Go\\strings\\multiple string matching\\adac.go",
+  "startLine" : 48,
+  "endLine" : 89,
+  "identifiers" : [ "startTime", "time", "Now", "occurences", "make", "map", "int", "int", "ac", "f", "buildExtendedAc", "p", "if", "debugMode", "true", "fmt", "Printf", "current", "for", "pos", "pos", "len", "t", "pos", "if", "getTransition", "current", "t", "pos", "ac", "current", "getTransition", "current", "t", "pos", "ac", "else", "current", "_", "ok", "f", "current", "if", "ok", "for", "i", "range", "f", "current", "if", "p", "f", "current", "i", "getWord", "pos", "len", "p", "f", "current", "i", "pos", "t", "if", "debugMode", "true", "fmt", "Printf", "pos", "len", "p", "f", "current", "i", "p", "f", "current", "i", "p", "f", "current", "i", "newOccurences", "intArrayCapUp", "occurences", "f", "current", "i", "occurences", "f", "current", "i", "newOccurences", "occurences", "f", "current", "i", "len", "newOccurences", "pos", "len", "p", "f", "current", "i", "elapsed", "time", "Since", "startTime", "fmt", "Printf", "elapsed", "Seconds", "for", "key", "value", "range", "occurences", "fmt", "Printf", "len", "value", "p", "key", "for", "i", "range", "value", "fmt", "Printf", "value", "i", "if", "i", "len", "value", "fmt", "Printf", "fmt", "Printf", "return" ]
+}, {
+  "path" : "c:\\Users\\10146\\Downloads\\dataset\\TheAlgorithm-Go\\strings\\multiple string matching\\adac.go",
+  "startLine" : 92,
+  "endLine" : 154,
+  "identifiers" : [ "acTrie", "stateIsTerminal", "f", "constructTrie", "p", "s", "make", "int", "len", "stateIsTerminal", "i", "acToReturn", "acTrie", "s", "i", "if", "debugMode", "true", "fmt", "Printf", "for", "current", "current", "len", "stateIsTerminal", "current", "o", "parent", "getParent", "current", "acTrie", "down", "s", "parent", "for", "stateExists", "down", "acToReturn", "getTransition", "down", "o", "acToReturn", "down", "s", "down", "if", "stateExists", "down", "acToReturn", "s", "current", "getTransition", "down", "o", "acToReturn", "if", "stateIsTerminal", "s", "current", "true", "stateIsTerminal", "current", "true", "f", "current", "arrayUnion", "f", "current", "f", "s", "current", "if", "debugMode", "true", "fmt", "Printf", "current", "for", "i", "range", "f", "current", "fmt", "Printf", "f", "current", "i", "else", "s", "current", "i", "if", "debugMode", "true", "fmt", "Printf", "for", "i", "range", "s", "fmt", "Printf", "i", "s", "i", "fmt", "Printf", "for", "i", "j", "range", "f", "fmt", "Printf", "i", "for", "k", "range", "j", "fmt", "Printf", "j", "k", "if", "debugMode", "true", "fmt", "Printf", "a", "computeAlphabet", "p", "for", "j", "range", "a", "if", "getTransition", "i", "a", "j", "acToReturn", "createTransition", "i", "a", "j", "i", "acToReturn", "for", "current", "current", "len", "stateIsTerminal", "current", "for", "j", "range", "a", "if", "getTransition", "current", "a", "j", "acToReturn", "createTransition", "current", "a", "j", "getTransition", "s", "current", "a", "j", "acToReturn", "acToReturn", "return", "acToReturn", "f" ]
+}, {
+  "path" : "c:\\Users\\10146\\Downloads\\dataset\\TheAlgorithm-Go\\strings\\multiple string matching\\adac.go",
+  "startLine" : 157,
+  "endLine" : 198,
+  "identifiers" : [ "trie", "make", "map", "int", "map", "uint8", "int", "stateIsTerminal", "make", "bool", "f", "make", "map", "int", "int", "state", "if", "debugMode", "true", "fmt", "Printf", "createNewState", "trie", "for", "i", "i", "len", "p", "i", "current", "j", "for", "j", "len", "p", "i", "getTransition", "current", "p", "i", "j", "trie", "current", "getTransition", "current", "p", "i", "j", "trie", "j", "for", "j", "len", "p", "i", "stateIsTerminal", "boolArrayCapUp", "stateIsTerminal", "createNewState", "state", "trie", "stateIsTerminal", "state", "false", "createTransition", "current", "p", "i", "j", "state", "trie", "current", "state", "j", "state", "if", "stateIsTerminal", "current", "newArray", "intArrayCapUp", "f", "current", "newArray", "len", "newArray", "i", "f", "current", "newArray", "if", "debugMode", "true", "fmt", "Printf", "i", "else", "stateIsTerminal", "current", "true", "f", "current", "int", "i", "if", "debugMode", "true", "fmt", "Printf", "current", "i", "return", "trie", "stateIsTerminal", "f" ]
+}, {
+  "path" : "c:\\Users\\10146\\Downloads\\dataset\\TheAlgorithm-Go\\strings\\multiple string matching\\adac.go",
+  "startLine" : 211,
+  "endLine" : 220,
+  "identifiers" : [ "for", "end", "len", "t", "return", "d", "make", "uint8", "end", "begin", "for", "j", "i", "begin", "i", "end", "i", "j", "i", "j", "d", "j", "t", "i", "return", "string", "d" ]
+}, {
+  "path" : "c:\\Users\\10146\\Downloads\\dataset\\TheAlgorithm-Go\\strings\\multiple string matching\\sbom.go",
+  "startLine" : 18,
+  "endLine" : 44,
+  "identifiers" : [ "patFile", "err", "ioutil", "ReadFile", "if", "err", "nil", "log", "Fatal", "err", "textFile", "err", "ioutil", "ReadFile", "if", "err", "nil", "log", "Fatal", "err", "patterns", "strings", "Split", "string", "patFile", "fmt", "Printf", "if", "debugMode", "true", "fmt", "Printf", "len", "patterns", "for", "i", "i", "len", "patterns", "i", "if", "len", "patterns", "i", "len", "textFile", "log", "Fatal", "i", "if", "debugMode", "true", "fmt", "Printf", "patterns", "i", "if", "debugMode", "true", "fmt", "Printf", "len", "textFile", "textFile", "sbom", "string", "textFile", "patterns" ]
+}, {
+  "path" : "c:\\Users\\10146\\Downloads\\dataset\\TheAlgorithm-Go\\strings\\multiple string matching\\sbom.go",
+  "startLine" : 48,
+  "endLine" : 109,
+  "identifiers" : [ "startTime", "time", "Now", "occurences", "make", "map", "int", "int", "lmin", "computeMinLength", "p", "or", "f", "buildOracleMultiple", "reverseAll", "trimToLength", "p", "lmin", "if", "debugMode", "true", "fmt", "Printf", "pos", "for", "pos", "len", "t", "lmin", "current", "j", "lmin", "if", "debugMode", "true", "fmt", "Printf", "pos", "for", "j", "stateExists", "current", "or", "if", "debugMode", "true", "fmt", "Printf", "t", "pos", "j", "current", "getTransition", "current", "t", "pos", "j", "or", "if", "debugMode", "true", "if", "current", "fmt", "Printf", "else", "fmt", "Printf", "j", "if", "debugMode", "true", "fmt", "Printf", "word", "getWord", "pos", "pos", "lmin", "t", "if", "stateExists", "current", "or", "j", "strings", "HasPrefix", "word", "getCommonPrefix", "p", "f", "current", "lmin", "for", "i", "range", "f", "current", "if", "p", "f", "current", "i", "getWord", "pos", "pos", "len", "p", "f", "current", "i", "t", "if", "debugMode", "true", "fmt", "Printf", "p", "f", "current", "i", "word", "newOccurences", "intArrayCapUp", "occurences", "f", "current", "i", "occurences", "f", "current", "i", "newOccurences", "occurences", "f", "current", "i", "len", "newOccurences", "pos", "j", "pos", "pos", "j", "elapsed", "time", "Since", "startTime", "fmt", "Printf", "elapsed", "Seconds", "for", "key", "value", "range", "occurences", "fmt", "Printf", "len", "value", "p", "key", "for", "i", "range", "value", "fmt", "Printf", "value", "i", "if", "i", "len", "value", "fmt", "Printf", "fmt", "Printf", "return" ]
+}, {
+  "path" : "c:\\Users\\10146\\Downloads\\dataset\\TheAlgorithm-Go\\strings\\multiple string matching\\sbom.go",
+  "startLine" : 112,
+  "endLine" : 135,
+  "identifiers" : [ "orTrie", "stateIsTerminal", "f", "constructTrie", "p", "s", "make", "int", "len", "stateIsTerminal", "i", "orToReturn", "orTrie", "s", "i", "if", "debugMode", "true", "fmt", "Printf", "for", "current", "current", "len", "stateIsTerminal", "current", "o", "parent", "getParent", "current", "orTrie", "down", "s", "parent", "for", "stateExists", "down", "orToReturn", "getTransition", "down", "o", "orToReturn", "createTransition", "down", "o", "current", "orToReturn", "down", "s", "down", "if", "stateExists", "down", "orToReturn", "s", "current", "getTransition", "down", "o", "orToReturn", "else", "s", "current", "i", "return", "orToReturn", "f" ]
+}, {
+  "path" : "c:\\Users\\10146\\Downloads\\dataset\\TheAlgorithm-Go\\strings\\multiple string matching\\sbom.go",
+  "startLine" : 138,
+  "endLine" : 179,
+  "identifiers" : [ "trie", "make", "map", "int", "map", "uint8", "int", "stateIsTerminal", "make", "bool", "f", "make", "map", "int", "int", "state", "if", "debugMode", "true", "fmt", "Printf", "createNewState", "trie", "for", "i", "i", "len", "p", "i", "current", "j", "for", "j", "len", "p", "i", "getTransition", "current", "p", "i", "j", "trie", "current", "getTransition", "current", "p", "i", "j", "trie", "j", "for", "j", "len", "p", "i", "stateIsTerminal", "boolArrayCapUp", "stateIsTerminal", "createNewState", "state", "trie", "stateIsTerminal", "state", "false", "createTransition", "current", "p", "i", "j", "state", "trie", "current", "state", "j", "state", "if", "stateIsTerminal", "current", "newArray", "intArrayCapUp", "f", "current", "newArray", "len", "newArray", "i", "f", "current", "newArray", "if", "debugMode", "true", "fmt", "Printf", "i", "else", "stateIsTerminal", "current", "true", "f", "current", "int", "i", "if", "debugMode", "true", "fmt", "Printf", "current", "i", "return", "trie", "stateIsTerminal", "f" ]
+}, {
+  "path" : "c:\\Users\\10146\\Downloads\\dataset\\TheAlgorithm-Go\\strings\\multiple string matching\\sbom.go",
+  "startLine" : 220,
+  "endLine" : 227,
+  "identifiers" : [ "r", "rune", "p", "f", "newR", "make", "rune", "lmin", "for", "j", "j", "lmin", "j", "newR", "j", "r", "j", "return", "string", "newR" ]
+}, {
+  "path" : "c:\\Users\\10146\\Downloads\\dataset\\TheAlgorithm-Go\\strings\\multiple string matching\\sbom.go",
+  "startLine" : 231,
+  "endLine" : 242,
+  "identifiers" : [ "trimmedP", "make", "string", "len", "p", "for", "i", "range", "p", "r", "rune", "p", "i", "newR", "make", "rune", "length", "for", "j", "j", "length", "j", "newR", "j", "r", "j", "trimmedP", "i", "string", "newR", "return", "trimmedP" ]
+}, {
+  "path" : "c:\\Users\\10146\\Downloads\\dataset\\TheAlgorithm-Go\\strings\\multiple string matching\\sbom.go",
+  "startLine" : 245,
+  "endLine" : 254,
+  "identifiers" : [ "for", "end", "len", "t", "return", "d", "make", "uint8", "end", "begin", "for", "j", "i", "begin", "i", "end", "i", "j", "i", "j", "d", "j", "t", "i", "return", "string", "d" ]
+}, {
+  "path" : "c:\\Users\\10146\\Downloads\\dataset\\TheAlgorithm-Go\\strings\\multiple string matching\\sbom.go",
+  "startLine" : 257,
+  "endLine" : 265,
+  "identifiers" : [ "lmin", "len", "p", "for", "i", "i", "len", "p", "i", "if", "len", "p", "i", "lmin", "lmin", "len", "p", "i", "return", "lmin" ]
+}, {
+  "path" : "c:\\Users\\10146\\Downloads\\dataset\\TheAlgorithm-Go\\strings\\naiveStringSearch.go",
+  "startLine" : 17,
+  "endLine" : 33,
+  "identifiers" : [ "var", "positions", "int", "for", "i", "i", "len", "text", "len", "pattern", "i", "var", "match", "bool", "true", "for", "j", "j", "len", "pattern", "j", "if", "text", "i", "j", "pattern", "j", "match", "false", "break", "if", "match", "positions", "append", "positions", "i", "return", "positions" ]
+}, {
+  "path" : "c:\\Users\\10146\\Downloads\\dataset\\TheAlgorithm-Go\\strings\\naiveStringSearch.go",
+  "startLine" : 35,
+  "endLine" : 45,
+  "identifiers" : [ "text", "pattern", "var", "positions", "int", "naivePatternSearch", "text", "pattern", "if", "len", "positions", "fmt", "Printf", "else", "fmt", "Printf", "fmt", "Printf", "positions" ]
+}, {
+  "path" : "c:\\Users\\10146\\Downloads\\dataset\\TheAlgorithm-Go\\strings\\single string matching\\bom.go",
+  "startLine" : 25,
+  "endLine" : 68,
+  "identifiers" : [ "if", "commandLineInput", "true", "args", "os", "Args", "if", "len", "args", "log", "Fatal", "pattern", "args", "s", "args", "for", "i", "i", "len", "args", "i", "s", "s", "args", "i", "if", "len", "args", "len", "s", "log", "Fatal", "if", "debugMode", "true", "fmt", "Printf", "fmt", "Printf", "len", "args", "pattern", "fmt", "Printf", "len", "s", "s", "else", "fmt", "Printf", "bom", "s", "pattern", "else", "if", "commandLineInput", "false", "patFile", "err", "ioutil", "ReadFile", "if", "err", "nil", "log", "Fatal", "err", "textFile", "err", "ioutil", "ReadFile", "if", "err", "nil", "log", "Fatal", "err", "if", "len", "patFile", "len", "textFile", "log", "Fatal", "if", "debugMode", "true", "fmt", "Printf", "fmt", "Printf", "len", "patFile", "patFile", "fmt", "Printf", "len", "textFile", "textFile", "else", "fmt", "Printf", "bom", "string", "textFile", "string", "patFile" ]
+}, {
+  "path" : "c:\\Users\\10146\\Downloads\\dataset\\TheAlgorithm-Go\\strings\\single string matching\\bom.go",
+  "startLine" : 73,
+  "endLine" : 123,
+  "identifiers" : [ "startTime", "time", "Now", "n", "m", "len", "t", "len", "p", "var", "current", "j", "pos", "int", "oracle", "oracleOnLine", "reverse", "p", "occurences", "make", "int", "len", "t", "currentOcc", "pos", "if", "debugMode", "true", "fmt", "Printf", "t", "p", "pos", "m", "for", "pos", "n", "m", "current", "j", "m", "for", "j", "stateExists", "current", "oracle", "if", "debugMode", "true", "prettyPrint", "current", "j", "n", "pos", "t", "oracle", "current", "getTransition", "current", "t", "pos", "j", "oracle", "j", "if", "stateExists", "current", "oracle", "if", "debugMode", "true", "fmt", "Printf", "occurences", "currentOcc", "pos", "currentOcc", "pos", "pos", "j", "if", "pos", "m", "len", "t", "if", "debugMode", "true", "fmt", "Printf", "pos", "m", "elapsed", "time", "Since", "startTime", "fmt", "Printf", "elapsed", "Seconds", "fmt", "Printf", "if", "currentOcc", "fmt", "Printf", "p", "currentOcc", "for", "k", "k", "currentOcc", "k", "fmt", "Printf", "occurences", "k", "fmt", "Printf", "occurences", "currentOcc", "fmt", "Printf", "if", "currentOcc", "fmt", "Printf", "return" ]
+}, {
+  "path" : "c:\\Users\\10146\\Downloads\\dataset\\TheAlgorithm-Go\\strings\\single string matching\\bom.go",
+  "startLine" : 126,
+  "endLine" : 139,
+  "identifiers" : [ "if", "debugMode", "true", "fmt", "Printf", "oracle", "make", "map", "int", "map", "uint8", "int", "supply", "make", "int", "len", "p", "createNewState", "oracle", "supply", "var", "orP", "string", "for", "j", "j", "len", "p", "j", "oracle", "orP", "oracleAddLetter", "oracle", "supply", "orP", "p", "j", "return", "oracle" ]
+}, {
+  "path" : "c:\\Users\\10146\\Downloads\\dataset\\TheAlgorithm-Go\\strings\\single string matching\\bom.go",
+  "startLine" : 142,
+  "endLine" : 159,
+  "identifiers" : [ "m", "len", "orP", "var", "s", "int", "createNewState", "m", "oracle", "createTransition", "m", "o", "m", "oracle", "k", "supply", "m", "for", "k", "getTransition", "k", "o", "oracle", "createTransition", "k", "o", "m", "oracle", "k", "supply", "k", "if", "k", "s", "else", "s", "getTransition", "k", "o", "oracle", "supply", "m", "s", "return", "oracle", "orP", "string", "o" ]
+}, {
+  "path" : "c:\\Users\\10146\\Downloads\\dataset\\TheAlgorithm-Go\\strings\\single string matching\\bom.go",
+  "startLine" : 211,
+  "endLine" : 236,
+  "identifiers" : [ "if", "current", "getTransition", "current", "t", "pos", "j", "oracle", "fmt", "Printf", "current", "t", "pos", "j", "getTransition", "current", "t", "pos", "j", "oracle", "else", "if", "getTransition", "current", "t", "pos", "j", "oracle", "current", "fmt", "Printf", "current", "t", "pos", "j", "else", "if", "getTransition", "current", "t", "pos", "j", "oracle", "current", "fmt", "Printf", "current", "t", "pos", "j", "else", "fmt", "Printf", "current", "t", "pos", "j", "getTransition", "current", "t", "pos", "j", "oracle", "fmt", "Printf", "for", "a", "a", "pos", "j", "a", "fmt", "Printf", "t", "a", "if", "getTransition", "current", "t", "pos", "j", "oracle", "fmt", "Printf", "t", "pos", "j", "else", "fmt", "Printf", "t", "pos", "j", "for", "a", "pos", "j", "a", "n", "a", "fmt", "Printf", "t", "a", "if", "getTransition", "current", "t", "pos", "j", "oracle", "fmt", "Printf", "t", "pos", "j" ]
+}, {
+  "path" : "c:\\Users\\10146\\Downloads\\dataset\\TheAlgorithm-Go\\strings\\single string matching\\horspool.go",
+  "startLine" : 19,
+  "endLine" : 54,
+  "identifiers" : [ "if", "commandLineInput", "true", "args", "os", "Args", "if", "len", "args", "log", "Fatal", "pattern", "args", "s", "args", "for", "i", "i", "len", "args", "i", "s", "s", "args", "i", "if", "len", "args", "len", "s", "log", "Fatal", "fmt", "Printf", "fmt", "Printf", "len", "args", "pattern", "fmt", "Printf", "len", "s", "s", "horspool", "s", "pattern", "else", "if", "commandLineInput", "false", "patFile", "err", "ioutil", "ReadFile", "if", "err", "nil", "log", "Fatal", "err", "textFile", "err", "ioutil", "ReadFile", "if", "err", "nil", "log", "Fatal", "err", "if", "len", "patFile", "len", "textFile", "log", "Fatal", "fmt", "Printf", "fmt", "Printf", "len", "patFile", "patFile", "fmt", "Printf", "len", "textFile", "textFile", "horspool", "string", "textFile", "string", "patFile" ]
+}, {
+  "path" : "c:\\Users\\10146\\Downloads\\dataset\\TheAlgorithm-Go\\strings\\single string matching\\horspool.go",
+  "startLine" : 58,
+  "endLine" : 89,
+  "identifiers" : [ "m", "n", "c", "pos", "len", "p", "len", "t", "d", "preprocess", "t", "p", "fmt", "Printf", "for", "key", "value", "range", "d", "fmt", "Printf", "key", "value", "fmt", "Println", "for", "pos", "n", "m", "j", "m", "if", "t", "pos", "j", "p", "j", "fmt", "Printf", "t", "pos", "j", "p", "j", "pos", "j", "j", "c", "for", "j", "t", "pos", "j", "p", "j", "fmt", "Printf", "t", "pos", "j", "p", "j", "pos", "j", "j", "c", "fmt", "Printf", "j", "if", "j", "fmt", "Printf", "p", "pos", "t", "c", "return", "pos", "pos", "d", "t", "pos", "m", "fmt", "Printf", "c", "return" ]
+}, {
+  "path" : "c:\\Users\\10146\\Downloads\\dataset\\TheAlgorithm-Go\\strings\\single string matching\\horspool.go",
+  "startLine" : 93,
+  "endLine" : 102,
+  "identifiers" : [ "d", "make", "map", "uint8", "int", "for", "i", "i", "len", "t", "i", "d", "t", "i", "len", "p", "for", "i", "i", "len", "p", "i", "d", "p", "i", "len", "p", "i", "return", "d" ]
+}, {
+  "path" : "c:\\Users\\10146\\Downloads\\dataset\\TheAlgorithm-Go\\strings\\single string matching\\kmp.go",
+  "startLine" : 19,
+  "endLine" : 54,
+  "identifiers" : [ "if", "commandLineInput", "true", "args", "os", "Args", "if", "len", "args", "log", "Fatal", "pattern", "args", "s", "args", "for", "i", "i", "len", "args", "i", "s", "s", "args", "i", "if", "len", "args", "len", "s", "log", "Fatal", "fmt", "Printf", "fmt", "Printf", "len", "args", "pattern", "fmt", "Printf", "len", "s", "s", "knp", "s", "pattern", "else", "if", "commandLineInput", "false", "patFile", "err", "ioutil", "ReadFile", "if", "err", "nil", "log", "Fatal", "err", "textFile", "err", "ioutil", "ReadFile", "if", "err", "nil", "log", "Fatal", "err", "if", "len", "patFile", "len", "textFile", "log", "Fatal", "fmt", "Printf", "fmt", "Printf", "len", "patFile", "patFile", "fmt", "Printf", "len", "textFile", "textFile", "knp", "string", "textFile", "string", "patFile" ]
+}, {
+  "path" : "c:\\Users\\10146\\Downloads\\dataset\\TheAlgorithm-Go\\strings\\single string matching\\kmp.go",
+  "startLine" : 59,
+  "endLine" : 83,
+  "identifiers" : [ "m", "i", "c", "t", "kmp_table", "word", "for", "m", "i", "len", "text", "fmt", "Printf", "text", "m", "i", "word", "i", "m", "i", "i", "c", "if", "word", "i", "text", "m", "i", "fmt", "Printf", "if", "i", "len", "word", "fmt", "Printf", "word", "m", "text", "c", "return", "i", "else", "m", "m", "i", "t", "i", "if", "t", "i", "i", "t", "i", "else", "i", "fmt", "Printf", "c", "return" ]
+}, {
+  "path" : "c:\\Users\\10146\\Downloads\\dataset\\TheAlgorithm-Go\\strings\\single string matching\\kmp.go",
+  "startLine" : 87,
+  "endLine" : 104,
+  "identifiers" : [ "t", "make", "int", "len", "word", "pos", "cnd", "t", "t", "for", "pos", "len", "word", "if", "word", "pos", "word", "cnd", "cnd", "t", "pos", "cnd", "pos", "else", "if", "cnd", "cnd", "t", "cnd", "else", "t", "pos", "pos", "return", "t" ]
+} ]

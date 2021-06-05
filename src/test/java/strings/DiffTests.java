@@ -12,9 +12,15 @@ public class DiffTests {
 
     @Test
     public void testDiff() throws IOException {
-        List<String> lines1 = Files.readAllLines(Paths.get("resources/a.txt"));
-        List<String> lines2 = Files.readAllLines(Paths.get("resources/b.txt"));
-        List<String> patch = DiffUtils.getPatch(lines1, lines2);
-        System.out.println(patch);
+        char c1 = ' ';
+        char c2 = '\t';
+        char c3 = '\r';
+        char c4 = '\n';
+        char c5 = 'a';
+        System.out.println(Character.isWhitespace(c1));
+        System.out.println(Character.isWhitespace(c2));
+        System.out.println(Character.isWhitespace(c3));
+        System.out.println(Character.isWhitespace(c4));
+        System.out.println(Character.isWhitespace(c5));
     }
 }

@@ -3,79 +3,28 @@
   <component name="ChangeListManager">
     <list default="true" id="126b89c9-1882-4bc2-a35b-eb9e3daee37e" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/strings/CodeUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/strings/CodeUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/strings/CodeUtilsTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/strings/CodeUtilsTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/signatures.json" beforeDir="false" afterPath="$PROJECT_DIR$/signatures.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/code/PythonCodeUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/code/PythonCodeUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/code/JavaCodeUtilsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/code/JavaCodeUtilsTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/code/PythonCodeUtilsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/code/PythonCodeUtilsTest.java" afterDir="false" />
     </list>
-    <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="DefaultGradleProjectSettings">
-    <option name="isMigrated" value="true" />
-  </component>
-  <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/strings/SuffixArray.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="12" selection-start-line="12" selection-end-line="12" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/strings/CodeUtils.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="79" selection-start-line="79" selection-end-line="79" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/test/java/strings/CodeUtilsTests.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="16" selection-start-line="16" selection-end-line="16" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
-  </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="JUnit4 Test Class" />
       </list>
     </option>
-  </component>
-  <component name="FindInProjectRecents">
-    <findStrings>
-      <find>o1</find>
-      <find>o2</find>
-    </findStrings>
-    <replaceStrings>
-      <replace>suffix1</replace>
-      <replace>suffix2</replace>
-    </replaceStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-  </component>
-  <component name="IdeDocumentHistory">
-    <option name="CHANGED_PATHS">
-      <list>
-        <option value="$PROJECT_DIR$/src/test/java/strings/SuffixArrayTests.java" />
-        <option value="$PROJECT_DIR$/src/main/java/strings/SuffixArray.java" />
-        <option value="$PROJECT_DIR$/src/test/java/strings/CodeUtilsTests.java" />
-        <option value="$PROJECT_DIR$/src/main/java/strings/CodeUtils.java" />
-      </list>
-    </option>
+    <option name="ROOT_SYNC" value="DONT_SYNC" />
   </component>
   <component name="MavenImportPreferences">
     <option name="importingSettings">
@@ -84,38 +33,28 @@
       </MavenImportingSettings>
     </option>
   </component>
-  <component name="ProjectFrameBounds" fullScreen="true">
-    <option name="width" value="1440" />
-    <option name="height" value="900" />
-  </component>
+  <component name="ProjectId" id="1gysiuBmgyhKYjQA9ByNAnmN4FO" />
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="1" id="Add" />
   </component>
-  <component name="ProjectView">
-    <navigator proportions="" version="1">
-      <foldersAlwaysOnTop value="true" />
-    </navigator>
-    <panes>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="Algorithm" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Algorithm" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-    </panes>
-  </component>
   <component name="PropertiesComponent">
-    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../TencentProjects/SACloneDetector" />
+    <property name="settings.editor.selected.configurable" value="vcs.Git" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="code" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\GitRepo\Algorithm\src\main\java" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -129,50 +68,82 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.CodeUtilsTests.testIsSimilarCode">
-    <configuration name="CodeUtilsTests.testIsSimilarCode" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.GolangCodeUtilsTest.parseMethodSignature">
+    <configuration name="GolangCodeUtilsTest.parseMethodBody" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Algorithm" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="strings.*" />
+          <option name="PATTERN" value="code.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="strings" />
-      <option name="MAIN_CLASS_NAME" value="strings.CodeUtilsTests" />
-      <option name="METHOD_NAME" value="testIsSimilarCode" />
+      <option name="PACKAGE_NAME" value="code" />
+      <option name="MAIN_CLASS_NAME" value="code.GolangCodeUtilsTest" />
+      <option name="METHOD_NAME" value="parseMethodBody" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="DiffTests.testDiff" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="GolangCodeUtilsTest.parseMethodSignature" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Algorithm" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="strings.*" />
+          <option name="PATTERN" value="code.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="strings" />
-      <option name="MAIN_CLASS_NAME" value="strings.DiffTests" />
-      <option name="METHOD_NAME" value="testDiff" />
+      <option name="PACKAGE_NAME" value="code" />
+      <option name="MAIN_CLASS_NAME" value="code.GolangCodeUtilsTest" />
+      <option name="METHOD_NAME" value="parseMethodSignature" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SuffixArrayTests.testBuildSuffixArray" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="JavaScriptCodeUtilsTest.parseMethodBody" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Algorithm" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="strings.*" />
+          <option name="PATTERN" value="code.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="strings" />
-      <option name="MAIN_CLASS_NAME" value="strings.SuffixArrayTests" />
-      <option name="METHOD_NAME" value="testBuildSuffixArray" />
+      <option name="PACKAGE_NAME" value="code" />
+      <option name="MAIN_CLASS_NAME" value="code.JavaScriptCodeUtilsTest" />
+      <option name="METHOD_NAME" value="parseMethodBody" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PythonCodeUtilsTest.parseMethodBody" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Algorithm" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="code.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="code" />
+      <option name="MAIN_CLASS_NAME" value="code.PythonCodeUtilsTest" />
+      <option name="METHOD_NAME" value="parseMethodBody" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PythonCodeUtilsTest.parseMethodSignature" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Algorithm" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="code.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="code" />
+      <option name="MAIN_CLASS_NAME" value="code.PythonCodeUtilsTest" />
+      <option name="METHOD_NAME" value="parseMethodSignature" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -180,9 +151,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.CodeUtilsTests.testIsSimilarCode" />
-        <item itemvalue="JUnit.SuffixArrayTests.testBuildSuffixArray" />
-        <item itemvalue="JUnit.DiffTests.testDiff" />
+        <item itemvalue="JUnit.GolangCodeUtilsTest.parseMethodSignature" />
+        <item itemvalue="JUnit.GolangCodeUtilsTest.parseMethodBody" />
+        <item itemvalue="JUnit.PythonCodeUtilsTest.parseMethodBody" />
+        <item itemvalue="JUnit.PythonCodeUtilsTest.parseMethodSignature" />
+        <item itemvalue="JUnit.JavaScriptCodeUtilsTest.parseMethodBody" />
       </list>
     </recent_temporary>
   </component>
@@ -197,87 +170,19 @@
       <option name="presentableId" value="Default" />
       <updated>1593570947341</updated>
       <workItem from="1593570951862" duration="8213000" />
-      <workItem from="1594203605461" duration="640000" />
-      <workItem from="1594700329977" duration="15000" />
-      <workItem from="1594700388505" duration="4000" />
-      <workItem from="1594799244814" duration="8000" />
-      <workItem from="1595813899025" duration="3423000" />
-      <workItem from="1596094019773" duration="6286000" />
-      <workItem from="1596157891766" duration="1730000" />
+      <workItem from="1599098301569" duration="2584000" />
+      <workItem from="1609927538581" duration="2087000" />
+      <workItem from="1609988088926" duration="3269000" />
+      <workItem from="1614665154508" duration="15100000" />
+      <workItem from="1614733943459" duration="5645000" />
+      <workItem from="1614750715094" duration="8284000" />
+      <workItem from="1614765464949" duration="246000" />
+      <workItem from="1614824894298" duration="1830000" />
+      <workItem from="1614837321930" duration="3314000" />
+      <workItem from="1614846386606" duration="5050000" />
+      <workItem from="1614907366167" duration="3444000" />
     </task>
     <servers />
-  </component>
-  <component name="TestHistory">
-    <history-entry file="CodeUtilsTests_testIsSimilarCode - 2020.07.30 at 17h 25m 01s.xml">
-      <configuration name="CodeUtilsTests.testIsSimilarCode" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="CodeUtilsTests_testIsSimilarCode - 2020.07.30 at 17h 25m 26s.xml">
-      <configuration name="CodeUtilsTests.testIsSimilarCode" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="CodeUtilsTests_testIsSimilarCode - 2020.07.30 at 17h 28m 47s.xml">
-      <configuration name="CodeUtilsTests.testIsSimilarCode" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="CodeUtilsTests_testIsSimilarCode - 2020.07.30 at 17h 29m 28s.xml">
-      <configuration name="CodeUtilsTests.testIsSimilarCode" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="CodeUtilsTests_testIsSimilarCode - 2020.07.30 at 17h 29m 37s.xml">
-      <configuration name="CodeUtilsTests.testIsSimilarCode" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="CodeUtilsTests_testIsSimilarCode - 2020.07.31 at 09h 16m 13s.xml">
-      <configuration name="CodeUtilsTests.testIsSimilarCode" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="CodeUtilsTests_testIsSimilarCode - 2020.07.31 at 09h 20m 16s.xml">
-      <configuration name="CodeUtilsTests.testIsSimilarCode" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="CodeUtilsTests_testIsSimilarCode - 2020.07.31 at 09h 25m 22s.xml">
-      <configuration name="CodeUtilsTests.testIsSimilarCode" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="CodeUtilsTests_testIsSimilarCode - 2020.07.31 at 09h 28m 22s.xml">
-      <configuration name="CodeUtilsTests.testIsSimilarCode" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="CodeUtilsTests_testIsSimilarCode - 2020.07.31 at 09h 32m 23s.xml">
-      <configuration name="CodeUtilsTests.testIsSimilarCode" configurationId="JUnit" />
-    </history-entry>
-  </component>
-  <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="12106000" />
-  </component>
-  <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1440" height="900" extended-state="0" />
-    <editor active="true" />
-    <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.27110156" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="Designer" order="2" />
-      <window_info id="Image Layers" order="3" />
-      <window_info id="Capture Tool" order="4" />
-      <window_info id="UI Designer" order="5" />
-      <window_info id="Favorites" order="6" side_tool="true" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32891566" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.3987952" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Terminal" order="7" />
-      <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Tool Output" order="9" />
-      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" order="11" weight="0.32891566" />
-      <window_info anchor="bottom" id="Database Changes" order="12" />
-      <window_info anchor="bottom" id="Version Control" order="13" />
-      <window_info anchor="bottom" id="ANTLR Preview" order="14" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Maven" order="3" />
-      <window_info anchor="right" id="Palette" order="4" />
-      <window_info anchor="right" id="Capture Analysis" order="5" />
-      <window_info anchor="right" id="Database" order="6" />
-      <window_info anchor="right" id="Palette&#9;" order="7" />
-      <window_info anchor="right" id="Theme Preview" order="8" />
-    </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -288,27 +193,8 @@
         <entry key="MAIN">
           <value>
             <State>
-              <option name="RECENTLY_FILTERED_USER_GROUPS">
-                <collection />
-              </option>
-              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
-                <collection />
-              </option>
+              <option name="COLUMN_ORDER" />
             </State>
-          </value>
-        </entry>
-      </map>
-    </option>
-    <option name="RECENT_FILTERS">
-      <map>
-        <entry key="Branch">
-          <value>
-            <list />
-          </value>
-        </entry>
-        <entry key="User">
-          <value>
-            <list />
           </value>
         </entry>
       </map>
@@ -318,82 +204,32 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/strings/CodeUtils.java</url>
-          <line>77</line>
-          <properties />
-          <option name="timeStamp" value="10" />
+          <condition expression="path.equals(&quot;c:\\Users\\10146\\Downloads\\dataset\\redis\\utils\\tracking_collisions.c&quot;)&amp;&amp;startLine==52" language="JAVA" />
+          <url>file://$PROJECT_DIR$/src/main/java/code/CppCodeUtils.java</url>
+          <line>25</line>
+          <option name="timeStamp" value="17" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/code/CppCodeUtils.java</url>
+          <line>91</line>
+          <option name="timeStamp" value="18" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/code/JavaScriptCodeUtils.java</url>
+          <line>171</line>
+          <option name="timeStamp" value="19" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/code/PythonCodeUtilsTest.java</url>
+          <line>47</line>
+          <option name="timeStamp" value="20" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/code/PythonCodeUtils.java</url>
+          <line>174</line>
+          <option name="timeStamp" value="21" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
-  </component>
-  <component name="debuggerHistoryManager">
-    <expressions id="breakpointCondition">
-      <expression>
-        <expression-string>index==20</expression-string>
-        <language-id>JAVA</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>x1==39 &amp;&amp; x2 == 0 &amp;&amp; cloneLen == 38</expression-string>
-        <language-id>JAVA</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-    </expressions>
-    <expressions id="watch">
-      <expression>
-        <expression-string>pairs.get(index).first</expression-string>
-        <language-id>JAVA</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>pairs.get(index).size</expression-string>
-        <language-id>JAVA</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>pairs.get(index).index</expression-string>
-        <language-id>JAVA</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-    </expressions>
-  </component>
-  <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/security/CipherUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1842">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/strings/SuffixArray.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" selection-start-line="12" selection-end-line="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/strings/SuffixArrayTests.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="33" selection-start-line="33" selection-end-line="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/strings/CodeUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="79" selection-start-line="79" selection-end-line="79" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/strings/CodeUtilsTests.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" selection-start-line="16" selection-end-line="16" />
-        </state>
-      </provider>
-    </entry>
   </component>
 </project>
