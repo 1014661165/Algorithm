@@ -1,6 +1,7 @@
 package strings;
 
 import java.util.*;
+import java.util.function.IntUnaryOperator;
 
 /**
  * 后缀数组工具类
@@ -24,7 +25,7 @@ public class SuffixArray {
     /**
      * 构建后缀数组
      */
-    private void buildSuffixArray(){
+    public void buildSuffixArray(){
         //初始化sa
         for (int i=0; i<sa.length; i++){
             sa[i] = i;
@@ -56,7 +57,7 @@ public class SuffixArray {
     /**
      * 计算高度数组
      */
-    private void calculateHeight(){
+    public void calculateHeight(){
         for (int i=1; i<sa.length; i++){
             List<Byte> pre = tokens.subList(sa[i - 1], tokens.size());
             List<Byte> cur = tokens.subList(sa[i], tokens.size());
@@ -76,27 +77,25 @@ public class SuffixArray {
      * 获取检测结果
      * @return
      */
-    public List<Result> process(){
-        buildSuffixArray();
-        calculateHeight();
-        List<Result> results = new ArrayList<>();
+    public List<Integer> getResult(){
+        List<Integer> results = new ArrayList<>();
         for (int i=1; i<height.length; i++){
-            Result result = new Result();
-            result.firstIndex = sa[i - 1];
-            result.secondIndex = sa[i];
-            result.length = height[i];
-            results.add(result);
+            results.add(sa[i-1]);
+            results.add(sa[i]);
+            results.add(height[i]);
         }
         return results;
     }
 
-    /**
-     * 后缀数组检测结果类
-     */
-    public static class Result{
-        public int firstIndex;
-        public int secondIndex;
-        public int length;
+    public List<Byte> getTokens() {
+        return tokens;
     }
 
+    public int[] getSa() {
+        return sa;
+    }
+
+    public int[] getHeight() {
+        return height;
+    }
 }

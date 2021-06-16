@@ -2,11 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="126b89c9-1882-4bc2-a35b-eb9e3daee37e" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/signatures.json" beforeDir="false" afterPath="$PROJECT_DIR$/signatures.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/code/PythonCodeUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/code/PythonCodeUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/code/JavaCodeUtilsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/code/JavaCodeUtilsTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/code/PythonCodeUtilsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/code/PythonCodeUtilsTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/strings/SuffixArray.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/strings/SuffixArray.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/strings/SuffixArrayTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/strings/SuffixArrayTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/thread/MultiThreadTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/thread/MultiThreadTests.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -19,6 +17,7 @@
       <list>
         <option value="Class" />
         <option value="JUnit4 Test Class" />
+        <option value="FxmlFile" />
       </list>
     </option>
   </component>
@@ -42,7 +41,7 @@
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../TencentProjects/SACloneDetector" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="vcs.Git" />
   </component>
   <component name="RecentsManager">
@@ -68,82 +67,79 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.GolangCodeUtilsTest.parseMethodSignature">
-    <configuration name="GolangCodeUtilsTest.parseMethodBody" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.SuffixArrayTests.testBuildSuffixArray">
+    <configuration name="MultiThreadTests" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="thread.MultiThreadTests" />
       <module name="Algorithm" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="code.*" />
+          <option name="PATTERN" value="thread.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="code" />
-      <option name="MAIN_CLASS_NAME" value="code.GolangCodeUtilsTest" />
-      <option name="METHOD_NAME" value="parseMethodBody" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MultiThreadTests.testCountDownLatch" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Algorithm" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="thread.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="thread" />
+      <option name="MAIN_CLASS_NAME" value="thread.MultiThreadTests" />
+      <option name="METHOD_NAME" value="testCountDownLatch" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="GolangCodeUtilsTest.parseMethodSignature" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="MultiThreadTests.testForeach" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Algorithm" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="code.*" />
+          <option name="PATTERN" value="thread.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="code" />
-      <option name="MAIN_CLASS_NAME" value="code.GolangCodeUtilsTest" />
-      <option name="METHOD_NAME" value="parseMethodSignature" />
+      <option name="PACKAGE_NAME" value="thread" />
+      <option name="MAIN_CLASS_NAME" value="thread.MultiThreadTests" />
+      <option name="METHOD_NAME" value="testForeach" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="JavaScriptCodeUtilsTest.parseMethodBody" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="MultiThreadTests.testThreadLocal" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Algorithm" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="code.*" />
+          <option name="PATTERN" value="thread.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="code" />
-      <option name="MAIN_CLASS_NAME" value="code.JavaScriptCodeUtilsTest" />
-      <option name="METHOD_NAME" value="parseMethodBody" />
+      <option name="PACKAGE_NAME" value="thread" />
+      <option name="MAIN_CLASS_NAME" value="thread.MultiThreadTests" />
+      <option name="METHOD_NAME" value="testThreadLocal" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PythonCodeUtilsTest.parseMethodBody" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="SuffixArrayTests.testBuildSuffixArray" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Algorithm" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="code.*" />
+          <option name="PATTERN" value="strings.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="code" />
-      <option name="MAIN_CLASS_NAME" value="code.PythonCodeUtilsTest" />
-      <option name="METHOD_NAME" value="parseMethodBody" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="PythonCodeUtilsTest.parseMethodSignature" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Algorithm" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="code.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="code" />
-      <option name="MAIN_CLASS_NAME" value="code.PythonCodeUtilsTest" />
-      <option name="METHOD_NAME" value="parseMethodSignature" />
+      <option name="PACKAGE_NAME" value="strings" />
+      <option name="MAIN_CLASS_NAME" value="strings.SuffixArrayTests" />
+      <option name="METHOD_NAME" value="testBuildSuffixArray" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -151,11 +147,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.GolangCodeUtilsTest.parseMethodSignature" />
-        <item itemvalue="JUnit.GolangCodeUtilsTest.parseMethodBody" />
-        <item itemvalue="JUnit.PythonCodeUtilsTest.parseMethodBody" />
-        <item itemvalue="JUnit.PythonCodeUtilsTest.parseMethodSignature" />
-        <item itemvalue="JUnit.JavaScriptCodeUtilsTest.parseMethodBody" />
+        <item itemvalue="JUnit.SuffixArrayTests.testBuildSuffixArray" />
+        <item itemvalue="JUnit.MultiThreadTests.testThreadLocal" />
+        <item itemvalue="JUnit.MultiThreadTests.testForeach" />
+        <item itemvalue="Application.MultiThreadTests" />
+        <item itemvalue="JUnit.MultiThreadTests.testCountDownLatch" />
       </list>
     </recent_temporary>
   </component>
@@ -180,7 +176,21 @@
       <workItem from="1614824894298" duration="1830000" />
       <workItem from="1614837321930" duration="3314000" />
       <workItem from="1614846386606" duration="5050000" />
-      <workItem from="1614907366167" duration="3444000" />
+      <workItem from="1614907366167" duration="4290000" />
+      <workItem from="1615285606453" duration="1613000" />
+      <workItem from="1615796568243" duration="132000" />
+      <workItem from="1615804216220" duration="2962000" />
+      <workItem from="1615856938871" duration="3305000" />
+      <workItem from="1616048611698" duration="4396000" />
+      <workItem from="1617098131653" duration="705000" />
+      <workItem from="1618295859873" duration="636000" />
+      <workItem from="1618304474908" duration="93000" />
+      <workItem from="1618381562263" duration="2330000" />
+      <workItem from="1618472338604" duration="59000" />
+      <workItem from="1618814373878" duration="1465000" />
+      <workItem from="1621994475082" duration="1386000" />
+      <workItem from="1621996167280" duration="110000" />
+      <workItem from="1622018939043" duration="626000" />
     </task>
     <servers />
   </component>
@@ -228,6 +238,11 @@
           <url>file://$PROJECT_DIR$/src/main/java/code/PythonCodeUtils.java</url>
           <line>174</line>
           <option name="timeStamp" value="21" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/code/GolangCodeUtils.java</url>
+          <line>62</line>
+          <option name="timeStamp" value="29" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

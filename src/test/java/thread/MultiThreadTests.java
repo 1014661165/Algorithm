@@ -2,38 +2,67 @@ package thread;
 
 import org.junit.Test;
 
-import java.util.concurrent.*;
-import java.util.concurrent.locks.Lock;
-import java.util.concurrent.locks.ReentrantLock;
+import java.time.Duration;
+import java.util.ArrayList;
+import java.util.LinkedList;
+import java.util.List;
+import java.util.Random;
+import java.util.function.Consumer;
 
 public class MultiThreadTests {
 
-    static int ticket = 100;
-    static Lock lock = new ReentrantLock();
-    static CountDownLatch latch = new CountDownLatch(100);
-
     @Test
-    public void testCountDownLatch() throws Exception {
-        ExecutorService executorService = Executors.newFixedThreadPool(32);
-
-        for (int i=0; i<100; i++){
-            executorService.execute(new Processor());
+    public void testForeach(){
+        List<Boolean> arrayList = new ArrayList<>(100000);
+        for (int i=0; i<100000; i++){
+            arrayList.add(true);
         }
-        latch.await();
-        System.out.println("main exit");
+
+        List<Boolean> linkedList = new LinkedList<>(arrayList);
+
+        long start = System.nanoTime();
+        for (int i=0; i<arrayList.size(); i++){
+            arrayList.get(i);
+        }
+        System.out.println(Duration.ofNanos(System.nanoTime() - start).toNanos());
+
+        start = System.nanoTime();
+        for (Boolean b: arrayList){
+        }
+        System.out.println(Duration.ofNanos(System.nanoTime() - start).toNanos());
+
+        start = System.nanoTime();
+        for (int i=0; i<linkedList.size(); i++){
+            linkedList.get(i);
+        }
+        System.out.println(Duration.ofNanos(System.nanoTime() - start).toNanos());
+
+        start = System.nanoTime();
+        linkedList.forEach(new Consumer<Boolean>() {
+            @Override
+            public void accept(Boolean aBoolean) {
+            }
+        });
+        System.out.println(Duration.ofNanos(System.nanoTime() - start).toNanos());
+
+        start = System.nanoTime();
+        for (Boolean b: linkedList){
+        }
+        System.out.println(Duration.ofNanos(System.nanoTime() - start).toNanos());
     }
 
-    static class Processor implements Runnable{
 
-        @Override
-        public void run() {
-            if (ticket > 0){
-                lock.lock();
-                ticket--;
-                System.out.printf("name: %s  ticket: %d\n", Thread.currentThread().getName(), ticket);
-                lock.unlock();
-                latch.countDown();
-            }
+    @Test
+    public void testThreadLocal(){
+        ThreadLocal<Integer> b = new ThreadLocal<>();
+        for (int i=0; i<100; i++){
+            new Thread(new Runnable() {
+                @Override
+                public void run() {
+                    b.set(new Random().nextInt(10));
+                    System.out.printf("%d ", b.get());
+                }
+            }).start();
         }
     }
 }
